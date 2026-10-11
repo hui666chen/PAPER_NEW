@@ -33,12 +33,13 @@ reflection strength will produce a positive PVT improvement.
 
 ## Start here
 
-1. `docs/PAPER_MAINLINE.md` — recommended paper title, abstract logic, section outline, and figures.
-2. `docs/LATEST_EXPERIMENT_STATUS.md` — latest result matrix and what each batch can prove.
-3. `docs/UNIFIED_PROTOCOL_3OF5.md` — the writing/validation protocol to use going forward.
-4. `docs/CONTRIBUTION_MAP.md` — standard components versus the researcher-specific contribution.
-5. `docs/CLAIMS_AND_LIMITATIONS.md` — wording that is safe for a paper and wording to avoid.
-6. `proposal/学硕开题报告_图表化修订版.docx` — the figure/table-enhanced opening report.
+1. `docs/AI_HANDOFF_EXECUTIVE_SUMMARY.md` — one-page Chinese summary of the real achievements, failures, limitations, and non-overclaim rules.
+2. `docs/PAPER_MAINLINE.md` — recommended paper title, abstract logic, section outline, and figures.
+3. `docs/LATEST_EXPERIMENT_STATUS.md` — latest result matrix and what each batch can prove.
+4. `docs/UNIFIED_PROTOCOL_3OF5.md` — the writing/validation protocol to use going forward.
+5. `docs/CONTRIBUTION_MAP.md` — standard components versus the researcher-specific contribution.
+6. `docs/CLAIMS_AND_LIMITATIONS.md` — wording that is safe for a paper and wording to avoid.
+7. `proposal/学硕开题报告_图表化修订版.docx` — the figure/table-enhanced opening report.
 
 ## Repository structure
 
@@ -61,4 +62,3 @@ protocol decisions needed for paper writing.
 Some older PRN30 records use a historical 3-of-4 persistence rule, whereas the
 current comparable PRN9 and PRN28 records use 3-of-5. They must not be merged
 as if they were one experiment. See `docs/LATEST_EXPERIMENT_STATUS.md`.
-
