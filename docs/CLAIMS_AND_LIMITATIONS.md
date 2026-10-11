@@ -26,11 +26,12 @@
 
 ## Main limitations
 
-- response banks are calibrated for the tested receiver binary and states;
+- the public handoff contains the tested response summaries and calibration
+  artifacts, while very large raw observations remain local; the response
+  banks are still calibrated for the tested receiver binary and states;
 - medium-elevation batches demonstrate safety but not positive gain;
 - historical PRN30 records contain a 3-of-4 protocol version;
 - PRN9 batches with different protocol versions are not pooled;
 - weak/short-delay reflection parameters may be statistically unidentifiable;
 - absolute pseudorange/PVT benefit depends on satellite geometry and the
   corrected PRN's leverage in the full constellation.
-

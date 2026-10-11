@@ -24,6 +24,9 @@
 - Keep the outlier-theory material as a separate optional paper line.
 - Do not invent missing hardware, absolute range truth, double-delta results,
   or multi-day generalization.
+- The compact public package is the authoritative handoff. Large raw IQ,
+  tracking-state/epoch files, sealed truth, and runtime artifacts remain local
+  because of storage limits; do not invent values that are not in the reports.
 - Do not turn a safe fallback result into a positive-improvement result. PRN28
   is a safety/boundary case, not a gain case.
 - Always state the response-bank limitation: it is calibrated for the tested

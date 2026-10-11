@@ -1,10 +1,11 @@
 # GNSS GPU Software Receiver and Receiver-Chain-Consistent Multipath Study
 
-This is a curated, paper-oriented archive of the current GNSS software-receiver
-and short-delay multipath experiments. It is intended to give another AI or
-research collaborator enough controlled evidence to draft a thesis chapter,
-paper outline, abstract, and figures without exposing raw IQ data or sealed
-truth files.
+This is a public, paper-oriented archive of the GNSS software-receiver and
+short-delay multipath experiments. It contains the complete compact handoff
+package needed by another account or AI to draft the thesis chapter and paper:
+protocols, result tables, figures, reports, selected scripts, and the revised
+opening report. Very large raw files are not mirrored into the Git repository;
+their quantitative outcomes and roles are recorded in the reports.
 
 ## Current paper mainline
 
@@ -52,10 +53,15 @@ reflection strength will produce a positive PVT improvement.
 
 ## Data policy
 
-Raw IQ files, large epoch-response CSV files, sealed truth, private simulator
-inputs, receiver binaries, company source code, and absolute local secrets are
-intentionally excluded. The compact reports retain the numerical outcomes and
-protocol decisions needed for paper writing.
+The compact public package shares the paper-relevant numerical evidence and
+the scripts/protocols needed to understand it. Raw IQ, very large tracking
+state and epoch-response files, sealed truth, and receiver/simulator runtime
+artifacts remain in the local experiment directories because they are too large
+for a normal GitHub repository and are not needed for drafting the manuscript.
+This is a storage decision, not a claim that the researcher lacks permission to
+share the data. If a later version uses Git LFS or an external data archive,
+the corresponding download manifest can be added without changing the paper
+claims.
 
 ## Protocol warning
 
