@@ -1,0 +1,65 @@
+{
+  "status": "current_binary_prn04_calibration_complete",
+  "truth_accessed": false,
+  "validation_outcomes_accessed": false,
+  "target_prn": 4,
+  "calibration_seed": 2026101012,
+  "receiver": "<LOCAL_USER>/chh/GPU/High/gnss-sdr-cuda-scan/build-cuda-scan/src/main/gnss-sdr",
+  "receiver_sha256": "1ddccdc3c7f4fde5680b38db8a139baa6d8d3692229d74e7d3d3b5e05683840b",
+  "calibration_config": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn04_shared_ratio_v2/configs/signalsim_prn04_isolated_145s.json",
+  "calibration_config_sha256": "3e7e6a2ecb1e573b3a6a686c41995b6a763b316e8cbafe237950965b49609f51",
+  "calibration_iq_sha256": "32157eeb2f927c00165f191538d46d44242f5bbf5ab2327878b549af3141cf74",
+  "calibration_state": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn04_shared_ratio_v2/calibration_25m/state/tracking_state_prn30.csv",
+  "calibration_state_sha256": "1ff994299a3147ca4c235a6ae1f3377a064fe964a98d77b370d97ad8550fa150",
+  "response_spec": {
+    "prn": 4,
+    "sample_rate_hz": 25000000.0,
+    "if_hz": -4580000.0,
+    "tap_first_chip": -2.0,
+    "tap_step_chip": 0.01,
+    "tap_count": 401
+  },
+  "banks": [
+    {
+      "window": 68,
+      "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn04_shared_ratio_v2/response_banks_25m/bank_68.npz",
+      "sha256": "85a40aa2806f5cb1d26a450e2207c18afc39d37979d40134d9b0a1de5ea294d1"
+    },
+    {
+      "window": 108,
+      "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn04_shared_ratio_v2/response_banks_25m/bank_108.npz",
+      "sha256": "aa90696e1cd5d78eb66005190b969a3363f17f463b62eabe2d4a35501a3d0025"
+    },
+    {
+      "window": 129,
+      "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn04_shared_ratio_v2/response_banks_25m/bank_129.npz",
+      "sha256": "966209af789a75eb9e5f3a0a6a339899130f342be69c732d58e6035fee49ba63"
+    }
+  ],
+  "gpu_forward_checks": [
+    {
+      "window": 68,
+      "relative_shape_error": 3.3275987943479394e-05,
+      "pass_le_0p01": true,
+      "gpu_reference_sha256": "c3cb24dea6f2842995392eaba129a2de44dbb5870012d6f40d241ce095273a3c",
+      "gpu_reference_rows": 40101
+    },
+    {
+      "window": 108,
+      "relative_shape_error": 3.4064813754958936e-05,
+      "pass_le_0p01": true,
+      "gpu_reference_sha256": "26f81854a7aa6b37efd33a809ad19af89a7ecee4f165b0c5a3475478cdbd515d",
+      "gpu_reference_rows": 40101
+    },
+    {
+      "window": 129,
+      "relative_shape_error": 4.048971463475283e-05,
+      "pass_le_0p01": true,
+      "gpu_reference_sha256": "299e4595e950f5b8e20b378d9956997c6d4e13f86ec5b6da4bb3488899c83a6c",
+      "gpu_reference_rows": 40101
+    }
+  ],
+  "old_prn30_response_banks_reused": false,
+  "protocol_sha256": "0f824e4a8281101b1795653a941442711831eeebd52b94b2c26f4018e301cfe8",
+  "old_prn04_response_banks_reused": false
+}

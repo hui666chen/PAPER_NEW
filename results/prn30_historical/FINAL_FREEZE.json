@@ -1,0 +1,30 @@
+{
+  "status": "frozen_before_final_iq_generation",
+  "frozen_at": "2026-09-26T09:55:03.725878+08:00",
+  "final_iq_exists_at_freeze": false,
+  "final_outcomes_accessed_at_freeze": false,
+  "seed": 2026092901,
+  "isolated_primary_iq": {
+    "path": "<TMP_DIR>/prn30_formal_pvt_iq/prn30_isolated_145s_iq16.bin",
+    "sha256_from_existing_iq_manifest": "e467cb3d38dd885c2db5799467dd243f06dce5b7f2d4b05f26744c8a41d72ea1"
+  },
+  "files": {
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/FINAL_SIGN_PERSISTENCE_PROTOCOL.md": "c7c6925752ecbeb57d10492a7da9a986c9cf4df3c99189d9f1a650b25377d9b1",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/final_sign_persistence/signalsim_final_confirmation_145s.json": "51226569e39671b415f655eb1e3a383d3e0fb1a62400aa26c84d37b45e64e844",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/extract_final_sign_persistence_responses.py": "f3ade79f323d0d4ec4c598b41835956fe8c2794660d36aa19204c7add4a3cfde",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/run_final_sign_persistence.py": "d079602095514253c9cc4c287ac57e3b06484b2329be6f7e99357932bfe5b6be",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/prepare_final_sign_persistence_configs.py": "7fadd4220c247339ac084ee90dfcedd49992988fd507a8ce676791df69c4ec66",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/score_final_sign_persistence.py": "c2b13bf4646dac2af75c2b157fa771b1fef421a651fd11ef33ac2b09c8bdcdfc",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/final_sign_persistence/state/run.conf": "2ab3445cdf3ba915db3f15f3070e9bfc7edea4b8fddd4d22610145ef36c8ce09",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/final_sign_persistence/receiver/single/run.conf": "7d1b1d144feb5be97d943f5c0b7eb6caf46fd47ab146ebe5ffeaad86d1757822",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/final_sign_persistence/receiver/cross_only_refined/run.conf": "0e341fe6695d86550b03d1d04d4078f22ffbdf7f612f060e4913bffa9e5534d9",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/final_sign_persistence/receiver/sign_persistent_refined/run.conf": "f73d8b943c5dd1943dd1471a27537e950f7cb0da78f50790d7cfa299b1f8f100",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/response_banks/bank_68.npz": "ecf903d4479c8eb28641b99dced510dd09ea205a6c8119313d703c032fcb9d86",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/response_banks/bank_87.npz": "b4a8906a437506137ef38977f85fe6c7cbfd93f7515e656b9162214d5e94029c",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/response_banks/bank_108.npz": "2fd1de4c196e28d8b6c7d1a7aabce9df3271104bd9a22c921f4850e688f8ca6a",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/response_banks/bank_129.npz": "7d857948353b618a1a2af0d4f0139ddfb5c12cae61b21f497f84f0f302d3986c",
+    "<LOCAL_USER>/chh/GPU/High/signalsim-new-multipath/build-if/IFdataGen": "ce5c3eef2c8e8c118e7c309127e9df3ba83fc41c203898b7683e383e844c9c30",
+    "<LOCAL_USER>/chh/GPU/High/gnss-sdr-cuda-scan/build-cuda-scan/src/main/gnss-sdr": "1a3efc8a1da05dd301a0e03dce62a7982e6385c1b11b9280a6183dc6c2c53eca",
+    "<LOCAL_USER>/chh/GPU/High/gnss-sdr-cuda-scan/build-cuda-scan/src/algorithms/tracking/libs/frozen_reference_open_loop_scan": "98bf1a17d8c66ff242509fc4c8045e00b7858a6b7fce711270f54227c0e8399d"
+  }
+}

@@ -1,0 +1,36 @@
+# Raw and large signal data
+*.bin
+*.iq
+*.iq16
+*.complex64
+*.npy
+*.npz
+*.mat
+*.dat
+*.so
+*.o
+
+# Receiver and simulator runtime products
+__pycache__/
+*.pyc
+*.log
+*.stderr.log
+*.stdout.log
+source_receiver/
+open_loop/
+tracking_state*.csv
+observables.dat
+*.26O
+*.26N
+*.gpx
+*.geojson
+*.kml
+*.nmea
+*.pos
+
+# Local/editor files
+.DS_Store
+.idea/
+.vscode/
+.~lock.*
+

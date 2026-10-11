@@ -1,0 +1,175 @@
+{
+  "status": "prn09_comparable_shared_ratio_confirmation_complete",
+  "truth_accessed": false,
+  "target_prn": 9,
+  "threshold": 0.0032589351980997073,
+  "threshold_file_sha256": "0126100761b160d4504d5fc63e558ae77aec96d08e072b545a5e2385db656e83",
+  "rule_file_sha256": "aa72890c5a96ed8e424229be0b78f07771ab57bdea974cc4560ba31578b0cc3b",
+  "protocol_sha256": "4d3cd6e06fe2e01dc574dcb1b42b4ed2708a82121d30a890b2fb314cc357e769",
+  "calibration_audit_sha256": "48e3d55beae921345e05bcd01c019018c13bae63359c751f860ca81e95271af3",
+  "rule": {
+    "k": 3,
+    "m": 5
+  },
+  "seeds": [
+    2026101110,
+    2026101111,
+    2026101112,
+    2026101113,
+    2026101114
+  ],
+  "aggregate": {
+    "clean": {
+      "windows": 80,
+      "active": 0,
+      "active_rate": 0.0
+    },
+    "amp_0p05": {
+      "windows": 80,
+      "active": 57,
+      "active_rate": 0.7125
+    },
+    "amp_0p10": {
+      "windows": 80,
+      "active": 60,
+      "active_rate": 0.75
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 2026101110,
+      "truth_accessed": false,
+      "threshold": 0.0032589351980997073,
+      "rule": {
+        "k": 3,
+        "m": 5
+      },
+      "state_sha256": "a61a75f89a56c03fd3e7ba47860e0415113fd686e7e87202df40e2cd4e726d96",
+      "scenes": {
+        "clean": {
+          "windows": 16,
+          "active": 0,
+          "active_rate": 0.0
+        },
+        "amp_0p05": {
+          "windows": 16,
+          "active": 11,
+          "active_rate": 0.6875
+        },
+        "amp_0p10": {
+          "windows": 16,
+          "active": 12,
+          "active_rate": 0.75
+        }
+      }
+    },
+    {
+      "seed": 2026101111,
+      "truth_accessed": false,
+      "threshold": 0.0032589351980997073,
+      "rule": {
+        "k": 3,
+        "m": 5
+      },
+      "state_sha256": "f74e8184ed9618bc4013404c239679554fd124306a4cb737e1e593b19e874685",
+      "scenes": {
+        "clean": {
+          "windows": 16,
+          "active": 0,
+          "active_rate": 0.0
+        },
+        "amp_0p05": {
+          "windows": 16,
+          "active": 12,
+          "active_rate": 0.75
+        },
+        "amp_0p10": {
+          "windows": 16,
+          "active": 12,
+          "active_rate": 0.75
+        }
+      }
+    },
+    {
+      "seed": 2026101112,
+      "truth_accessed": false,
+      "threshold": 0.0032589351980997073,
+      "rule": {
+        "k": 3,
+        "m": 5
+      },
+      "state_sha256": "1d2b36523a40b89eda11af2e636f84fc5c37b9611bb1d3a231968d1bf0371a2e",
+      "scenes": {
+        "clean": {
+          "windows": 16,
+          "active": 0,
+          "active_rate": 0.0
+        },
+        "amp_0p05": {
+          "windows": 16,
+          "active": 11,
+          "active_rate": 0.6875
+        },
+        "amp_0p10": {
+          "windows": 16,
+          "active": 12,
+          "active_rate": 0.75
+        }
+      }
+    },
+    {
+      "seed": 2026101113,
+      "truth_accessed": false,
+      "threshold": 0.0032589351980997073,
+      "rule": {
+        "k": 3,
+        "m": 5
+      },
+      "state_sha256": "521d13137731e4f2e88311aeaa49f1650be8e64b4af3da7882dbaf45b4cead0f",
+      "scenes": {
+        "clean": {
+          "windows": 16,
+          "active": 0,
+          "active_rate": 0.0
+        },
+        "amp_0p05": {
+          "windows": 16,
+          "active": 12,
+          "active_rate": 0.75
+        },
+        "amp_0p10": {
+          "windows": 16,
+          "active": 12,
+          "active_rate": 0.75
+        }
+      }
+    },
+    {
+      "seed": 2026101114,
+      "truth_accessed": false,
+      "threshold": 0.0032589351980997073,
+      "rule": {
+        "k": 3,
+        "m": 5
+      },
+      "state_sha256": "ae6e08b2b6136da9a4e09acb3026e4706ef2931e6c6fd1e566f793f063245a28",
+      "scenes": {
+        "clean": {
+          "windows": 16,
+          "active": 0,
+          "active_rate": 0.0
+        },
+        "amp_0p05": {
+          "windows": 16,
+          "active": 11,
+          "active_rate": 0.6875
+        },
+        "amp_0p10": {
+          "windows": 16,
+          "active": 12,
+          "active_rate": 0.75
+        }
+      }
+    }
+  ]
+}

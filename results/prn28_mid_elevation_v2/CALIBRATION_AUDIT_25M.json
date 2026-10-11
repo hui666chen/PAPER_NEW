@@ -1,0 +1,66 @@
+{
+  "status": "current_binary_prn28_v2_calibration_complete",
+  "truth_accessed": false,
+  "validation_outcomes_accessed": false,
+  "target_prn": 28,
+  "calibration_seed": 2026101128,
+  "receiver": "<LOCAL_USER>/chh/GPU/High/gnss-sdr-cuda-scan/build-cuda-scan/src/main/gnss-sdr",
+  "receiver_sha256": "1ddccdc3c7f4fde5680b38db8a139baa6d8d3692229d74e7d3d3b5e05683840b",
+  "calibration_config": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn28_mid_elevation_v1/configs/signalsim_prn28_isolated_145s.json",
+  "calibration_config_sha256": "f9278e753addb33b14ee79d443087141dd12f06a010f5255dbcad62d117795ae",
+  "calibration_iq_sha256": "4ee9300d21364ec224e9a938f8c3acf91bef99adbacb60ad17d0eba382fcf0e2",
+  "calibration_state": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn28_mid_elevation_v1/v2/calibration_25m/state/tracking_state_prn30.csv",
+  "calibration_state_sha256": "a66fcc58514d81cf70fe9f7b717ce05afb9cb8999e8be9fe67f4c4d016283120",
+  "response_spec": {
+    "prn": 28,
+    "sample_rate_hz": 25000000.0,
+    "if_hz": -4580000.0,
+    "tap_first_chip": -2.0,
+    "tap_step_chip": 0.01,
+    "tap_count": 401
+  },
+  "banks": [
+    {
+      "window": 98,
+      "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn28_mid_elevation_v1/v2/response_banks_25m/bank_98.npz",
+      "sha256": "0ae492d2f0e1df66bc0c68a28af5abb942b8353304514839faf104878c98184c"
+    },
+    {
+      "window": 116,
+      "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn28_mid_elevation_v1/v2/response_banks_25m/bank_116.npz",
+      "sha256": "cae15e2ae27567f497967cafbc4336d4dd6eb5024948de09f047af28d00a6c72"
+    },
+    {
+      "window": 132,
+      "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn28_mid_elevation_v1/v2/response_banks_25m/bank_132.npz",
+      "sha256": "3f006f94ecbff018318f1832eeb8c41d291829d9d0f7c4900e081f93ff328c9d"
+    }
+  ],
+  "gpu_forward_checks": [
+    {
+      "window": 98,
+      "relative_shape_error": 3.392131835049168e-05,
+      "pass_le_0p01": true,
+      "gpu_reference_sha256": "b8091c16aa4554b78fb90e08542b728bd77c67af2e83fc2b25ae6b74f8b8ba57",
+      "gpu_reference_rows": 40101
+    },
+    {
+      "window": 116,
+      "relative_shape_error": 5.1859447764458614e-05,
+      "pass_le_0p01": true,
+      "gpu_reference_sha256": "2a998275e7734899909e10b1c8feb5ab15335702b7f66db102cb28b258128963",
+      "gpu_reference_rows": 40101
+    },
+    {
+      "window": 132,
+      "relative_shape_error": 4.634430029026723e-05,
+      "pass_le_0p01": true,
+      "gpu_reference_sha256": "1bc9f10cad50cc8bee6df3cac5c52c48866204b59fd20970390866c5f4dcaabd",
+      "gpu_reference_rows": 40101
+    }
+  ],
+  "old_prn30_response_banks_reused": false,
+  "protocol_sha256": "dabdf1c159a36f55de29f92f04754fc39cafe24d7bdbcfa75ea1e06c58ad727d",
+  "old_prn28_response_banks_reused": false,
+  "parent_protocol": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn28_mid_elevation_v1/PRN28_MID_ELEVATION_PROTOCOL.md"
+}

@@ -1,0 +1,95 @@
+{
+  "status": "prn09_comparable_calibration_complete_and_gpu_validated",
+  "truth_accessed": false,
+  "validation_iq_generated": false,
+  "validation_outcomes_accessed": false,
+  "target_prn": 9,
+  "response_spec": {
+    "prn": 9,
+    "sample_rate_hz": 25000000.0,
+    "if_hz": -4580000.0,
+    "chip_rate_hz": 1023000.0,
+    "code_length_chips": 1023,
+    "tap_first_chip": -2.0,
+    "tap_step_chip": 0.01,
+    "tap_count": 401,
+    "delay_filter_half": 128,
+    "delay_filter_beta": 10.0
+  },
+  "calibration_seed": 2026101100,
+  "receiver": "<LOCAL_USER>/chh/GPU/High/gnss-sdr-cuda-scan/build-cuda-scan/src/main/gnss-sdr",
+  "receiver_sha256": "1ddccdc3c7f4fde5680b38db8a139baa6d8d3692229d74e7d3d3b5e05683840b",
+  "calibration_config": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/configs/signalsim_prn09_isolated_145s.json",
+  "calibration_config_sha256": "14c1b78be57986d128cc05f98e1339e5b1c09f690a4c6524c57a8a38e04e338f",
+  "calibration_primary": {
+    "path": "<TMP_DIR>/prn09_comparable_v3_calibration/prn09_isolated_145s_iq16.bin",
+    "bytes": 14499900000,
+    "sha256": "2f922561e64b325a12152decb0b720b3b05859d15e01bec21e0ef47d695a36df",
+    "retained_after_audit": false
+  },
+  "tracking_state": {
+    "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/calibration/tracking_state_prn09.csv",
+    "bytes": 64546397,
+    "sha256": "f0cf13419a325634e930cc97ea6ef687246ad580bd15feac3e0de9cc57aeebaf"
+  },
+  "state_config": {
+    "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/calibration/state_prn09.conf",
+    "sha256": "dcc7e88d503ee649b13689474bde6fad561b2f7f6f5344c1d6f0ebb0b24caa77"
+  },
+  "banks": [
+    {
+      "window": 68,
+      "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/response_banks/bank_68.npz",
+      "bytes": 2217673,
+      "sha256": "16f951fc480d54a0d12a84892e2a4cc9e9eb186cd31f273606071cd67e588454"
+    },
+    {
+      "window": 108,
+      "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/response_banks/bank_108.npz",
+      "bytes": 2217677,
+      "sha256": "f9d059afcab634e79a1d210c0fe8d2a97e3ebf13ffcccb0a5101068afa8ae571"
+    },
+    {
+      "window": 129,
+      "path": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/response_banks/bank_129.npz",
+      "bytes": 2217677,
+      "sha256": "9c87adb1e22cc41b83da4f6418db946c3c6750d42bedb6ed9d7c242cff3bf367"
+    }
+  ],
+  "gpu_forward_checks": [
+    {
+      "window": 68,
+      "relative_shape_error": 2.380334788100563e-05,
+      "gain_real": 1.0001589496072927,
+      "gain_imag": -1.9170311570336152e-06,
+      "pass_le_0p01": true,
+      "gpu_reference": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/calibration/gpu_reference/window_68/prn09_epoch_responses.csv",
+      "gpu_reference_sha256": "85f07d4472b2c701aec2c8676ceb899827acdb0eb8ce6f2f2f69dc4f8034e91f"
+    },
+    {
+      "window": 108,
+      "relative_shape_error": 2.606040780173327e-05,
+      "gain_real": 1.0001531211586239,
+      "gain_imag": 7.1661895692235005e-06,
+      "pass_le_0p01": true,
+      "gpu_reference": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/calibration/gpu_reference/window_108/prn09_epoch_responses.csv",
+      "gpu_reference_sha256": "09e0e6a6bc7798c72e25a3cf2126360dfdecd509084bcff0d059e6a986915436"
+    },
+    {
+      "window": 129,
+      "relative_shape_error": 2.4851276458257802e-05,
+      "gain_real": 1.0001545263891574,
+      "gain_imag": -1.9761075165300387e-06,
+      "pass_le_0p01": true,
+      "gpu_reference": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/calibration/gpu_reference/window_129/prn09_epoch_responses.csv",
+      "gpu_reference_sha256": "a81e7313aa9681332f07784642a68b6566667f141d6b27a3aa53ecf7f5ffcacf"
+    }
+  ],
+  "inputs": {
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/CALIBRATION_PLAN.json": "a052d59a21524b80ba05892076e7146600c1cacdec341e63c5d1526f389ad55a",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/configs/signalsim_prn09_isolated_145s.json": "14c1b78be57986d128cc05f98e1339e5b1c09f690a4c6524c57a8a38e04e338f",
+    "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn30_formal_pvt/final_sign_persistence/state/run.conf": "2ab3445cdf3ba915db3f15f3070e9bfc7edea4b8fddd4d22610145ef36c8ce09",
+    "<LOCAL_USER>/chh/GPU/High/gnss-sdr-cuda-scan/build-cuda-scan/src/main/gnss-sdr": "1ddccdc3c7f4fde5680b38db8a139baa6d8d3692229d74e7d3d3b5e05683840b",
+    "<LOCAL_USER>/chh/GPU/High/gnss-sdr-cuda-scan/build-cuda-scan/src/algorithms/tracking/libs/frozen_reference_open_loop_scan": "98bf1a17d8c66ff242509fc4c8045e00b7858a6b7fce711270f54227c0e8399d"
+  }
+}

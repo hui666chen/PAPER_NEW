@@ -1,0 +1,4466 @@
+{
+  "status": "prn09_comparable_persistence_pvt_confirmation_complete",
+  "truth_used_for_estimation": false,
+  "truth_used_for_scoring_only": true,
+  "target_prn": 9,
+  "threshold": 0.0032589351980997073,
+  "threshold_file_sha256": "0126100761b160d4504d5fc63e558ae77aec96d08e072b545a5e2385db656e83",
+  "protocol_sha256": "4d3cd6e06fe2e01dc574dcb1b42b4ed2708a82121d30a890b2fb314cc357e769",
+  "rule_file_sha256": "aa72890c5a96ed8e424229be0b78f07771ab57bdea974cc4560ba31578b0cc3b",
+  "calibration_audit_sha256": "48e3d55beae921345e05bcd01c019018c13bae63359c751f860ca81e95271af3",
+  "rule": {
+    "k": 3,
+    "m": 5
+  },
+  "seeds": [
+    2026101110,
+    2026101111,
+    2026101112,
+    2026101113,
+    2026101114
+  ],
+  "methods": [
+    "single",
+    "always_shared_ratio",
+    "gated_persistence_shared_ratio"
+  ],
+  "activation_counts": {
+    "clean/single": 0,
+    "clean/always_shared_ratio": 80,
+    "clean/gated_persistence_shared_ratio": 0,
+    "amp_0p05/single": 0,
+    "amp_0p05/always_shared_ratio": 80,
+    "amp_0p05/gated_persistence_shared_ratio": 57,
+    "amp_0p10/single": 0,
+    "amp_0p10/always_shared_ratio": 80,
+    "amp_0p10/gated_persistence_shared_ratio": 60
+  },
+  "per_seed": [
+    {
+      "seed": 2026101110,
+      "status": "valid",
+      "target_prn": 9,
+      "invariants": {
+        "one_common_observation_stream": true,
+        "solution_timestamp_sets_may_differ": true,
+        "pvt_availability_scored_per_method": true,
+        "epochs_per_scene_method": 16,
+        "satellites_per_score_epoch": 9,
+        "only_target_c1c_differs": true
+      },
+      "missing_solution_seconds": {
+        "clean/single": [],
+        "clean/always_shared_ratio": [],
+        "clean/gated_persistence_shared_ratio": [],
+        "amp_0p05/single": [],
+        "amp_0p05/always_shared_ratio": [],
+        "amp_0p05/gated_persistence_shared_ratio": [],
+        "amp_0p10/single": [],
+        "amp_0p10/always_shared_ratio": [],
+        "amp_0p10/gated_persistence_shared_ratio": []
+      },
+      "source_receiver": {
+        "native_position_lines": 1147,
+        "minimum_observations": 7,
+        "maximum_observations": 9,
+        "has_native_pvt_success": true
+      },
+      "rinex": {
+        "source_observation_sha256": "c65e18c1112e16b6fc44bd724923c55ebd9605b1e3e70f90fc79a3360548c137",
+        "source_navigation_sha256": "28a770a489a0dfede8baceeec54389db5fa0d70f03a3ede2ff4265cbace68c2b",
+        "outputs": {
+          "single": "c65e18c1112e16b6fc44bd724923c55ebd9605b1e3e70f90fc79a3360548c137",
+          "always_shared_ratio": "6976a85836dcf6086548c5ca323a4bbdbcb0d8357cb6a2493308c9dd1eeef446",
+          "gated_persistence_shared_ratio": "baff3ac63083d39889e61d936c53cdf9415db5a9af2c69bd019282bbe8458f7e"
+        },
+        "navigation_sha256": "28a770a489a0dfede8baceeec54389db5fa0d70f03a3ede2ff4265cbace68c2b",
+        "only_g30_c1c_differs": true,
+        "all_score_epochs_have_frozen_satellite_set": true,
+        "score_epoch_satellite_count": 9,
+        "score_epoch_satellite_set": [
+          "G03",
+          "G04",
+          "G07",
+          "G08",
+          "G09",
+          "G14",
+          "G16",
+          "G27",
+          "G30"
+        ],
+        "score_audit": {
+          "clean": {
+            "relative_seconds": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76
+            ],
+            "satellites": {
+              "61": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "62": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "63": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "64": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "65": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "66": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "67": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "68": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "69": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "70": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "71": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "72": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "73": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "74": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "75": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "76": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p05": {
+            "relative_seconds": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "satellites": {
+              "100": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "101": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "102": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "103": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "104": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "105": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "106": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "107": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "108": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "109": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "110": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "111": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "112": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "113": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "114": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "115": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p10": {
+            "relative_seconds": [
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              130,
+              131,
+              132,
+              133,
+              134,
+              135,
+              136
+            ],
+            "satellites": {
+              "121": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "122": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "123": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "124": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "125": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "126": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "127": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "128": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "129": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "130": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "131": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "132": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "133": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "134": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "135": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "136": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          }
+        }
+      },
+      "schedules": {
+        "paths": {
+          "single": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101110/zero_corrections.csv",
+          "always_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101110/always_shared_ratio_corrections.csv",
+          "gated_persistence_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101110/gated_persistence_shared_ratio_corrections.csv"
+        },
+        "sha256": {
+          "single": "16358d6b61be4ce4ea595f71ffed32d543a30b83d8bb7b6d8b6dae4a8080dc41",
+          "always_shared_ratio": "104b31da5302a2518145c5a71e0dd97ed35aa87d489a5d30ae6589f70f77543a",
+          "gated_persistence_shared_ratio": "1aba0996cf5d389dd23c04cf6ba6a95f807673fd58d9973a73edc1d2dfda7711"
+        },
+        "activations": {
+          "single": {
+            "clean": 0,
+            "amp_0p05": 0,
+            "amp_0p10": 0
+          },
+          "always_shared_ratio": {
+            "clean": 16,
+            "amp_0p05": 16,
+            "amp_0p10": 16
+          },
+          "gated_persistence_shared_ratio": {
+            "clean": 0,
+            "amp_0p05": 11,
+            "amp_0p10": 12
+          }
+        }
+      },
+      "metrics": [
+        {
+          "seed": 2026101110,
+          "scene": "clean",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.2076495469746957,
+          "vertical_rmse_m": 1.4331704982969427,
+          "rmse_3d_m": 1.874138496882473,
+          "p95_3d_m": 3.3603690632280268,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.04942172670186799,
+          "mean_north_error_m": -0.0918953633509561,
+          "mean_up_error_m": 0.2527873851752886
+        },
+        {
+          "seed": 2026101110,
+          "scene": "clean",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.3716290018850898,
+          "vertical_rmse_m": 3.321773727076812,
+          "rmse_3d_m": 3.5938206428131694,
+          "p95_3d_m": 6.119805543750503,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.09185525012612931,
+          "mean_north_error_m": -0.5003537300271211,
+          "mean_up_error_m": 2.585056101980004
+        },
+        {
+          "seed": 2026101110,
+          "scene": "clean",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.2076495469746957,
+          "vertical_rmse_m": 1.4331704982969427,
+          "rmse_3d_m": 1.874138496882473,
+          "p95_3d_m": 3.3603690632280268,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.04942172670186799,
+          "mean_north_error_m": -0.0918953633509561,
+          "mean_up_error_m": 0.2527873851752886
+        },
+        {
+          "seed": 2026101110,
+          "scene": "amp_0p05",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.5963075617305786,
+          "vertical_rmse_m": 4.64836626405141,
+          "rmse_3d_m": 4.914825201002523,
+          "p95_3d_m": 6.430483154062894,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.047887793835853426,
+          "mean_north_error_m": 1.00033122398735,
+          "mean_up_error_m": -4.351550200520597
+        },
+        {
+          "seed": 2026101110,
+          "scene": "amp_0p05",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.2280893506755741,
+          "vertical_rmse_m": 2.828769521156489,
+          "rmse_3d_m": 3.083851562100009,
+          "p95_3d_m": 4.92807844301738,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.16673798200583784,
+          "mean_north_error_m": -0.06885920388922528,
+          "mean_up_error_m": 1.7160873813417434
+        },
+        {
+          "seed": 2026101110,
+          "scene": "amp_0p05",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.4522274495163183,
+          "vertical_rmse_m": 3.5383908006447657,
+          "rmse_3d_m": 3.824810325129362,
+          "p95_3d_m": 6.6816454608187925,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.12450943974126602,
+          "mean_north_error_m": 0.31460617881224995,
+          "mean_up_error_m": -0.4618876658596436
+        },
+        {
+          "seed": 2026101110,
+          "scene": "amp_0p10",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.6773648425226266,
+          "vertical_rmse_m": 7.220917166728933,
+          "rmse_3d_m": 7.4131772907230244,
+          "p95_3d_m": 9.210767162397044,
+          "gross_error_rate": 0.0625,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.08660561823015728,
+          "mean_north_error_m": 1.2285149955956403,
+          "mean_up_error_m": -7.116418971288897
+        },
+        {
+          "seed": 2026101110,
+          "scene": "amp_0p10",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.2370895866033313,
+          "vertical_rmse_m": 3.3753111111553804,
+          "rmse_3d_m": 3.594873536353034,
+          "p95_3d_m": 6.51383746403188,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.18810144074235252,
+          "mean_north_error_m": 0.3481168202799428,
+          "mean_up_error_m": -2.1362063703895315
+        },
+        {
+          "seed": 2026101110,
+          "scene": "amp_0p10",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.3856924544913036,
+          "vertical_rmse_m": 4.576518775214702,
+          "rmse_3d_m": 4.781701337215322,
+          "p95_3d_m": 8.138973372627069,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.16615093239955586,
+          "mean_north_error_m": 0.5405013946547478,
+          "mean_up_error_m": -3.2255314012631566
+        }
+      ]
+    },
+    {
+      "seed": 2026101111,
+      "status": "valid",
+      "target_prn": 9,
+      "invariants": {
+        "one_common_observation_stream": true,
+        "solution_timestamp_sets_may_differ": true,
+        "pvt_availability_scored_per_method": true,
+        "epochs_per_scene_method": 16,
+        "satellites_per_score_epoch": 9,
+        "only_target_c1c_differs": true
+      },
+      "missing_solution_seconds": {
+        "clean/single": [],
+        "clean/always_shared_ratio": [],
+        "clean/gated_persistence_shared_ratio": [],
+        "amp_0p05/single": [],
+        "amp_0p05/always_shared_ratio": [],
+        "amp_0p05/gated_persistence_shared_ratio": [],
+        "amp_0p10/single": [],
+        "amp_0p10/always_shared_ratio": [],
+        "amp_0p10/gated_persistence_shared_ratio": []
+      },
+      "source_receiver": {
+        "native_position_lines": 1147,
+        "minimum_observations": 8,
+        "maximum_observations": 9,
+        "has_native_pvt_success": true
+      },
+      "rinex": {
+        "source_observation_sha256": "70bd7ee92b4f18d1d7e434d12b352babbace2da82984724a293951a0b501ff2c",
+        "source_navigation_sha256": "d7653311bcccba54f43d830b2f493e26829aa6f16a7b9e623b61d35baabd5444",
+        "outputs": {
+          "single": "70bd7ee92b4f18d1d7e434d12b352babbace2da82984724a293951a0b501ff2c",
+          "always_shared_ratio": "50b0fe166dd0b111fb02c7855b52d7153a9d9f5088521f61cc6e9e2bf2f83388",
+          "gated_persistence_shared_ratio": "364a19776f1af2e6f66be4c55e5873e7416ffb8b382bdbdec8e830cf238e419d"
+        },
+        "navigation_sha256": "d7653311bcccba54f43d830b2f493e26829aa6f16a7b9e623b61d35baabd5444",
+        "only_g30_c1c_differs": true,
+        "all_score_epochs_have_frozen_satellite_set": true,
+        "score_epoch_satellite_count": 9,
+        "score_epoch_satellite_set": [
+          "G03",
+          "G04",
+          "G07",
+          "G08",
+          "G09",
+          "G14",
+          "G16",
+          "G27",
+          "G30"
+        ],
+        "score_audit": {
+          "clean": {
+            "relative_seconds": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76
+            ],
+            "satellites": {
+              "61": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "62": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "63": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "64": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "65": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "66": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "67": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "68": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "69": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "70": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "71": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "72": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "73": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "74": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "75": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "76": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p05": {
+            "relative_seconds": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "satellites": {
+              "100": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "101": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "102": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "103": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "104": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "105": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "106": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "107": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "108": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "109": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "110": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "111": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "112": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "113": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "114": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "115": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p10": {
+            "relative_seconds": [
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              130,
+              131,
+              132,
+              133,
+              134,
+              135,
+              136
+            ],
+            "satellites": {
+              "121": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "122": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "123": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "124": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "125": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "126": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "127": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "128": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "129": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "130": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "131": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "132": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "133": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "134": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "135": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "136": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          }
+        }
+      },
+      "schedules": {
+        "paths": {
+          "single": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101111/zero_corrections.csv",
+          "always_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101111/always_shared_ratio_corrections.csv",
+          "gated_persistence_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101111/gated_persistence_shared_ratio_corrections.csv"
+        },
+        "sha256": {
+          "single": "16358d6b61be4ce4ea595f71ffed32d543a30b83d8bb7b6d8b6dae4a8080dc41",
+          "always_shared_ratio": "f7e6f9e45a35d1f9203963046ca7f1dc24153b898e06f35e826bbcaaa8ddf94f",
+          "gated_persistence_shared_ratio": "0926143e06b8d55fecf270876cf17900c876751e7e28171ee7824efeae196fa4"
+        },
+        "activations": {
+          "single": {
+            "clean": 0,
+            "amp_0p05": 0,
+            "amp_0p10": 0
+          },
+          "always_shared_ratio": {
+            "clean": 16,
+            "amp_0p05": 16,
+            "amp_0p10": 16
+          },
+          "gated_persistence_shared_ratio": {
+            "clean": 0,
+            "amp_0p05": 12,
+            "amp_0p10": 12
+          }
+        }
+      },
+      "metrics": [
+        {
+          "seed": 2026101111,
+          "scene": "clean",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.1972714368235857,
+          "vertical_rmse_m": 1.4684743262154667,
+          "rmse_3d_m": 1.89469674095555,
+          "p95_3d_m": 2.794549599126614,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.3345059453869267,
+          "mean_north_error_m": -0.39330180880237664,
+          "mean_up_error_m": 0.48882488740744456
+        },
+        {
+          "seed": 2026101111,
+          "scene": "clean",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.3822520287698776,
+          "vertical_rmse_m": 3.3001887831120356,
+          "rmse_3d_m": 3.5779696302815287,
+          "p95_3d_m": 5.959727803015539,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.37407109156192697,
+          "mean_north_error_m": -0.7744995988572514,
+          "mean_up_error_m": 2.6655748496229323
+        },
+        {
+          "seed": 2026101111,
+          "scene": "clean",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.1972714368235857,
+          "vertical_rmse_m": 1.4684743262154667,
+          "rmse_3d_m": 1.89469674095555,
+          "p95_3d_m": 2.794549599126614,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.3345059453869267,
+          "mean_north_error_m": -0.39330180880237664,
+          "mean_up_error_m": 0.48882488740744456
+        },
+        {
+          "seed": 2026101111,
+          "scene": "amp_0p05",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.3779286185915829,
+          "vertical_rmse_m": 4.054265750102548,
+          "rmse_3d_m": 4.2820273294770415,
+          "p95_3d_m": 6.906249883015878,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": -0.06010897702694476,
+          "mean_north_error_m": 0.48213053660914484,
+          "mean_up_error_m": -3.4879501494310654
+        },
+        {
+          "seed": 2026101111,
+          "scene": "amp_0p05",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.4469058990012156,
+          "vertical_rmse_m": 3.448765595059177,
+          "rmse_3d_m": 3.739989413117154,
+          "p95_3d_m": 6.407020488312103,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.049693005495141884,
+          "mean_north_error_m": -0.5048903385558864,
+          "mean_up_error_m": 2.1130748354373017
+        },
+        {
+          "seed": 2026101111,
+          "scene": "amp_0p05",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.556165072315458,
+          "vertical_rmse_m": 3.974743515598133,
+          "rmse_3d_m": 4.268516808808885,
+          "p95_3d_m": 7.799416880888319,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.022565100975650842,
+          "mean_north_error_m": -0.2583867723265116,
+          "mean_up_error_m": 0.7129435594230223
+        },
+        {
+          "seed": 2026101111,
+          "scene": "amp_0p10",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 2.1951411299815464,
+          "vertical_rmse_m": 7.877609347508236,
+          "rmse_3d_m": 8.177736460200084,
+          "p95_3d_m": 12.053902013594914,
+          "gross_error_rate": 0.1875,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.004147758092564149,
+          "mean_north_error_m": 1.5549338772570729,
+          "mean_up_error_m": -7.571462879057873
+        },
+        {
+          "seed": 2026101111,
+          "scene": "amp_0p10",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.639932761217295,
+          "vertical_rmse_m": 2.7855743191411215,
+          "rmse_3d_m": 3.232460943116297,
+          "p95_3d_m": 6.439014905876363,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.1215360385222127,
+          "mean_north_error_m": 0.53696390330058,
+          "mean_up_error_m": -1.813093961430364
+        },
+        {
+          "seed": 2026101111,
+          "scene": "amp_0p10",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.94020678705794,
+          "vertical_rmse_m": 4.917923343282161,
+          "rmse_3d_m": 5.2868111737554315,
+          "p95_3d_m": 11.173417367470769,
+          "gross_error_rate": 0.125,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.09332276710298643,
+          "mean_north_error_m": 0.7843132156480844,
+          "mean_up_error_m": -3.2136315459720377
+        }
+      ]
+    },
+    {
+      "seed": 2026101112,
+      "status": "valid",
+      "target_prn": 9,
+      "invariants": {
+        "one_common_observation_stream": true,
+        "solution_timestamp_sets_may_differ": true,
+        "pvt_availability_scored_per_method": true,
+        "epochs_per_scene_method": 16,
+        "satellites_per_score_epoch": 9,
+        "only_target_c1c_differs": true
+      },
+      "missing_solution_seconds": {
+        "clean/single": [],
+        "clean/always_shared_ratio": [],
+        "clean/gated_persistence_shared_ratio": [],
+        "amp_0p05/single": [],
+        "amp_0p05/always_shared_ratio": [],
+        "amp_0p05/gated_persistence_shared_ratio": [],
+        "amp_0p10/single": [],
+        "amp_0p10/always_shared_ratio": [],
+        "amp_0p10/gated_persistence_shared_ratio": []
+      },
+      "source_receiver": {
+        "native_position_lines": 1147,
+        "minimum_observations": 8,
+        "maximum_observations": 9,
+        "has_native_pvt_success": true
+      },
+      "rinex": {
+        "source_observation_sha256": "3a15b7b3a43caf1c79c18de7bb0b08cba607b7e0a64030d2eb7dc2c3ad853814",
+        "source_navigation_sha256": "9f03111fe9a27918ed914c1d0c10952962243988f25973427a4dc9e8aa52787a",
+        "outputs": {
+          "single": "3a15b7b3a43caf1c79c18de7bb0b08cba607b7e0a64030d2eb7dc2c3ad853814",
+          "always_shared_ratio": "ba0ecea4cff62250a6e61c9fe47b1624e5c0388c7e3f31ef571aaa017e6023a7",
+          "gated_persistence_shared_ratio": "77ba6d19766d28735b33f1659d9f3666cdf83181db4dc1e5497320a57ef52e56"
+        },
+        "navigation_sha256": "9f03111fe9a27918ed914c1d0c10952962243988f25973427a4dc9e8aa52787a",
+        "only_g30_c1c_differs": true,
+        "all_score_epochs_have_frozen_satellite_set": true,
+        "score_epoch_satellite_count": 9,
+        "score_epoch_satellite_set": [
+          "G03",
+          "G04",
+          "G07",
+          "G08",
+          "G09",
+          "G14",
+          "G16",
+          "G27",
+          "G30"
+        ],
+        "score_audit": {
+          "clean": {
+            "relative_seconds": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76
+            ],
+            "satellites": {
+              "61": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "62": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "63": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "64": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "65": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "66": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "67": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "68": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "69": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "70": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "71": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "72": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "73": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "74": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "75": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "76": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p05": {
+            "relative_seconds": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "satellites": {
+              "100": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "101": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "102": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "103": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "104": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "105": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "106": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "107": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "108": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "109": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "110": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "111": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "112": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "113": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "114": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "115": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p10": {
+            "relative_seconds": [
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              130,
+              131,
+              132,
+              133,
+              134,
+              135,
+              136
+            ],
+            "satellites": {
+              "121": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "122": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "123": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "124": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "125": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "126": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "127": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "128": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "129": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "130": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "131": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "132": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "133": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "134": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "135": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "136": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          }
+        }
+      },
+      "schedules": {
+        "paths": {
+          "single": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101112/zero_corrections.csv",
+          "always_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101112/always_shared_ratio_corrections.csv",
+          "gated_persistence_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101112/gated_persistence_shared_ratio_corrections.csv"
+        },
+        "sha256": {
+          "single": "16358d6b61be4ce4ea595f71ffed32d543a30b83d8bb7b6d8b6dae4a8080dc41",
+          "always_shared_ratio": "4d6c5ac1541dab29ee4c830cf3c97ed14198e6d812b83347098900375326b9dc",
+          "gated_persistence_shared_ratio": "7661439e19a9bbec87bd8395f973a4a760190b6c8ee0f9059b79ea1fb8f3f873"
+        },
+        "activations": {
+          "single": {
+            "clean": 0,
+            "amp_0p05": 0,
+            "amp_0p10": 0
+          },
+          "always_shared_ratio": {
+            "clean": 16,
+            "amp_0p05": 16,
+            "amp_0p10": 16
+          },
+          "gated_persistence_shared_ratio": {
+            "clean": 0,
+            "amp_0p05": 11,
+            "amp_0p10": 12
+          }
+        }
+      },
+      "metrics": [
+        {
+          "seed": 2026101112,
+          "scene": "clean",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.4664777250573207,
+          "vertical_rmse_m": 1.500485550865057,
+          "rmse_3d_m": 2.0980976637049356,
+          "p95_3d_m": 3.2543890482720075,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.051620163155308124,
+          "mean_north_error_m": -0.6022790103412293,
+          "mean_up_error_m": 0.4231748310603975
+        },
+        {
+          "seed": 2026101112,
+          "scene": "clean",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.7090802167811914,
+          "vertical_rmse_m": 3.7027875062369167,
+          "rmse_3d_m": 4.078184706917656,
+          "p95_3d_m": 5.556473672758013,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.10818519156305276,
+          "mean_north_error_m": -1.1468948845592704,
+          "mean_up_error_m": 3.532956020111169
+        },
+        {
+          "seed": 2026101112,
+          "scene": "clean",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.4664777250573207,
+          "vertical_rmse_m": 1.500485550865057,
+          "rmse_3d_m": 2.0980976637049356,
+          "p95_3d_m": 3.2543890482720075,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.051620163155308124,
+          "mean_north_error_m": -0.6022790103412293,
+          "mean_up_error_m": 0.4231748310603975
+        },
+        {
+          "seed": 2026101112,
+          "scene": "amp_0p05",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.3855606895526604,
+          "vertical_rmse_m": 3.9969412597139544,
+          "rmse_3d_m": 4.230285789168081,
+          "p95_3d_m": 6.15573266483913,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": -0.03988621130561966,
+          "mean_north_error_m": 0.40036976215870235,
+          "mean_up_error_m": -3.6195126509884137
+        },
+        {
+          "seed": 2026101112,
+          "scene": "amp_0p05",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.5996076043318128,
+          "vertical_rmse_m": 3.517134859833197,
+          "rmse_3d_m": 3.863804098306492,
+          "p95_3d_m": 6.567366882157784,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.08803991493097096,
+          "mean_north_error_m": -0.7509848445260646,
+          "mean_up_error_m": 2.9147810487215464
+        },
+        {
+          "seed": 2026101112,
+          "scene": "amp_0p05",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.6605421695176676,
+          "vertical_rmse_m": 4.091695782093438,
+          "rmse_3d_m": 4.415809627910568,
+          "p95_3d_m": 6.567786590597288,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.048762797012085954,
+          "mean_north_error_m": -0.39487699140346033,
+          "mean_up_error_m": 0.8923685331067794
+        },
+        {
+          "seed": 2026101112,
+          "scene": "amp_0p10",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.7893196984629873,
+          "vertical_rmse_m": 7.807303214218554,
+          "rmse_3d_m": 8.009722121400657,
+          "p95_3d_m": 10.497931394030513,
+          "gross_error_rate": 0.1875,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.13035690465298955,
+          "mean_north_error_m": 1.130175611001746,
+          "mean_up_error_m": -7.6096065015265415
+        },
+        {
+          "seed": 2026101112,
+          "scene": "amp_0p10",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.4041414051664411,
+          "vertical_rmse_m": 3.9030799791572663,
+          "rmse_3d_m": 4.147968949908024,
+          "p95_3d_m": 7.568547029371531,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.2318083471067356,
+          "mean_north_error_m": 0.24980521890845753,
+          "mean_up_error_m": -2.6293689048126776
+        },
+        {
+          "seed": 2026101112,
+          "scene": "amp_0p10",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.6451657085148532,
+          "vertical_rmse_m": 5.3076808704559655,
+          "rmse_3d_m": 5.556801816789705,
+          "p95_3d_m": 9.778430117402673,
+          "gross_error_rate": 0.0625,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.20986907024342047,
+          "mean_north_error_m": 0.4421757367337877,
+          "mean_up_error_m": -3.7186814625729374
+        }
+      ]
+    },
+    {
+      "seed": 2026101113,
+      "status": "valid",
+      "target_prn": 9,
+      "invariants": {
+        "one_common_observation_stream": true,
+        "solution_timestamp_sets_may_differ": true,
+        "pvt_availability_scored_per_method": true,
+        "epochs_per_scene_method": 16,
+        "satellites_per_score_epoch": 9,
+        "only_target_c1c_differs": true
+      },
+      "missing_solution_seconds": {
+        "clean/single": [],
+        "clean/always_shared_ratio": [],
+        "clean/gated_persistence_shared_ratio": [],
+        "amp_0p05/single": [],
+        "amp_0p05/always_shared_ratio": [],
+        "amp_0p05/gated_persistence_shared_ratio": [],
+        "amp_0p10/single": [],
+        "amp_0p10/always_shared_ratio": [],
+        "amp_0p10/gated_persistence_shared_ratio": []
+      },
+      "source_receiver": {
+        "native_position_lines": 1147,
+        "minimum_observations": 9,
+        "maximum_observations": 9,
+        "has_native_pvt_success": true
+      },
+      "rinex": {
+        "source_observation_sha256": "d207b400ebe790f8945037389c760aaa942be6e2b672037096bcd3edddf336dd",
+        "source_navigation_sha256": "bcef5de23a9c9e17f6bd14822a35002e4e5acdd03f2dfcbbf2e81bb7817c7b00",
+        "outputs": {
+          "single": "d207b400ebe790f8945037389c760aaa942be6e2b672037096bcd3edddf336dd",
+          "always_shared_ratio": "5a05c98cbeca3d0a0c14ce42ffc17ced97de89f90c2d221e82f9aa1c44e5cb14",
+          "gated_persistence_shared_ratio": "80711c0a1ddbfbf19c3bf7c9ebeb38bb316c58b1f19f3b3baa77129ff38ef0fc"
+        },
+        "navigation_sha256": "bcef5de23a9c9e17f6bd14822a35002e4e5acdd03f2dfcbbf2e81bb7817c7b00",
+        "only_g30_c1c_differs": true,
+        "all_score_epochs_have_frozen_satellite_set": true,
+        "score_epoch_satellite_count": 9,
+        "score_epoch_satellite_set": [
+          "G03",
+          "G04",
+          "G07",
+          "G08",
+          "G09",
+          "G14",
+          "G16",
+          "G27",
+          "G30"
+        ],
+        "score_audit": {
+          "clean": {
+            "relative_seconds": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76
+            ],
+            "satellites": {
+              "61": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "62": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "63": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "64": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "65": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "66": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "67": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "68": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "69": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "70": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "71": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "72": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "73": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "74": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "75": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "76": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p05": {
+            "relative_seconds": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "satellites": {
+              "100": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "101": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "102": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "103": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "104": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "105": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "106": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "107": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "108": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "109": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "110": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "111": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "112": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "113": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "114": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "115": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p10": {
+            "relative_seconds": [
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              130,
+              131,
+              132,
+              133,
+              134,
+              135,
+              136
+            ],
+            "satellites": {
+              "121": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "122": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "123": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "124": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "125": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "126": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "127": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "128": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "129": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "130": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "131": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "132": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "133": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "134": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "135": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "136": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          }
+        }
+      },
+      "schedules": {
+        "paths": {
+          "single": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101113/zero_corrections.csv",
+          "always_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101113/always_shared_ratio_corrections.csv",
+          "gated_persistence_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101113/gated_persistence_shared_ratio_corrections.csv"
+        },
+        "sha256": {
+          "single": "16358d6b61be4ce4ea595f71ffed32d543a30b83d8bb7b6d8b6dae4a8080dc41",
+          "always_shared_ratio": "78a57cc924b18af4ddcacb0655e97bd06c40a1de6c683b04502149fc074a263e",
+          "gated_persistence_shared_ratio": "fd02ee1c628a3a22cab8643a82bdd7e8aea8eafdcea855d0d6cc35c0e41b9693"
+        },
+        "activations": {
+          "single": {
+            "clean": 0,
+            "amp_0p05": 0,
+            "amp_0p10": 0
+          },
+          "always_shared_ratio": {
+            "clean": 16,
+            "amp_0p05": 16,
+            "amp_0p10": 16
+          },
+          "gated_persistence_shared_ratio": {
+            "clean": 0,
+            "amp_0p05": 12,
+            "amp_0p10": 12
+          }
+        }
+      },
+      "metrics": [
+        {
+          "seed": 2026101113,
+          "scene": "clean",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.1829662864835144,
+          "vertical_rmse_m": 1.7945955203089285,
+          "rmse_3d_m": 2.149414412455046,
+          "p95_3d_m": 3.349743685115657,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": -0.1273223719522397,
+          "mean_north_error_m": 0.19934207075543953,
+          "mean_up_error_m": 0.038606139655423644
+        },
+        {
+          "seed": 2026101113,
+          "scene": "clean",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.1595739913303142,
+          "vertical_rmse_m": 3.45891492614641,
+          "rmse_3d_m": 3.6481096896458776,
+          "p95_3d_m": 5.663192600943649,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": -0.07371999226924994,
+          "mean_north_error_m": -0.3179226363703689,
+          "mean_up_error_m": 2.9928248943131823
+        },
+        {
+          "seed": 2026101113,
+          "scene": "clean",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.1829662864835144,
+          "vertical_rmse_m": 1.7945955203089285,
+          "rmse_3d_m": 2.149414412455046,
+          "p95_3d_m": 3.349743685115657,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": -0.1273223719522397,
+          "mean_north_error_m": 0.19934207075543953,
+          "mean_up_error_m": 0.038606139655423644
+        },
+        {
+          "seed": 2026101113,
+          "scene": "amp_0p05",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.1524669946480663,
+          "vertical_rmse_m": 3.9432592877332424,
+          "rmse_3d_m": 4.108220294001725,
+          "p95_3d_m": 5.997684672959178,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": -0.02216082734660858,
+          "mean_north_error_m": 0.8486433498704753,
+          "mean_up_error_m": -3.7278001043063456
+        },
+        {
+          "seed": 2026101113,
+          "scene": "amp_0p05",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 0.9122500886432106,
+          "vertical_rmse_m": 2.4951045660969093,
+          "rmse_3d_m": 2.6566420571818083,
+          "p95_3d_m": 4.383021331535829,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.08459006815429163,
+          "mean_north_error_m": -0.11094313556625217,
+          "mean_up_error_m": 1.7175936846707702
+        },
+        {
+          "seed": 2026101113,
+          "scene": "amp_0p05",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 0.9863970198057089,
+          "vertical_rmse_m": 3.0301753678198047,
+          "rmse_3d_m": 3.186681948425897,
+          "p95_3d_m": 5.11164424334065,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.060480051172881674,
+          "mean_north_error_m": 0.1081611987137423,
+          "mean_up_error_m": 0.47306242372733615
+        },
+        {
+          "seed": 2026101113,
+          "scene": "amp_0p10",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.9423322011921573,
+          "vertical_rmse_m": 7.204152493149575,
+          "rmse_3d_m": 7.461398496551515,
+          "p95_3d_m": 10.013360740005194,
+          "gross_error_rate": 0.0625,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.261234222636723,
+          "mean_north_error_m": 1.208461389586919,
+          "mean_up_error_m": -6.982294046610683
+        },
+        {
+          "seed": 2026101113,
+          "scene": "amp_0p10",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.5740613299354271,
+          "vertical_rmse_m": 3.3116099153512786,
+          "rmse_3d_m": 3.6666646017669775,
+          "p95_3d_m": 6.816388706965685,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.365936413843047,
+          "mean_north_error_m": 0.30052518690294644,
+          "mean_up_error_m": -1.8464189447784067
+        },
+        {
+          "seed": 2026101113,
+          "scene": "amp_0p10",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.8047798019172128,
+          "vertical_rmse_m": 4.8952541434578976,
+          "rmse_3d_m": 5.2173502146635755,
+          "p95_3d_m": 9.390449239119079,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.3408572217171163,
+          "mean_north_error_m": 0.5203990374146044,
+          "mean_up_error_m": -3.09137525603691
+        }
+      ]
+    },
+    {
+      "seed": 2026101114,
+      "status": "valid",
+      "target_prn": 9,
+      "invariants": {
+        "one_common_observation_stream": true,
+        "solution_timestamp_sets_may_differ": true,
+        "pvt_availability_scored_per_method": true,
+        "epochs_per_scene_method": 16,
+        "satellites_per_score_epoch": 9,
+        "only_target_c1c_differs": true
+      },
+      "missing_solution_seconds": {
+        "clean/single": [],
+        "clean/always_shared_ratio": [],
+        "clean/gated_persistence_shared_ratio": [],
+        "amp_0p05/single": [],
+        "amp_0p05/always_shared_ratio": [],
+        "amp_0p05/gated_persistence_shared_ratio": [],
+        "amp_0p10/single": [],
+        "amp_0p10/always_shared_ratio": [],
+        "amp_0p10/gated_persistence_shared_ratio": []
+      },
+      "source_receiver": {
+        "native_position_lines": 1147,
+        "minimum_observations": 8,
+        "maximum_observations": 9,
+        "has_native_pvt_success": true
+      },
+      "rinex": {
+        "source_observation_sha256": "7276f0d628620aa6105437200582aaf87220452911e59306e39d9c1d024e8a2d",
+        "source_navigation_sha256": "543d0304c49844495f35e7d24803a61a48abe1bfb96f9fdd9607bb277669b928",
+        "outputs": {
+          "single": "7276f0d628620aa6105437200582aaf87220452911e59306e39d9c1d024e8a2d",
+          "always_shared_ratio": "23127f060cffee4c26c48419f86e2e0f879d7628e7fc72a3582da3a7a4eaddf3",
+          "gated_persistence_shared_ratio": "5cff4bc056d5c3d9fd0ab9481bf63fa756bdf13d9608588abc7927669b3574cc"
+        },
+        "navigation_sha256": "543d0304c49844495f35e7d24803a61a48abe1bfb96f9fdd9607bb277669b928",
+        "only_g30_c1c_differs": true,
+        "all_score_epochs_have_frozen_satellite_set": true,
+        "score_epoch_satellite_count": 9,
+        "score_epoch_satellite_set": [
+          "G03",
+          "G04",
+          "G07",
+          "G08",
+          "G09",
+          "G14",
+          "G16",
+          "G27",
+          "G30"
+        ],
+        "score_audit": {
+          "clean": {
+            "relative_seconds": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76
+            ],
+            "satellites": {
+              "61": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "62": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "63": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "64": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "65": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "66": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "67": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "68": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "69": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "70": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "71": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "72": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "73": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "74": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "75": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "76": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p05": {
+            "relative_seconds": [
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115
+            ],
+            "satellites": {
+              "100": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "101": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "102": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "103": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "104": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "105": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "106": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "107": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "108": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "109": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "110": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "111": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "112": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "113": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "114": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "115": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          },
+          "amp_0p10": {
+            "relative_seconds": [
+              121,
+              122,
+              123,
+              124,
+              125,
+              126,
+              127,
+              128,
+              129,
+              130,
+              131,
+              132,
+              133,
+              134,
+              135,
+              136
+            ],
+            "satellites": {
+              "121": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "122": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "123": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "124": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "125": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "126": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "127": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "128": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "129": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "130": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "131": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "132": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "133": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "134": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "135": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ],
+              "136": [
+                "G03",
+                "G04",
+                "G07",
+                "G08",
+                "G09",
+                "G14",
+                "G16",
+                "G27",
+                "G30"
+              ]
+            }
+          }
+        }
+      },
+      "schedules": {
+        "paths": {
+          "single": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101114/zero_corrections.csv",
+          "always_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101114/always_shared_ratio_corrections.csv",
+          "gated_persistence_shared_ratio": "<LOCAL_USER>/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/persistence_pvt_confirmation/seed_2026101114/gated_persistence_shared_ratio_corrections.csv"
+        },
+        "sha256": {
+          "single": "16358d6b61be4ce4ea595f71ffed32d543a30b83d8bb7b6d8b6dae4a8080dc41",
+          "always_shared_ratio": "141adddb71b5ef91683e9070906313476a31ad9327aa943416127ee8adef2b62",
+          "gated_persistence_shared_ratio": "2c9ddb93c7fb33347fbe6f9ee2e4df80a2a0a557cbfde2c655d18d798589ea9c"
+        },
+        "activations": {
+          "single": {
+            "clean": 0,
+            "amp_0p05": 0,
+            "amp_0p10": 0
+          },
+          "always_shared_ratio": {
+            "clean": 16,
+            "amp_0p05": 16,
+            "amp_0p10": 16
+          },
+          "gated_persistence_shared_ratio": {
+            "clean": 0,
+            "amp_0p05": 11,
+            "amp_0p10": 12
+          }
+        }
+      },
+      "metrics": [
+        {
+          "seed": 2026101114,
+          "scene": "clean",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.2215271876653595,
+          "vertical_rmse_m": 1.855009615932148,
+          "rmse_3d_m": 2.221078419463477,
+          "p95_3d_m": 4.304877023427485,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": -0.12883967516136716,
+          "mean_north_error_m": -0.02755204319903467,
+          "mean_up_error_m": 0.4442936326636241
+        },
+        {
+          "seed": 2026101114,
+          "scene": "clean",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.248630697691461,
+          "vertical_rmse_m": 3.7100632829906193,
+          "rmse_3d_m": 3.914543164024711,
+          "p95_3d_m": 6.21019108355925,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": -0.07519853913924594,
+          "mean_north_error_m": -0.5448584468044139,
+          "mean_up_error_m": 3.398518627370174
+        },
+        {
+          "seed": 2026101114,
+          "scene": "clean",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.2215271876653595,
+          "vertical_rmse_m": 1.855009615932148,
+          "rmse_3d_m": 2.221078419463477,
+          "p95_3d_m": 4.304877023427485,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": -0.12883967516136716,
+          "mean_north_error_m": -0.02755204319903467,
+          "mean_up_error_m": 0.4442936326636241
+        },
+        {
+          "seed": 2026101114,
+          "scene": "amp_0p05",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.7294427885049517,
+          "vertical_rmse_m": 4.0555163543071675,
+          "rmse_3d_m": 4.408875736371425,
+          "p95_3d_m": 6.914507218243388,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.098034854162796,
+          "mean_north_error_m": 0.746135028233051,
+          "mean_up_error_m": -3.763106485141526
+        },
+        {
+          "seed": 2026101114,
+          "scene": "amp_0p05",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.6792906469384308,
+          "vertical_rmse_m": 3.454405403359992,
+          "rmse_3d_m": 3.840954798960488,
+          "p95_3d_m": 6.4627668900830235,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.2138949783469837,
+          "mean_north_error_m": -0.29564963430658625,
+          "mean_up_error_m": 2.148949777950831
+        },
+        {
+          "seed": 2026101114,
+          "scene": "amp_0p05",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.7448476218544795,
+          "vertical_rmse_m": 3.916881713075624,
+          "rmse_3d_m": 4.2879430473966735,
+          "p95_3d_m": 6.440839127271333,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.18061483519190016,
+          "mean_north_error_m": 0.0057081147508168395,
+          "mean_up_error_m": 0.43769976035823543
+        },
+        {
+          "seed": 2026101114,
+          "scene": "amp_0p10",
+          "method": "single",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.8896400157816053,
+          "vertical_rmse_m": 7.574763669825443,
+          "rmse_3d_m": 7.806906176133444,
+          "p95_3d_m": 9.631754432314178,
+          "gross_error_rate": 0.0625,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.061576310948679436,
+          "mean_north_error_m": 1.5730246993872545,
+          "mean_up_error_m": -7.4639940309114
+        },
+        {
+          "seed": 2026101114,
+          "scene": "amp_0p10",
+          "method": "always_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.2983774203186018,
+          "vertical_rmse_m": 3.295374676577976,
+          "rmse_3d_m": 3.54193142009054,
+          "p95_3d_m": 5.50103580372814,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.16309427263810644,
+          "mean_north_error_m": 0.6925991259908403,
+          "mean_up_error_m": -2.4837001324124754
+        },
+        {
+          "seed": 2026101114,
+          "scene": "amp_0p10",
+          "method": "gated_persistence_shared_ratio",
+          "epochs": 16,
+          "satellites_min": 9,
+          "satellites_max": 9,
+          "horizontal_rmse_m": 1.4583410747928163,
+          "vertical_rmse_m": 4.598518795396341,
+          "rmse_3d_m": 4.824223647597743,
+          "p95_3d_m": 9.294230310367046,
+          "gross_error_rate": 0.0,
+          "pvt_availability": 1.0,
+          "mean_east_error_m": 0.14428363387799403,
+          "mean_north_error_m": 0.8575080545572384,
+          "mean_up_error_m": -3.417431417222563
+        }
+      ]
+    }
+  ],
+  "aggregate": {
+    "per_method_scene": {
+      "clean/single": {
+        "seeds": 5,
+        "horizontal_rmse_mean_m": 1.2551784366008953,
+        "vertical_rmse_mean_m": 1.6103471023237088,
+        "rmse_3d_mean_m": 2.0474851466922965,
+        "p95_3d_mean_m": 3.4127856838339583,
+        "gross_error_rate_mean": 0.0,
+        "pvt_availability_mean": 1.0
+      },
+      "clean/always_shared_ratio": {
+        "seeds": 5,
+        "horizontal_rmse_mean_m": 1.3742331872915865,
+        "vertical_rmse_mean_m": 3.498745645112558,
+        "rmse_3d_mean_m": 3.7625255667365884,
+        "p95_3d_mean_m": 5.901878140805391,
+        "gross_error_rate_mean": 0.0,
+        "pvt_availability_mean": 1.0
+      },
+      "clean/gated_persistence_shared_ratio": {
+        "seeds": 5,
+        "horizontal_rmse_mean_m": 1.2551784366008953,
+        "vertical_rmse_mean_m": 1.6103471023237088,
+        "rmse_3d_mean_m": 2.0474851466922965,
+        "p95_3d_mean_m": 3.4127856838339583,
+        "gross_error_rate_mean": 0.0,
+        "pvt_availability_mean": 1.0
+      },
+      "amp_0p05/single": {
+        "seeds": 5,
+        "horizontal_rmse_mean_m": 1.4483413306055681,
+        "vertical_rmse_mean_m": 4.139669783181665,
+        "rmse_3d_mean_m": 4.388846870004159,
+        "p95_3d_mean_m": 6.480931518624094,
+        "gross_error_rate_mean": 0.0,
+        "pvt_availability_mean": 1.0
+      },
+      "amp_0p05/always_shared_ratio": {
+        "seeds": 5,
+        "horizontal_rmse_mean_m": 1.3732287179180487,
+        "vertical_rmse_mean_m": 3.1488359891011526,
+        "rmse_3d_mean_m": 3.4370483859331906,
+        "p95_3d_mean_m": 5.749650807021224,
+        "gross_error_rate_mean": 0.0,
+        "pvt_availability_mean": 1.0
+      },
+      "amp_0p05/gated_persistence_shared_ratio": {
+        "seeds": 5,
+        "horizontal_rmse_mean_m": 1.4800358666019267,
+        "vertical_rmse_mean_m": 3.710377435846353,
+        "rmse_3d_mean_m": 3.996752351534277,
+        "p95_3d_mean_m": 6.520266460583277,
+        "gross_error_rate_mean": 0.0,
+        "pvt_availability_mean": 1.0
+      },
+      "amp_0p10/single": {
+        "seeds": 5,
+        "horizontal_rmse_mean_m": 1.8987595775881847,
+        "vertical_rmse_mean_m": 7.5369491782861475,
+        "rmse_3d_mean_m": 7.773788109001745,
+        "p95_3d_mean_m": 10.28154314846837,
+        "gross_error_rate_mean": 0.1125,
+        "pvt_availability_mean": 1.0
+      },
+      "amp_0p10/always_shared_ratio": {
+        "seeds": 5,
+        "horizontal_rmse_mean_m": 1.4307205006482193,
+        "vertical_rmse_mean_m": 3.3341900002766045,
+        "rmse_3d_mean_m": 3.6367798902469746,
+        "p95_3d_mean_m": 6.56776478199472,
+        "gross_error_rate_mean": 0.0,
+        "pvt_availability_mean": 1.0
+      },
+      "amp_0p10/gated_persistence_shared_ratio": {
+        "seeds": 5,
+        "horizontal_rmse_mean_m": 1.6468371653548253,
+        "vertical_rmse_mean_m": 4.8591791855614135,
+        "rmse_3d_mean_m": 5.133377638004356,
+        "p95_3d_mean_m": 9.555100081397327,
+        "gross_error_rate_mean": 0.0375,
+        "pvt_availability_mean": 1.0
+      }
+    },
+    "paired_vs_single": {
+      "clean/always_shared_ratio": {
+        "improvements_3d_rmse_m": [
+          -1.7196821459306963,
+          -1.6832728893259787,
+          -1.9800870432127207,
+          -1.4986952771908317,
+          -1.6934647445612336
+        ],
+        "mean_improvement_3d_rmse_m": -1.7150404200442921,
+        "bootstrap_percentile_95ci_m": [
+          -1.8654381237521256,
+          -1.581846544412885
+        ],
+        "student_t_95ci_m": [
+          -1.9288006981686023,
+          -1.501280141919982
+        ],
+        "std_m": 0.17215629867141435,
+        "median_m": -1.6934647445612336,
+        "range_m": [
+          -1.9800870432127207,
+          -1.4986952771908317
+        ],
+        "wins": 0,
+        "ties": 0,
+        "losses": 5,
+        "relative_mean_improvement": -0.8376326552673325
+      },
+      "clean/gated_persistence_shared_ratio": {
+        "improvements_3d_rmse_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean_improvement_3d_rmse_m": 0.0,
+        "bootstrap_percentile_95ci_m": [
+          0.0,
+          0.0
+        ],
+        "student_t_95ci_m": [
+          0.0,
+          0.0
+        ],
+        "std_m": 0.0,
+        "median_m": 0.0,
+        "range_m": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 5,
+        "losses": 0,
+        "relative_mean_improvement": 0.0
+      },
+      "amp_0p05/always_shared_ratio": {
+        "improvements_3d_rmse_m": [
+          1.8309736389025137,
+          0.5420379163598876,
+          0.36648169086158955,
+          1.451578236819917,
+          0.5679209374109373
+        ],
+        "mean_improvement_3d_rmse_m": 0.951798484070969,
+        "bootstrap_percentile_95ci_m": [
+          0.4769920303707783,
+          1.4973074139774691
+        ],
+        "student_t_95ci_m": [
+          0.14696690902371234,
+          1.7566300591182258
+        ],
+        "std_m": 0.6481878964128408,
+        "median_m": 0.5679209374109373,
+        "range_m": [
+          0.36648169086158955,
+          1.8309736389025137
+        ],
+        "wins": 5,
+        "ties": 0,
+        "losses": 0,
+        "relative_mean_improvement": 0.21686755365654098
+      },
+      "amp_0p05/gated_persistence_shared_ratio": {
+        "improvements_3d_rmse_m": [
+          1.0900148758731607,
+          0.013510520668156722,
+          -0.1855238387424869,
+          0.9215383455758284,
+          0.12093268897475173
+        ],
+        "mean_improvement_3d_rmse_m": 0.39209451846988214,
+        "bootstrap_percentile_95ci_m": [
+          -0.044618789434781723,
+          0.8410186987726934
+        ],
+        "student_t_95ci_m": [
+          -0.3206198429176292,
+          1.1048088798573934
+        ],
+        "std_m": 0.5739993769800431,
+        "median_m": 0.12093268897475173,
+        "range_m": [
+          -0.1855238387424869,
+          1.0900148758731607
+        ],
+        "wins": 4,
+        "ties": 0,
+        "losses": 1,
+        "relative_mean_improvement": 0.0893388468733498
+      },
+      "amp_0p10/always_shared_ratio": {
+        "improvements_3d_rmse_m": [
+          3.8183037543699903,
+          4.945275517083786,
+          3.8617531714926328,
+          3.794733894784538,
+          4.264974756042904
+        ],
+        "mean_improvement_3d_rmse_m": 4.1370082187547705,
+        "bootstrap_percentile_95ci_m": [
+          3.8175656939603377,
+          4.57910704041576
+        ],
+        "student_t_95ci_m": [
+          3.527402707357213,
+          4.746613730152328
+        ],
+        "std_m": 0.49095851396145285,
+        "median_m": 3.8617531714926328,
+        "range_m": [
+          3.794733894784538,
+          4.945275517083786
+        ],
+        "wins": 5,
+        "ties": 0,
+        "losses": 0,
+        "relative_mean_improvement": 0.5321740393160801
+      },
+      "amp_0p10/gated_persistence_shared_ratio": {
+        "improvements_3d_rmse_m": [
+          2.631475953507702,
+          2.890925286444652,
+          2.4529203046109513,
+          2.24404828188794,
+          2.982682528535701
+        ],
+        "mean_improvement_3d_rmse_m": 2.6404104709973892,
+        "bootstrap_percentile_95ci_m": [
+          2.405082625301097,
+          2.875738316693682
+        ],
+        "student_t_95ci_m": [
+          2.26163008347371,
+          3.0191908585210685
+        ],
+        "std_m": 0.3050586858213138,
+        "median_m": 2.631475953507702,
+        "range_m": [
+          2.24404828188794,
+          2.982682528535701
+        ],
+        "wins": 5,
+        "ties": 0,
+        "losses": 0,
+        "relative_mean_improvement": 0.33965557511657624
+      }
+    }
+  },
+  "reference_pipeline": "run_prn30_persistence_pvt with PRN9 paths and target"
+}
