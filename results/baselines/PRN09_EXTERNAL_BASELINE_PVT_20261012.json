@@ -1,0 +1,51 @@
+{
+  "status": "observation_level_external_baseline_pvt_complete",
+  "target_prn": 9,
+  "seeds": [2026101110, 2026101111, 2026101112, 2026101113, 2026101114],
+  "scenes": ["clean", "amp_0p05", "amp_0p10"],
+  "observation_level": "window_average_401_tap",
+  "truth_used_for_estimation": false,
+  "truth_used_for_scoring_only": true,
+  "zero_point": "per_seed_and_method_median_valid_clean_window_delay",
+  "working_summary_sha256": {
+    "observation": "cb9077ad345d8f1b0a833ae6734b69792716297f30ac7c6aaf4a3b598e26946b",
+    "pvt": "feac5d6eccf5b18617240981231beb46aec3efa3dcd87b2e46f212824d429018"
+  },
+  "aggregate_mean_metrics": {
+    "clean/single": {"horizontal_rmse_m": 1.255178, "vertical_rmse_m": 1.610347, "rmse_3d_m": 2.047485, "pvt_availability": 1.0},
+    "clean/eml": {"horizontal_rmse_m": 1.229657, "vertical_rmse_m": 1.696769, "rmse_3d_m": 2.100594, "pvt_availability": 1.0},
+    "clean/double_delta": {"horizontal_rmse_m": 1.231327, "vertical_rmse_m": 1.731376, "rmse_3d_m": 2.128156, "pvt_availability": 1.0},
+    "clean/medll_ideal": {"horizontal_rmse_m": 1.325056, "vertical_rmse_m": 2.744974, "rmse_3d_m": 3.118458, "pvt_availability": 0.8125},
+    "clean/medll_chain": {"horizontal_rmse_m": 1.262495, "vertical_rmse_m": 3.570056, "rmse_3d_m": 3.850384, "pvt_availability": 0.5625},
+    "amp_0p05/single": {"horizontal_rmse_m": 1.448341, "vertical_rmse_m": 4.139670, "rmse_3d_m": 4.388847, "pvt_availability": 1.0},
+    "amp_0p05/eml": {"horizontal_rmse_m": 1.282418, "vertical_rmse_m": 1.701289, "rmse_3d_m": 2.139545, "pvt_availability": 1.0},
+    "amp_0p05/double_delta": {"horizontal_rmse_m": 1.283062, "vertical_rmse_m": 1.710867, "rmse_3d_m": 2.145918, "pvt_availability": 1.0},
+    "amp_0p05/medll_ideal": {"horizontal_rmse_m": 1.524010, "vertical_rmse_m": 4.481640, "rmse_3d_m": 4.779183, "pvt_availability": 1.0},
+    "amp_0p05/medll_chain": {"horizontal_rmse_m": 1.515573, "vertical_rmse_m": 4.251693, "rmse_3d_m": 4.613666, "pvt_availability": 0.6125},
+    "amp_0p10/single": {"horizontal_rmse_m": 1.898760, "vertical_rmse_m": 7.536949, "rmse_3d_m": 7.773788, "pvt_availability": 1.0},
+    "amp_0p10/eml": {"horizontal_rmse_m": 1.372157, "vertical_rmse_m": 1.899753, "rmse_3d_m": 2.346950, "pvt_availability": 1.0},
+    "amp_0p10/double_delta": {"horizontal_rmse_m": 1.359681, "vertical_rmse_m": 1.776157, "rmse_3d_m": 2.241247, "pvt_availability": 0.9875},
+    "amp_0p10/medll_ideal": {"horizontal_rmse_m": 1.861267, "vertical_rmse_m": 6.884029, "rmse_3d_m": 7.135225, "pvt_availability": 0.9375},
+    "amp_0p10/medll_chain": {"horizontal_rmse_m": 2.124580, "vertical_rmse_m": 9.399133, "rmse_3d_m": 9.640069, "pvt_availability": 0.5875}
+  },
+  "paired_3d_rmse_improvement_vs_single_m": {
+    "clean/eml": -0.053109,
+    "clean/double_delta": -0.080671,
+    "clean/medll_ideal": -1.070973,
+    "clean/medll_chain": -1.802899,
+    "amp_0p05/eml": 2.249302,
+    "amp_0p05/double_delta": 2.242929,
+    "amp_0p05/medll_ideal": -0.390336,
+    "amp_0p05/medll_chain": -0.198114,
+    "amp_0p10/eml": 5.426839,
+    "amp_0p10/double_delta": 5.532541,
+    "amp_0p10/medll_ideal": 0.638563,
+    "amp_0p10/medll_chain": -1.880727
+  },
+  "interpretation": [
+    "EML and normalized Double-Delta are classical comparators and are not claimed as new methods.",
+    "The receiver-chain MEDLL fit has lower PVT availability on this window-average batch; missing solutions are retained as availability loss, not imputed.",
+    "MEDLL-ideal versus MEDLL-chain is a controlled template ablation, but the result still needs a per-epoch retained batch before being used as the final paper claim.",
+    "These numbers are a common-observable PVT baseline result, not evidence that the external estimators have been validated on per-epoch scans."
+  ]
+}

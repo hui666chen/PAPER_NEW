@@ -1,9 +1,10 @@
 # Frozen baseline and generalization protocol
 
-Status: design frozen; numerical baseline results are pending a new retained
-401-point observation batch.  The old PRN9 confirmation runner deleted the
-mixed response CSVs after PVT, so no baseline number is back-filled from a
-missing file.
+Status: design frozen; an observation-only window-level baseline run has been
+completed on the retained PRN9 1110--1114 batch.  Formal per-epoch external
+baseline PVT remains pending because the retained confirmation batch contains
+one 401-point window average per second rather than the original per-epoch
+401-point CSVs.
 
 ## 1. Purpose
 
@@ -89,6 +90,22 @@ MEDLL is a classical comparator, not a claimed new algorithm.  The paper may
 claim only the controlled effect of the receiver-chain template and the
 additional observation-driven gate.
 
+### 2.4 Receiver-state zero-point calibration
+
+The scan delay origin contains a common receiver/tracking-state offset.  To
+avoid counting that offset as multipath, each seed and method estimates one
+zero point as the median valid clean-window delay.  Scene schedules apply only
+the relative delay
+
+```text
+delta_tau_scene(window) = tau_scene(window) - median(tau_clean(valid windows)) .
+```
+
+This is a fixed observation-level calibration, not a truth-based correction
+and not a parameter tuned from PVT outcomes.  Its source and hash are recorded
+in the baseline summary.  The resulting clean residuals are retained for the
+false-correction audit.
+
 ## 3. First retained-observation pilot
 
 Before the large parameter sweep, regenerate a new PRN9 observation batch with
@@ -118,7 +135,10 @@ python3 scripts/baselines/correlator_baselines.py \
 Repeat the command for `amp_0p05` and `amp_0p10`, then for the remaining four
 frozen seeds.  The output is observation-only; PVT scoring is a separate stage.
 For a first implementation pilot, append `--max-windows 1`; do not interpret
-that one-window output as a performance result.
+that one-window output as a performance result.  When the retained input is a
+window-average CSV without an `epoch` column, the estimator treats each window
+as one observation and labels the output `window_average_401_tap`; it is not
+silently mixed with per-epoch results.
 
 ## 4. PVT comparison and metrics
 
@@ -247,7 +267,8 @@ the actual receiver log or a timed CUDA run.
 
 ## 10. Result status and non-overclaim rule
 
-At the time this protocol was added, the new baselines and the 560-cell
-generalization grid had **no completed numerical result** in the public
-repository.  The existing conditional PVT results remain valid, but they must
-not be rewritten as if EML, Double-Delta, or MEDLL had already been measured.
+The retained PRN9 window-level run is observation-only: it verifies that EML,
+normalized Double-Delta, MEDLL-ideal, and MEDLL-chain execute on all five
+seeds and three scenes, but it is not yet a PVT result.  The existing
+conditional PVT results remain valid, but they must not be rewritten as if
+these external baselines had already been compared in PVT.

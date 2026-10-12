@@ -91,7 +91,14 @@ def read_epoch_scans(
     with path.open(newline="", encoding="utf-8") as stream:
         for row in csv.DictReader(stream):
             window = int(float(row["window"]))
-            epoch = int(float(row["epoch"]))
+            # The retained formal observation batch contains two formats:
+            # per-epoch scans with an ``epoch`` column, and one 401-tap
+            # window-average scan with ``epoch_count`` but no ``epoch``.
+            # The latter is still an observation-only baseline input; use a
+            # deterministic synthetic epoch index so the same estimator and
+            # schedule adapter can process both formats.
+            epoch_text = row.get("epoch", "")
+            epoch = int(float(epoch_text)) if epoch_text else 0
             groups.setdefault((window, epoch), []).append(row)
     scans: list[EpochScan] = []
     for (window, epoch), rows in sorted(groups.items()):
