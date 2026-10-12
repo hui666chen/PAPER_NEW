@@ -43,6 +43,21 @@ imputed.  These are valid common-observable baseline results, but not yet the
 final per-epoch estimator comparison requested for the paper: the retained
 confirmation CSVs contain one 401-point window average per second.
 
+The diagnostic supplements are summarized in
+`PRN09_CRB_ROC_RUNTIME_20261012.json`:
+
+- The 5,040-cell CRB grid gives the same local `tau`/`delta` CRB values for
+  M0, M1, and M2 in the current profiled implementation; the added nuisance
+  dimensions increase the condition number.  This is evidence against a
+  local-Fisher-information explanation of the global jumps, not evidence that
+  M1/M2 are better estimators.
+- At the frozen threshold, the one-window gate has TPR 0.78125/FPR 0.0625;
+  3-of-5 has TPR 0.71875/FPR 0 on one retained seed.
+- The current CUDA receiver logs show 43.32--53.70 s for 145 s of signal,
+  mean real-time factor 3.126.  EML and Double-Delta are sub-millisecond per
+  epoch in the Python reference; MEDLL-ideal is 0.1385 s/epoch in that
+  reference.  These Python values are not GPU measurements.
+
 ## Required next run
 
 1. Retain a fresh per-epoch response batch under a persistent project path

@@ -44,6 +44,10 @@ def main() -> None:
     parser.add_argument("--output-json", type=Path, required=True)
     parser.add_argument("--positive-scenes", default="amp_0p05,amp_0p10")
     parser.add_argument("--score-field", default="cv_gain_min")
+    parser.add_argument(
+        "--fixed-threshold", type=float,
+        help="also evaluate this pre-frozen threshold exactly, in addition to ROC midpoints",
+    )
     args = parser.parse_args()
 
     positive_scenes = {value for value in args.positive_scenes.split(",") if value}
@@ -57,6 +61,9 @@ def main() -> None:
     thresholds = [scores[0] - 1.0] + [
         (left + right) / 2.0 for left, right in zip(scores, scores[1:])
     ] + [scores[-1] + 1.0]
+    if args.fixed_threshold is not None and args.fixed_threshold not in thresholds:
+        thresholds.append(args.fixed_threshold)
+        thresholds.sort()
 
     single_window = []
     for threshold in thresholds:
@@ -99,6 +106,7 @@ def main() -> None:
         "truth_accessed_for_decision": False,
         "positive_scenes_for_scoring": sorted(positive_scenes),
         "score_field": args.score_field,
+        "fixed_threshold": args.fixed_threshold,
         "single_window": single_window,
         "k_of_m": persistence,
         "sqm_status": "not_available_unless_an_independent_sqm_column_is_supplied",

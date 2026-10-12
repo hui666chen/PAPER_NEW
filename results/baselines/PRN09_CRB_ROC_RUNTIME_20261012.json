@@ -1,0 +1,44 @@
+{
+  "status": "diagnostic_supplements_complete",
+  "target_prn": 9,
+  "crb_grid": {
+    "rows": 5040,
+    "grid": "delay 0.05..1.00 chip × ratio 0.10..0.70 × phase 0/90/180/270 deg × C/N0 35/40/45/50 × epochs 20/50/100",
+    "bank": "bank_68",
+    "models": {
+      "M0": {"rank": 2, "condition_median": 11.184691, "delta_sd_crb_chip_min": 0.0000023467, "delta_sd_crb_chip_median": 0.0000188950, "delta_sd_crb_chip_max": 0.0004195746},
+      "M1": {"rank": 4, "condition_median": 4797.896009, "delta_sd_crb_chip_min": 0.0000023467, "delta_sd_crb_chip_median": 0.0000188950, "delta_sd_crb_chip_max": 0.0004195746},
+      "M2": {"rank": 5, "condition_median": 22906380.7972, "delta_sd_crb_chip_min": 0.0000023467, "delta_sd_crb_chip_median": 0.0000188950, "delta_sd_crb_chip_max": 0.0004195746}
+    },
+    "diagnostic_line_delta_sd_le_0p02_chip_fraction": {"M0": 1.0, "M1": 1.0, "M2": 1.0},
+    "interpretation": "The current profiled Fisher implementation gives identical local tau/delta CRB values for M0/M1/M2 while the added nuisance dimensions increase condition number. This supports treating the observed failure as global ambiguity rather than local Fisher-information shortage; it does not claim M1/M2 improve CRB."
+  },
+  "gate_roc": {
+    "seed": 2026101110,
+    "positive_scenes": ["amp_0p05", "amp_0p10"],
+    "negative_scenes": ["clean"],
+    "frozen_threshold": 0.0032589351980997073,
+    "single_window": {"tpr": 0.78125, "fpr": 0.0625, "tp": 25, "fp": 1, "positive_count": 32, "negative_count": 16},
+    "k3_of_5": {"tpr": 0.71875, "fpr": 0.0, "tp": 23, "fp": 0, "positive_count": 32, "negative_count": 16},
+    "scope": "one retained seed; labels are post-hoc scoring only and were not used by the gate"
+  },
+  "runtime": {
+    "receiver": "current CUDA GNSS-SDR binary, PRN9 formal confirmation source runs",
+    "signal_seconds": 145.0,
+    "receiver_wall_seconds_per_seed": [43.319456, 53.701628, 43.657113, 47.728735, 43.490385],
+    "receiver_wall_seconds_mean": 46.3794634,
+    "receiver_real_time_factor_signal_over_mean_wall": 3.1263837,
+    "python_reference_seconds_per_epoch": {
+      "eml_0p10": 0.0003137964,
+      "double_delta_0p10_0p50": 0.0003264022,
+      "medll_ideal": 0.1385348942
+    },
+    "warning": "Python timings are algorithmic reference timings, not GPU timings; receiver RTF comes from the retained CUDA GNSS-SDR logs."
+  },
+  "working_file_sha256": {
+    "crb_full": "f32da1d9f375f4fb698b875ba6f2b8840a63167baaea4e1869abbb77f2533a11",
+    "gate_roc_full": "b097583164a2d4b175ee6dbdb72fa5fba4707ea534291e84a89513fc5d056822",
+    "runtime_reference": "41ad51f7d67558b7bece6fa9a399656f3d25ae72fe1b51602eae35cf9e6e2288"
+  },
+  "raw_json_files_are_outside_git": true
+}
