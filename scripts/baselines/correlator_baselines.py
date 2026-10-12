@@ -77,7 +77,9 @@ def _first(row: dict[str, str], names: Iterable[str]) -> str:
     raise KeyError(f"none of {tuple(names)} found in CSV row")
 
 
-def read_epoch_scans(path: Path, expected_taps: int = 401) -> list[EpochScan]:
+def read_epoch_scans(
+    path: Path, expected_taps: int = 401, default_bank_window: int | None = None
+) -> list[EpochScan]:
     """Read and group one scanner epoch-response CSV.
 
     Accepted IQ column names are the current ``mixed_i/mixed_q`` names and
@@ -110,7 +112,10 @@ def read_epoch_scans(path: Path, expected_taps: int = 401) -> list[EpochScan]:
             )
         if len(x) < 5 or np.any(np.diff(x) <= 0):
             raise ValueError(f"{path}: non-increasing or too-short delay grid")
-        bank_window = int(float(rows[0].get("bank_window", window)))
+        bank_value = rows[0].get("bank_window", "")
+        bank_window = int(float(bank_value)) if bank_value else (
+            window if default_bank_window is None else default_bank_window
+        )
         metadata = {
             key: value for key, value in rows[0].items()
             if key not in {"mixed_i", "mixed_q", "I_avg", "Q_avg", "I", "Q"}
@@ -485,9 +490,13 @@ def main() -> None:
     parser.add_argument("--output-csv", type=Path, required=True)
     parser.add_argument("--config", type=Path)
     parser.add_argument("--expected-taps", type=int, default=401)
+    parser.add_argument(
+        "--bank-window", type=int,
+        help="bank ID when the scanner CSV has no bank_window column",
+    )
     args = parser.parse_args()
     cfg = _load_config(args.config)
-    scans = read_epoch_scans(args.scan_csv, args.expected_taps)
+    scans = read_epoch_scans(args.scan_csv, args.expected_taps, args.bank_window)
     bank_windows = sorted({scan.bank_window for scan in scans})
     templates = {
         window: ChainBankTemplate(args.chain_bank_dir / f"bank_{window}.npz")

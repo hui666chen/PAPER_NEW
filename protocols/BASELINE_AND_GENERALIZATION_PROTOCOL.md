@@ -110,6 +110,7 @@ For every scene and seed, run:
 python3 scripts/baselines/correlator_baselines.py \
   --scan-csv /tmp/prn09_baseline_observations/seed_2026101110/open_loop/clean/prn09_epoch_responses.csv \
   --chain-bank-dir /home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_comparable_v3/response_banks \
+  --bank-window 68 \
   --config scripts/baselines/baseline_config.json \
   --output-csv /tmp/prn09_baseline_observations/seed_2026101110/baselines_clean.csv
 ```
