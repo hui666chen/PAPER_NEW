@@ -1,0 +1,38 @@
+{
+  "mode": "confirmation",
+  "protocol_sha256": "3a39439a8ad3872e795ac3a0550002e836ffe771406a044e4daab420733c91ff",
+  "runner_sha256": "9453d97f9d6ae93dd27a5a22ae04bb7876726cc7816ac8edaaffc8e9bf1ba36b",
+  "simulator_sha256": "ce5c3eef2c8e8c118e7c309127e9df3ba83fc41c203898b7683e383e844c9c30",
+  "receiver_sha256": "1ddccdc3c7f4fde5680b38db8a139baa6d8d3692229d74e7d3d3b5e05683840b",
+  "scanner_sha256": "98bf1a17d8c66ff242509fc4c8045e00b7858a6b7fce711270f54227c0e8399d",
+  "source_configs": {
+    "prn9_cal_config": "14c1b78be57986d128cc05f98e1339e5b1c09f690a4c6524c57a8a38e04e338f",
+    "prn9_validation_config": "e11e5707e3515ec0c255117a4f58ef8a408129f1b3ff4243c1cc19d92b778c89",
+    "prn9_audit": "48e3d55beae921345e05bcd01c019018c13bae63359c751f860ca81e95271af3",
+    "prn28_cal_config": "f9278e753addb33b14ee79d443087141dd12f06a010f5255dbcad62d117795ae",
+    "prn28_validation_config": "15531251ca89dca6e55e447089f4aa910ebfffd1cb3b9228f38ba3789928c0db",
+    "prn28_audit": "9d2d7f8a353de18f13e628c50a9480c6c65fd71fe56c3aec940ab0f9ba54663e"
+  },
+  "generated_configs": {
+    "prn9_calibration": "9fb8cda3513ddede79fda000e7b79baa307cdeba82605fb6529edb2656e14d61",
+    "prn9_validation": "156063de0ba50ab8e8a436daf3060422442e4843b97e58389eea97538529233e",
+    "prn28_calibration": "2dc65e4a0a1a3ca5bce7fe2ec08f8178c6a460dd27dd2087e0e446a77c252aeb",
+    "prn28_validation": "1ff60818576773501f8ffdfc1136fe452198b1ad4628c372aeff178aeb8f49b3"
+  },
+  "noise_seeds": {
+    "9": [
+      2026101290,
+      2026101291,
+      2026101292,
+      2026101293,
+      2026101294
+    ],
+    "28": [
+      2026101295,
+      2026101296,
+      2026101297,
+      2026101298,
+      2026101299
+    ]
+  }
+}

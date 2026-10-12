@@ -1,5 +1,17 @@
 # Latest experiment status and valid claims
 
+## Newest experiment (2026-10-12): unseen-seed forward-response validation
+
+The newly completed batch tested whether the full per-epoch state-conditioned
+two-path response predicts measured 401-tap complex correlator observations on
+unseen simulator noise seeds. It passed the frozen criteria separately for
+PRN9 (5 seeds; mean benefit `2.487%`, 95% seed-level t CI `[2.232%, 2.743%]`)
+and PRN28 (5 seeds; `2.944%`, CI `[2.570%, 3.318%]`).
+
+This is **forward-response validation only**. It is not a blind multipath
+parameter-estimation result and does not demonstrate pseudorange or PVT
+improvement. See the [full report and audit package](../results/state_conditioned_forward_unseen_20261012/README.md).
+
 ## 1. Response-model control
 
 The controlled receiver-response comparison contains 45 cases. Replacing the
