@@ -117,6 +117,8 @@ python3 scripts/baselines/correlator_baselines.py \
 
 Repeat the command for `amp_0p05` and `amp_0p10`, then for the remaining four
 frozen seeds.  The output is observation-only; PVT scoring is a separate stage.
+For a first implementation pilot, append `--max-windows 1`; do not interpret
+that one-window output as a performance result.
 
 ## 4. PVT comparison and metrics
 

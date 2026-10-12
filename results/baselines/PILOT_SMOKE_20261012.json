@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "status": "implementation_smoke_only",
+  "truth_accessed": false,
+  "pvt_scored": false,
+  "scope": "one complete 100-epoch window per PRN9 scene, one independent seed",
+  "seed": 2026101110,
+  "scenes": {
+    "clean": {
+      "window": 61,
+      "bank_window": 68,
+      "response_csv_sha256": "7bcf742f8de664f051b98d493bd887353669242f33c3c7a75b8d5c3b297394fd",
+      "baseline_csv_sha256": "c281aa2abfa442e27ae08a4b025f32120b3a1d75ce919b5a1a82436835845de8",
+      "median_tau_chip": {
+        "eml_0p10": 0.06957360503179792,
+        "double_delta_0p10_0p50": 0.06368857784405349,
+        "medll_ideal": 0.04093838494258578,
+        "medll_chain": 0.033147834614320484
+      },
+      "medll_boundary_count": {
+        "ideal": 26,
+        "chain": 22
+      }
+    },
+    "amp_0p05": {
+      "window": 100,
+      "bank_window": 108,
+      "response_csv_sha256": "076ee313610aa11d7a148a3812dc42b633eb252be4ef6ae766b94d71070ffb81",
+      "baseline_csv_sha256": "1e57c95b9cf87bca949222cf0c0dfa62b339b5e3527e81dd68bce187d8351630",
+      "median_tau_chip": {
+        "eml_0p10": 0.099980,
+        "double_delta_0p10_0p50": 0.086138,
+        "medll_ideal": 0.056392,
+        "medll_chain": 0.053507
+      },
+      "medll_boundary_count": {
+        "ideal": 29,
+        "chain": 30
+      }
+    },
+    "amp_0p10": {
+      "window": 121,
+      "bank_window": 129,
+      "response_csv_sha256": "1c4602aa6e2282ea691011db97662831579899ca822b47448dc4ae38a74d9133",
+      "baseline_csv_sha256": "d83292578ea54b53994c098517f716977a9006f8fe8df514f8dc0e76c57bd370",
+      "median_tau_chip": {
+        "eml_0p10": 0.102085,
+        "double_delta_0p10_0p50": 0.079486,
+        "medll_ideal": 0.034742,
+        "medll_chain": 0.029746
+      },
+      "medll_boundary_count": {
+        "ideal": 26,
+        "chain": 23
+      }
+    }
+  },
+  "interpretation": [
+    "All four observation-level baseline implementations ran on real retained 401-point mixed scans.",
+    "The boundary counts are diagnostic only and are not an accuracy or PVT result.",
+    "No baseline PVT schedule was accepted as a final result from this smoke test.",
+    "The full 16-window, five-seed baseline and common-observable PVT comparison remain pending."
+  ]
+}

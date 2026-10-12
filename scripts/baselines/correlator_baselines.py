@@ -235,6 +235,12 @@ class IdealTemplate:
             np.complex128
         )
 
+    def component_many(self, x: np.ndarray, delays: np.ndarray) -> np.ndarray:
+        centers = self.center_chip + np.asarray(delays, dtype=float)[:, None]
+        return np.maximum(1.0 - np.abs(x[None, :] - centers), 0.0).astype(
+            np.complex128
+        )
+
 
 class ChainBankTemplate:
     """Standalone loader for the public receiver-chain response bank format."""
@@ -259,25 +265,59 @@ class ChainBankTemplate:
         self.tap_count = int(spec.get("tap_count", self.bank.shape[1]))
         self.tap_grid = self.tap_first_chip + self.tap_step_chip * np.arange(self.tap_count)
         self._response_cache: dict[float, np.ndarray] = {}
+        self._table_grid: np.ndarray | None = None
+        self._table: np.ndarray | None = None
         if self.bank.shape != (self.kmax - self.kmin + 1, self.tap_count):
             raise ValueError(f"{path}: inconsistent bank shape {self.bank.shape}")
+
+    def _response_many_exact(self, delays: np.ndarray) -> np.ndarray:
+        delays = np.asarray(delays, dtype=float).reshape(-1)
+        delay_samples = delays / self.chip_per_sample
+        integer = np.floor(delay_samples).astype(int)
+        fraction = delay_samples - integer
+        offsets = np.arange(-self.half, self.half + 1)
+        indices = integer[:, None] + offsets[None, :] - self.kmin
+        if indices.min() < 0 or indices.max() >= len(self.bank):
+            raise ValueError("candidate outside response-bank support")
+        kernel = np.sinc(offsets[None, :] - fraction[:, None])
+        kernel *= np.kaiser(2 * self.half + 1, self.beta)[None, :]
+        kernel /= kernel.sum(axis=1, keepdims=True)
+        values = np.einsum("nl,nlc->nc", kernel, self.bank[indices])
+        return values * np.exp(1j * self.omega_per_sample * delay_samples)[:, None]
+
+    def prepare_table(
+        self, low: float = -0.60, high: float = 1.60, step: float = 0.0005
+    ) -> None:
+        """Cache a fine-delay table, matching the receiver's lookup strategy."""
+        grid = np.arange(low, high + step * 0.5, step, dtype=float)
+        table = np.empty((len(grid), self.tap_count), dtype=np.complex128)
+        for start in range(0, len(grid), 32):
+            stop = min(start + 32, len(grid))
+            table[start:stop] = self._response_many_exact(grid[start:stop])
+        self._table_grid = grid
+        self._table = table
+
+    def response_many(self, delays: np.ndarray) -> np.ndarray:
+        delays = np.asarray(delays, dtype=float).reshape(-1)
+        if self._table_grid is not None and self._table is not None:
+            grid = self._table_grid
+            step = grid[1] - grid[0]
+            positions = (delays - grid[0]) / step
+            lower = np.floor(positions).astype(int)
+            fraction = positions - lower
+            if lower.min() >= 0 and lower.max() + 1 < len(grid):
+                return (
+                    (1.0 - fraction)[:, None] * self._table[lower]
+                    + fraction[:, None] * self._table[lower + 1]
+                )
+        return self._response_many_exact(delays)
 
     def response(self, delay_chip: float) -> np.ndarray:
         cache_key = float(delay_chip)
         cached = self._response_cache.get(cache_key)
         if cached is not None:
             return cached
-        delay_samples = float(delay_chip) / self.chip_per_sample
-        integer = int(np.floor(delay_samples))
-        fraction = delay_samples - integer
-        offsets = np.arange(-self.half, self.half + 1)
-        indices = integer + offsets - self.kmin
-        if indices.min() < 0 or indices.max() >= len(self.bank):
-            raise ValueError(f"delay {delay_chip} chip outside response-bank support")
-        kernel = np.sinc(offsets - fraction) * np.kaiser(2 * self.half + 1, self.beta)
-        kernel /= kernel.sum()
-        value = kernel @ self.bank[indices]
-        response = value * np.exp(1j * self.omega_per_sample * delay_samples)
+        response = self.response_many(np.asarray([delay_chip]))[0]
         self._response_cache[cache_key] = response
         return response
 
@@ -288,6 +328,14 @@ class ChainBankTemplate:
         return _interp(self.tap_grid, full.real, x) + 1j * _interp(
             self.tap_grid, full.imag, x
         )
+
+    def component_many(self, x: np.ndarray, delays: np.ndarray) -> np.ndarray:
+        full = self.response_many(-np.asarray(delays, dtype=float))
+        return np.stack([
+            _interp(self.tap_grid, row.real, x)
+            + 1j * _interp(self.tap_grid, row.imag, x)
+            for row in full
+        ])
 
     def center_chip(self) -> float:
         return float(self.tap_grid[np.argmax(np.abs(self.response(0.0)))])
@@ -312,12 +360,8 @@ def _batch_linear_costs(
 ) -> np.ndarray:
     """Profile all direct-delay candidates for one separation at once."""
 
-    primary = np.stack(
-        [template.component(x, float(tau)) for tau in tau_grid], axis=0
-    )
-    reflected = np.stack(
-        [template.component(x, float(tau - separation)) for tau in tau_grid], axis=0
-    )
+    primary = template.component_many(x, tau_grid)
+    reflected = template.component_many(x, tau_grid - separation)
     constant = np.broadcast_to(np.ones_like(x), primary.shape)
     linear = np.broadcast_to(x, primary.shape)
     design = np.stack((primary, reflected, constant, linear), axis=2)
@@ -430,6 +474,8 @@ def run_baselines(
     chain_templates: dict[int, ChainBankTemplate],
     cfg: BaselineConfig,
 ) -> list[dict[str, object]]:
+    for template in chain_templates.values():
+        template.prepare_table()
     output: list[dict[str, object]] = []
     for index, scan in enumerate(scans, start=1):
         eml = eml_estimate(scan, cfg)
@@ -496,9 +542,18 @@ def main() -> None:
         "--bank-window", type=int,
         help="bank ID when the scanner CSV has no bank_window column",
     )
+    parser.add_argument(
+        "--max-windows", type=int,
+        help="optional pilot limit; keep the first N scanner windows",
+    )
     args = parser.parse_args()
     cfg = _load_config(args.config)
     scans = read_epoch_scans(args.scan_csv, args.expected_taps, args.bank_window)
+    if args.max_windows is not None:
+        if args.max_windows < 1:
+            raise ValueError("max-windows must be positive")
+        selected = sorted({scan.window for scan in scans})[:args.max_windows]
+        scans = [scan for scan in scans if scan.window in set(selected)]
     bank_windows = sorted({scan.bank_window for scan in scans})
     templates = {
         window: ChainBankTemplate(args.chain_bank_dir / f"bank_{window}.npz")

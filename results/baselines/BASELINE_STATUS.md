@@ -11,6 +11,8 @@ Last updated: 2026-10-12
 - Deterministic delay/amplitude/phase/C/N0 design generator.
 - K-of-N gate operating-point/ROC evaluator.
 - Separate algorithmic timing and end-to-end CUDA real-time-factor schema.
+- One implementation smoke run on real retained PRN9 scans is summarized in
+  `PILOT_SMOKE_20261012.json`; it is explicitly not a PVT result.
 
 ## Not yet completed
 
@@ -23,6 +25,8 @@ batch is therefore required before the external baselines can be scored.
 
 1. Run `scripts/baselines/run_prn09_baseline_observation.py` for one pilot seed.
 2. Run `scripts/baselines/correlator_baselines.py` for clean, 0.05, and 0.10.
+   Use `--max-windows 1` first to verify the live chain and the schedule
+   adapter; remove it only for the full 16-window baseline.
 3. Check the EML/DD sign on a clean injected control before making PVT schedules.
 4. Process all five frozen seeds only after the pilot passes.
 5. Feed every schedule through the existing common-observable PVT pipeline.
