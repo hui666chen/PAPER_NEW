@@ -431,7 +431,7 @@ def run_baselines(
     cfg: BaselineConfig,
 ) -> list[dict[str, object]]:
     output: list[dict[str, object]] = []
-    for scan in scans:
+    for index, scan in enumerate(scans, start=1):
         eml = eml_estimate(scan, cfg)
         dd = double_delta_estimate(scan, cfg)
         chain = chain_templates.get(scan.bank_window)
@@ -469,6 +469,8 @@ def run_baselines(
             "medll_chain_optimizer_success": medll_chain["optimizer_success"],
         }
         output.append(row)
+        if index == 1 or index % 100 == 0 or index == len(scans):
+            print(f"baseline_epochs={index}/{len(scans)}", flush=True)
     return output
 
 
