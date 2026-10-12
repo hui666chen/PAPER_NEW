@@ -1,0 +1,18 @@
+{
+  "eml_spacing_chip": 0.1,
+  "dd_inner_spacing_chip": 0.1,
+  "dd_outer_spacing_chip": 0.5,
+  "discriminator_min_chip": -0.5,
+  "discriminator_max_chip": 0.5,
+  "discriminator_step_chip": 0.002,
+  "fit_min_chip": -1.5,
+  "fit_max_chip": 1.5,
+  "medll_tau_min_chip": -0.5,
+  "medll_tau_max_chip": 0.5,
+  "medll_tau_step_chip": 0.02,
+  "medll_separation_min_chip": 0.02,
+  "medll_separation_max_chip": 1.0,
+  "medll_separation_step_chip": 0.04,
+  "medll_refine_starts": 8,
+  "medll_max_nfev": 400
+}

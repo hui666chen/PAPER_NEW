@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import argparse
 import json
 from pathlib import Path
 import shutil
@@ -53,6 +54,7 @@ SCENES = {
     "amp_0p05": (tuple(range(100, 116)), 108),
     "amp_0p10": (tuple(range(121, 137)), 129),
 }
+KEEP_EPOCH_RESPONSES = False
 
 
 def sha256(path: Path) -> str:
@@ -217,15 +219,25 @@ def process_seed(seed: int, threshold: float, k: int, m: int) -> dict:
         (run_dir / "persistence_summary.json").write_text(
             json.dumps(summary, indent=2) + "\n", encoding="utf-8"
         )
-        for scene in SCENES:
-            (run_dir / "open_loop" / scene / "prn09_epoch_responses.csv").unlink()
+        if not KEEP_EPOCH_RESPONSES:
+            for scene in SCENES:
+                (run_dir / "open_loop" / scene / "prn09_epoch_responses.csv").unlink()
         return summary
     finally:
         if validation_iq.exists() and validation_iq.parent == TEMP:
             validation_iq.unlink()
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
+    global KEEP_EPOCH_RESPONSES
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--keep-epoch-responses",
+        action="store_true",
+        help="retain 401-point mixed response CSVs for independent baselines",
+    )
+    args = parser.parse_args(argv)
+    KEEP_EPOCH_RESPONSES = bool(args.keep_epoch_responses)
     for path in (
         SIMULATOR, RECEIVER, SCANNER, CAL_CONFIG, VALID_CONFIG, STATE_TEMPLATE,
         BANKS / "bank_68.npz", BANKS / "bank_108.npz", BANKS / "bank_129.npz",

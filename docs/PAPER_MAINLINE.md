@@ -68,6 +68,16 @@ epochs, navigation data, and solver.
 - Optional double-delta baseline if it is available under the same observation
   protocol.
 
+## Required external baselines before submission
+
+The compact repository now contains a frozen protocol for EML (0.1-chip),
+normalized Double-Delta, and MEDLL with ideal versus receiver-chain templates
+in `protocols/BASELINE_AND_GENERALIZATION_PROTOCOL.md`.  These are required
+comparators, not optional claims.  Their numerical results are pending a new
+retained 401-point observation batch; no baseline result should be stated as
+completed until that batch is run and the same common-observable PVT flow is
+used.
+
 ### 6. Boundary analysis and limitations
 
 Discuss zero activation, boundary solutions, identifiability, response-state
@@ -83,4 +93,3 @@ strong-multipath cases and safe fallback otherwise.
 The semi-analytic outlier-probability theory is a possible second paper. It
 should not dominate this receiver/PVT paper; otherwise the manuscript will have
 two unrelated contribution stories.
-

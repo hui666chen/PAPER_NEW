@@ -41,6 +41,7 @@ reflection strength will produce a positive PVT improvement.
 5. `docs/CONTRIBUTION_MAP.md` — standard components versus the researcher-specific contribution.
 6. `docs/CLAIMS_AND_LIMITATIONS.md` — wording that is safe for a paper and wording to avoid.
 7. `proposal/学硕开题报告_图表化修订版.docx` — the figure/table-enhanced opening report.
+8. `protocols/BASELINE_AND_GENERALIZATION_PROTOCOL.md` — frozen EML, Double-Delta, MEDLL, parameter-sweep, CRB, portability, ROC, and runtime requirements.
 
 ## Repository structure
 
