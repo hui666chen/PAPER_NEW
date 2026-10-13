@@ -1,0 +1,127 @@
+{
+  "status": "stage1_and_stage2_existing_data_reanalysis_complete",
+  "analysis_class": "exploratory_post_hoc_reanalysis",
+  "data_generated": false,
+  "protocol_sha256": "f5bc86891e842fcc344607ae3b800d4a2be1e2c61e534f8baca067a5b843dbcd",
+  "grid": {
+    "candidate_pairs_tau_separation": 2419,
+    "rho_values": 113,
+    "residual_surface_files": 400,
+    "grid_points_per_window": 273347
+  },
+  "calibration": {
+    "kappa_by_family": {
+      "long_0p8": [
+        0.0
+      ],
+      "short_delay": [
+        0.7169136178552176
+      ]
+    },
+    "tau_zero_values_by_family": {
+      "long_0p8": [
+        3.3306690738754696e-16
+      ],
+      "short_delay": [
+        -0.009999999999999676,
+        3.3306690738754696e-16,
+        0.010000000000000342
+      ]
+    }
+  },
+  "long_0p8": {
+    "windows": 240,
+    "counterfactual_coverage": null,
+    "coverage_status": "not scoreable: retained batch lacks same-seed same-second clean RINEX counterfactual"
+  },
+  "short_delay": {
+    "windows": 160,
+    "coverage_rate": 0.0,
+    "median_operational_width_m": 0.0,
+    "median_ungated_profile_width_m": 29.305225610948213,
+    "ungated_profile_coverage_rate": 0.8625,
+    "coverage_by_cell": {
+      "d005_a025": {
+        "windows": 40,
+        "coverage_rate": 0.0,
+        "median_operational_width_m": 0.0,
+        "median_ungated_profile_width_m": 29.305225610948213,
+        "gate_active_rate": 0.0,
+        "ungated_profile_coverage_rate": 0.8,
+        "median_true_correction_abs_m": 2.430000001564622
+      },
+      "d005_a050": {
+        "windows": 40,
+        "coverage_rate": 0.0,
+        "median_operational_width_m": 0.0,
+        "median_ungated_profile_width_m": 29.305225610948213,
+        "gate_active_rate": 0.0,
+        "ungated_profile_coverage_rate": 0.9,
+        "median_true_correction_abs_m": 3.958500001579523
+      },
+      "d010_a025": {
+        "windows": 40,
+        "coverage_rate": 0.0,
+        "median_operational_width_m": 0.0,
+        "median_ungated_profile_width_m": 29.305225610948213,
+        "gate_active_rate": 0.0,
+        "ungated_profile_coverage_rate": 0.825,
+        "median_true_correction_abs_m": 4.904749999754131
+      },
+      "d010_a050": {
+        "windows": 40,
+        "coverage_rate": 0.0,
+        "median_operational_width_m": 0.0,
+        "median_ungated_profile_width_m": 29.305225610948213,
+        "gate_active_rate": 0.0,
+        "ungated_profile_coverage_rate": 0.925,
+        "median_true_correction_abs_m": 8.354750000871718
+      }
+    },
+    "coverage_by_delay_chip": {
+      "0.05": {
+        "windows": 80,
+        "coverage_rate": 0.0,
+        "median_operational_width_m": 0.0,
+        "median_ungated_profile_width_m": 29.305225610948213,
+        "gate_active_rate": 0.0,
+        "ungated_profile_coverage_rate": 0.85
+      },
+      "0.1": {
+        "windows": 80,
+        "coverage_rate": 0.0,
+        "median_operational_width_m": 0.0,
+        "median_ungated_profile_width_m": 29.305225610948213,
+        "gate_active_rate": 0.0,
+        "ungated_profile_coverage_rate": 0.875
+      }
+    }
+  },
+  "gate_rates": {
+    "long_0p8/clean": {
+      "windows": 80,
+      "active_rate": 0.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": null
+    },
+    "long_0p8/amp_0p05": {
+      "windows": 80,
+      "active_rate": 0.7125,
+      "false_positive_rate": null,
+      "false_negative_rate": 0.2875
+    },
+    "long_0p8/amp_0p10": {
+      "windows": 80,
+      "active_rate": 0.75,
+      "false_positive_rate": null,
+      "false_negative_rate": 0.25
+    },
+    "short_delay/injected": {
+      "windows": 160,
+      "active_rate": 0.0,
+      "false_positive_rate": null,
+      "false_negative_rate": 1.0
+    }
+  },
+  "stage2_decision": "STOP_BEFORE_PVT"
+}
