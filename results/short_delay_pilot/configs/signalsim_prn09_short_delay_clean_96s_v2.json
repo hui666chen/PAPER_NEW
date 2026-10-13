@@ -1,0 +1,33 @@
+{
+  "version": 1.0,
+  "description": "PRN9 short-delay pilot v2 counterfactual clean recording",
+  "time": {
+    "type": "UTC", "year": 2021, "month": 6, "day": 19,
+    "hour": 10, "minute": 5, "second": 30
+  },
+  "trajectory": {
+    "name": "PRN9 short-delay pilot clean v2",
+    "initPosition": {
+      "type": "LLA", "format": "d", "longitude": -121.915773,
+      "latitude": 37.352721, "altitude": 20
+    },
+    "initVelocity": {"type": "SCU", "speed": 0, "course": 0},
+    "trajectoryList": [{"type": "Const", "time": 96}]
+  },
+  "ephemeris": {
+    "type": "RINEX",
+    "name": "/home/zoxoai/chh/GNSS/SignalSim-main/EphData/BRDC00IGS_R_20211700000_01D_MN.rnx"
+  },
+  "output": {
+    "type": "IFdata", "format": "IQ16", "sampleFreq": 25.0,
+    "centerFreq": 1580.0,
+    "name": "/tmp/prn09_short_delay_clean_96s_v2_iq16.bin",
+    "config": {"elevationMask": 3},
+    "systemSelect": [{"system": "GPS", "signal": "L1CA", "enable": true}]
+  },
+  "power": {
+    "noiseFloor": -172,
+    "initPower": {"unit": "dBHz", "value": 53},
+    "elevationAdjust": false
+  }
+}

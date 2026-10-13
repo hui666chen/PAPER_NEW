@@ -1,0 +1,47 @@
+{
+  "version": 1.0,
+  "description": "PRN9 short-delay strong-reflection pilot v2: scenes after acquisition",
+  "time": {
+    "type": "UTC", "year": 2021, "month": 6, "day": 19,
+    "hour": 10, "minute": 5, "second": 30
+  },
+  "trajectory": {
+    "name": "PRN9 short-delay pilot mixed v2",
+    "initPosition": {
+      "type": "LLA", "format": "d", "longitude": -121.915773,
+      "latitude": 37.352721, "altitude": 20
+    },
+    "initVelocity": {"type": "SCU", "speed": 0, "course": 0},
+    "trajectoryList": [{"type": "Const", "time": 96}]
+  },
+  "ephemeris": {
+    "type": "RINEX",
+    "name": "/home/zoxoai/chh/GNSS/SignalSim-main/EphData/BRDC00IGS_R_20211700000_01D_MN.rnx"
+  },
+  "output": {
+    "type": "IFdata", "format": "IQ16", "sampleFreq": 25.0,
+    "centerFreq": 1580.0,
+    "name": "/tmp/prn09_short_delay_mixed_96s_v2_iq16.bin",
+    "config": {"elevationMask": 3},
+    "systemSelect": [{"system": "GPS", "signal": "L1CA", "enable": true}]
+  },
+  "power": {
+    "noiseFloor": -172,
+    "initPower": {"unit": "dBHz", "value": 53},
+    "elevationAdjust": false
+  },
+  "multipath": [
+    {"system": "GPS", "signal": "L1CA", "svid": 9, "start": 34.0,
+     "end": 46.0, "delayChip": 0.05, "amplitude": 0.25,
+     "phaseDeg": 8.833159347728436},
+    {"system": "GPS", "signal": "L1CA", "svid": 9, "start": 48.0,
+     "end": 60.0, "delayChip": 0.05, "amplitude": 0.50,
+     "phaseDeg": 8.833159347728436},
+    {"system": "GPS", "signal": "L1CA", "svid": 9, "start": 62.0,
+     "end": 74.0, "delayChip": 0.10, "amplitude": 0.25,
+     "phaseDeg": 8.833159347728436},
+    {"system": "GPS", "signal": "L1CA", "svid": 9, "start": 76.0,
+     "end": 88.0, "delayChip": 0.10, "amplitude": 0.50,
+     "phaseDeg": 8.833159347728436}
+  ]
+}

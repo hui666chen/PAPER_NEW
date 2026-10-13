@@ -1,0 +1,5 @@
+delay_chip,amplitude_ratio,raw_mean_seed_rmse_m,eml_mean_seed_rmse_m,dd_mean_seed_rmse_m,dual_mean_seed_rmse_m,dual_reduction_vs_dd_fraction,paired_dd_minus_dual_ci95_low_m,paired_dd_minus_dual_ci95_high_m,dual_seed_wins,total_seeds,dual_boundary_rate,pass
+0.05,0.25,2.498708,3.799588,3.909415,4.424678,-0.131801,-0.872795,-0.221376,0,5,1.0,false
+0.05,0.50,4.003692,3.848075,3.968372,3.728288,0.060499,-0.224050,0.684566,3,5,1.0,false
+0.10,0.25,4.999002,2.556739,2.611382,4.126714,-0.580279,-1.960085,-0.749204,0,5,1.0,false
+0.10,0.50,8.579244,7.000160,6.273483,8.940159,-0.425071,-2.913561,-2.500783,0,5,1.0,false

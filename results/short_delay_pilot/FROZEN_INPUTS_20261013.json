@@ -1,0 +1,29 @@
+{
+  "status": "frozen_before_validation_generation",
+  "frozen_date_local": "2026-10-13",
+  "validation_outcomes_accessed": false,
+  "validation_iq_generated": true,
+  "amendment_status": "frozen_after_presence_only_infrastructure_audit_before_amended_validation_generation",
+  "infrastructure_failed_seed": 2026101310,
+  "scored_validation_seeds": [2026101311, 2026101312, 2026101313, 2026101314, 2026101320],
+  "sha256": {
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/SHORT_DELAY_PILOT_PREREGISTRATION_20261013.md": "62e2ac60b8467251ece5576f6ee5e782ea3606ac800e240a2b575f6267c1dafb",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/SEED_POLICY_20261013.md": "c83a7b67e42383e58028cade187e41a4bcc241b963ffae03b009adeb42741cd8",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/configs/signalsim_prn09_short_delay_mixed_68s.json": "f80f2827d6d29853d4ef83f11829688bab3050b2cab04133eb9ea5d6a78d0bfa",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/configs/signalsim_prn09_short_delay_clean_68s.json": "7eb1fef7e3cde7e99a4a7c792b5e5f167cf8491a664e17964f82da08bff2bdb3",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/configs/signalsim_prn09_short_delay_calibration_68s.json": "2b02734d60017f56b1d9869a5d53abb3b39d83d4b030cbef9abbd4df5585317a",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/INFRASTRUCTURE_AMENDMENT_20261013.md": "f010439a8907220436043c763e5d0c461024517b0870d826a4521fbdd7f6ff4c",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/configs/signalsim_prn09_short_delay_mixed_96s_v2.json": "cdcf0cd6699ed16e4f3cbb12952535e075d9a93129f9c8987649d738662148ba",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/configs/signalsim_prn09_short_delay_clean_96s_v2.json": "708643643557be7a7d226052c1c84eb565fdba4d79390ac4e76a12e78b175f38",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/configs/signalsim_prn09_short_delay_calibration_96s_v2.json": "a10a562c72e61740a0e2280232239ddb7d6755679d5287574e561a1bb2a0558e",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/scripts/short_delay_pilot/run_short_delay_pilot.py": "97acb1e9b0e0d8e3b437da162c54252e1ea34151b5f7d42d12ce042de8d46bc9",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_pilot/IMPLEMENTATION_ERRATA_20261013.md": "77cc755ffbb5d33ed8ff76959dc40df1b75c244081c5ca2929909d1aa7c95af2",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/scripts/baselines/correlator_baselines.py": "64f0cc856ce027710a6e4f43eafaa921a7da11c760c40bd947d73ee1e9c37264",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_shared_ratio_v2/shared_ratio_existence.py": "cf721a2f8b6ab56bd029651fd51ee44dae5d00722539d6ff87ef1fe8ea3df755",
+    "/home/zoxoai/Documents/ChatGPT/paper/receiver_chain_response_control.py": "149ca3f435646887b63234fb0ec7a59338295b49450bcc3bd6380e043173be14",
+    "/home/zoxoai/Documents/ChatGPT/paper/monte_carlo_resolution_baseline.py": "8e7e64870d9da71d4e2cf7ded5d4ef0de1da91ae16be4c980ff330247678d5fe",
+    "/home/zoxoai/chh/GPU/High/signalsim-new-multipath/build-if/IFdataGen": "ce5c3eef2c8e8c118e7c309127e9df3ba83fc41c203898b7683e383e844c9c30",
+    "/home/zoxoai/chh/GPU/High/gnss-sdr-cuda-scan/build-cuda-scan/src/main/gnss-sdr": "1ddccdc3c7f4fde5680b38db8a139baa6d8d3692229d74e7d3d3b5e05683840b",
+    "/home/zoxoai/chh/GPU/High/gnss-sdr-cuda-scan/build-cuda-scan/src/algorithms/tracking/libs/frozen_reference_open_loop_scan": "98bf1a17d8c66ff242509fc4c8045e00b7858a6b7fce711270f54227c0e8399d"
+  }
+}
