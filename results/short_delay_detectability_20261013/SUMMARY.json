@@ -1,0 +1,413 @@
+{
+  "status": "complete",
+  "analysis_class": "post_hoc_theoretical_diagnostic_existing_data_only",
+  "iq_generated": false,
+  "pvt_run": false,
+  "timing": {
+    "stored_epoch_timestamp_step_ms": 1.0,
+    "stored_epoch_sample_step": 25000,
+    "sample_rate_hz": 25000000,
+    "correlator_epoch_seconds": 0.001,
+    "100_epoch_average_span_seconds": 0.1,
+    "one_second_start_spacing": true,
+    "warning": "The retained 100-epoch average spans 100 ms, not a full 1 s; 1-s time-to-detection is an extrapolation."
+  },
+  "threshold_references": {
+    "1": {
+      "reference_real_df": 1,
+      "false_alarm_probability": 0.001,
+      "target_detection_probability": 0.9,
+      "central_threshold": 10.827566170662733,
+      "required_real_noncentrality": 20.903899954232013
+    },
+    "3": {
+      "reference_real_df": 3,
+      "false_alarm_probability": 0.001,
+      "target_detection_probability": 0.9,
+      "central_threshold": 16.26623619623813,
+      "required_real_noncentrality": 25.934770893401943
+    }
+  },
+  "covariance_by_cell": {
+    "d005_a025": {
+      "sample_vectors": 800,
+      "dimension": 802,
+      "covariance_representation": "augmented_real_[Re(taps),Im(taps)]",
+      "diagonal_shrinkage": 0.01588416786205077,
+      "eigenvalue_floor": 146159.54203657844,
+      "min_eigenvalue_after_floor": 869610610.9324425,
+      "max_eigenvalue": 14615954203657.844,
+      "condition_number": 16807.469941041592,
+      "complex_pseudo_to_covariance_frobenius_ratio": 0.4762428726803485,
+      "trace": 76561707178071.9,
+      "calibration_windows": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "epochs_per_window": 100,
+      "epoch_duration_seconds": 0.001,
+      "averaged_span_seconds": 0.1,
+      "window_start_spacing_seconds": 1.0,
+      "lag1_to20_abs_max": 0.02826580476128227,
+      "hac_lag_bandwidth": 20,
+      "hac_eigenvalue_min_before_floor": 6775075.124032736,
+      "hac_eigenvalue_floor": 1715.5035977584312,
+      "hac_eigenvalue_clipped_count": 0,
+      "hac_trace_inflation_vs_iid": 0.8862941882037035,
+      "hac_condition_number": 25320.80554609865,
+      "iid_whitening": {
+        "whitening_floor": 1461.5954203657834,
+        "whitening_condition_number": 16807.469941041527
+      },
+      "hac_whitening": {
+        "whitening_floor": 1715.5035977584316,
+        "whitening_condition_number": 25320.805546098713
+      },
+      "per_window_fit": [
+        {
+          "window": 36,
+          "tau_fit_median_chip": 0.020000000000000184,
+          "residual_rms_per_tap": 429158.9018783853,
+          "mean_signal_norm": 32975487.827560924
+        },
+        {
+          "window": 37,
+          "tau_fit_median_chip": 1.6653345369377348e-16,
+          "residual_rms_per_tap": 441070.60611157084,
+          "mean_signal_norm": 32914285.49448902
+        },
+        {
+          "window": 38,
+          "tau_fit_median_chip": 0.005000000000000171,
+          "residual_rms_per_tap": 433635.64371351094,
+          "mean_signal_norm": 33380174.805256106
+        },
+        {
+          "window": 39,
+          "tau_fit_median_chip": 1.6653345369377348e-16,
+          "residual_rms_per_tap": 441916.4246183286,
+          "mean_signal_norm": 33573352.204357915
+        },
+        {
+          "window": 40,
+          "tau_fit_median_chip": 0.030000000000000193,
+          "residual_rms_per_tap": 432557.6464848466,
+          "mean_signal_norm": 32918295.311197914
+        },
+        {
+          "window": 41,
+          "tau_fit_median_chip": 0.020000000000000184,
+          "residual_rms_per_tap": 432457.2303781807,
+          "mean_signal_norm": 32577418.288072675
+        },
+        {
+          "window": 42,
+          "tau_fit_median_chip": 0.030000000000000193,
+          "residual_rms_per_tap": 442710.64410005475,
+          "mean_signal_norm": 34095268.09718145
+        },
+        {
+          "window": 43,
+          "tau_fit_median_chip": 1.6653345369377348e-16,
+          "residual_rms_per_tap": 441867.4869554604,
+          "mean_signal_norm": 33883340.82399463
+        }
+      ]
+    },
+    "d005_a050": {
+      "sample_vectors": 800,
+      "dimension": 802,
+      "covariance_representation": "augmented_real_[Re(taps),Im(taps)]",
+      "diagonal_shrinkage": 0.0157241701242129,
+      "eigenvalue_floor": 139583.68234237123,
+      "min_eigenvalue_after_floor": 851185000.2344604,
+      "max_eigenvalue": 13958368234237.123,
+      "condition_number": 16398.747898978796,
+      "complex_pseudo_to_covariance_frobenius_ratio": 0.43518100597011533,
+      "trace": 76481453434841.73,
+      "calibration_windows": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "epochs_per_window": 100,
+      "epoch_duration_seconds": 0.001,
+      "averaged_span_seconds": 0.1,
+      "window_start_spacing_seconds": 1.0,
+      "lag1_to20_abs_max": 0.028877464737553267,
+      "hac_lag_bandwidth": 20,
+      "hac_eigenvalue_min_before_floor": 6425501.722605127,
+      "hac_eigenvalue_floor": 1599.026241182718,
+      "hac_eigenvalue_clipped_count": 0,
+      "hac_trace_inflation_vs_iid": 0.8729817915387187,
+      "hac_condition_number": 24885.624659585585,
+      "iid_whitening": {
+        "whitening_floor": 1395.8368234237107,
+        "whitening_condition_number": 16398.74789897886
+      },
+      "hac_whitening": {
+        "whitening_floor": 1599.026241182719,
+        "whitening_condition_number": 24885.62465958542
+      },
+      "per_window_fit": [
+        {
+          "window": 50,
+          "tau_fit_median_chip": 0.010000000000000175,
+          "residual_rms_per_tap": 425793.46919310367,
+          "mean_signal_norm": 32664181.69290184
+        },
+        {
+          "window": 51,
+          "tau_fit_median_chip": 0.030000000000000193,
+          "residual_rms_per_tap": 454106.23062624614,
+          "mean_signal_norm": 33681627.64395907
+        },
+        {
+          "window": 52,
+          "tau_fit_median_chip": 0.010000000000000175,
+          "residual_rms_per_tap": 423976.3881717861,
+          "mean_signal_norm": 32248855.246215206
+        },
+        {
+          "window": 53,
+          "tau_fit_median_chip": -0.004999999999999838,
+          "residual_rms_per_tap": 451214.5265733397,
+          "mean_signal_norm": 32596008.187407047
+        },
+        {
+          "window": 54,
+          "tau_fit_median_chip": 0.020000000000000184,
+          "residual_rms_per_tap": 427827.2857843443,
+          "mean_signal_norm": 32784070.23536846
+        },
+        {
+          "window": 55,
+          "tau_fit_median_chip": 0.020000000000000184,
+          "residual_rms_per_tap": 427682.15652546193,
+          "mean_signal_norm": 33441620.593523234
+        },
+        {
+          "window": 56,
+          "tau_fit_median_chip": 0.020000000000000184,
+          "residual_rms_per_tap": 440245.3777601152,
+          "mean_signal_norm": 32420621.74751859
+        },
+        {
+          "window": 57,
+          "tau_fit_median_chip": 0.010000000000000175,
+          "residual_rms_per_tap": 441800.0140740527,
+          "mean_signal_norm": 33733348.3715517
+        }
+      ]
+    },
+    "d010_a025": {
+      "sample_vectors": 800,
+      "dimension": 802,
+      "covariance_representation": "augmented_real_[Re(taps),Im(taps)]",
+      "diagonal_shrinkage": 0.016820133888528748,
+      "eigenvalue_floor": 128435.68452356406,
+      "min_eigenvalue_after_floor": 946816849.850181,
+      "max_eigenvalue": 12843568452356.406,
+      "condition_number": 13564.997765289772,
+      "complex_pseudo_to_covariance_frobenius_ratio": 0.420443193641738,
+      "trace": 74943141742975.66,
+      "calibration_windows": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "epochs_per_window": 100,
+      "epoch_duration_seconds": 0.001,
+      "averaged_span_seconds": 0.1,
+      "window_start_spacing_seconds": 1.0,
+      "lag1_to20_abs_max": 0.026043737973120935,
+      "hac_lag_bandwidth": 20,
+      "hac_eigenvalue_min_before_floor": 7480178.689582153,
+      "hac_eigenvalue_floor": 1293.5908605788015,
+      "hac_eigenvalue_clipped_count": 0,
+      "hac_trace_inflation_vs_iid": 0.8366482934812359,
+      "hac_condition_number": 17293.582336213713,
+      "iid_whitening": {
+        "whitening_floor": 1284.356845235641,
+        "whitening_condition_number": 13564.997765289761
+      },
+      "hac_whitening": {
+        "whitening_floor": 1293.590860578803,
+        "whitening_condition_number": 17293.58233621371
+      },
+      "per_window_fit": [
+        {
+          "window": 64,
+          "tau_fit_median_chip": -0.009999999999999842,
+          "residual_rms_per_tap": 441420.80517366546,
+          "mean_signal_norm": 33104623.04104515
+        },
+        {
+          "window": 65,
+          "tau_fit_median_chip": 1.6653345369377348e-16,
+          "residual_rms_per_tap": 422685.18054612237,
+          "mean_signal_norm": 32813110.29629625
+        },
+        {
+          "window": 66,
+          "tau_fit_median_chip": 0.010000000000000175,
+          "residual_rms_per_tap": 437414.18741943035,
+          "mean_signal_norm": 32558886.509759583
+        },
+        {
+          "window": 67,
+          "tau_fit_median_chip": -0.004999999999999838,
+          "residual_rms_per_tap": 434298.4668823726,
+          "mean_signal_norm": 33419855.105409294
+        },
+        {
+          "window": 68,
+          "tau_fit_median_chip": -0.004999999999999838,
+          "residual_rms_per_tap": 426301.62624018994,
+          "mean_signal_norm": 32609872.571125604
+        },
+        {
+          "window": 69,
+          "tau_fit_median_chip": -0.009999999999999842,
+          "residual_rms_per_tap": 419303.77486195887,
+          "mean_signal_norm": 32887946.066307783
+        },
+        {
+          "window": 70,
+          "tau_fit_median_chip": 1.6653345369377348e-16,
+          "residual_rms_per_tap": 443974.1227643823,
+          "mean_signal_norm": 33581410.076054305
+        },
+        {
+          "window": 71,
+          "tau_fit_median_chip": 1.6653345369377348e-16,
+          "residual_rms_per_tap": 432437.1048894591,
+          "mean_signal_norm": 33028947.675559778
+        }
+      ]
+    },
+    "d010_a050": {
+      "sample_vectors": 800,
+      "dimension": 802,
+      "covariance_representation": "augmented_real_[Re(taps),Im(taps)]",
+      "diagonal_shrinkage": 0.01535370527745117,
+      "eigenvalue_floor": 153687.4743429087,
+      "min_eigenvalue_after_floor": 869556433.6282551,
+      "max_eigenvalue": 15368747434290.871,
+      "condition_number": 17674.238082701806,
+      "complex_pseudo_to_covariance_frobenius_ratio": 0.4791288060762436,
+      "trace": 78304866152486.67,
+      "calibration_windows": [
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "epochs_per_window": 100,
+      "epoch_duration_seconds": 0.001,
+      "averaged_span_seconds": 0.1,
+      "window_start_spacing_seconds": 1.0,
+      "lag1_to20_abs_max": 0.036087593152041735,
+      "hac_lag_bandwidth": 20,
+      "hac_eigenvalue_min_before_floor": 6615646.268501017,
+      "hac_eigenvalue_floor": 1268.5558553839703,
+      "hac_eigenvalue_clipped_count": 0,
+      "hac_trace_inflation_vs_iid": 0.7899270859775916,
+      "hac_condition_number": 19175.08590844597,
+      "iid_whitening": {
+        "whitening_floor": 1536.8747434290863,
+        "whitening_condition_number": 17674.238082701806
+      },
+      "hac_whitening": {
+        "whitening_floor": 1268.5558553839703,
+        "whitening_condition_number": 19175.085908445853
+      },
+      "per_window_fit": [
+        {
+          "window": 78,
+          "tau_fit_median_chip": -0.009999999999999842,
+          "residual_rms_per_tap": 442270.87276090356,
+          "mean_signal_norm": 33151548.743418194
+        },
+        {
+          "window": 79,
+          "tau_fit_median_chip": -0.01999999999999985,
+          "residual_rms_per_tap": 448511.25970525603,
+          "mean_signal_norm": 33519312.826805104
+        },
+        {
+          "window": 80,
+          "tau_fit_median_chip": 1.6653345369377348e-16,
+          "residual_rms_per_tap": 434682.1882386304,
+          "mean_signal_norm": 32613881.21861686
+        },
+        {
+          "window": 81,
+          "tau_fit_median_chip": 1.6653345369377348e-16,
+          "residual_rms_per_tap": 438707.2159085426,
+          "mean_signal_norm": 32846059.501832195
+        },
+        {
+          "window": 82,
+          "tau_fit_median_chip": 1.6653345369377348e-16,
+          "residual_rms_per_tap": 462398.14075014065,
+          "mean_signal_norm": 33121444.242964417
+        },
+        {
+          "window": 83,
+          "tau_fit_median_chip": 0.010000000000000175,
+          "residual_rms_per_tap": 439167.47929811367,
+          "mean_signal_norm": 32913156.47256499
+        },
+        {
+          "window": 84,
+          "tau_fit_median_chip": -0.02999999999999986,
+          "residual_rms_per_tap": 437060.02839848574,
+          "mean_signal_norm": 32816607.678185616
+        },
+        {
+          "window": 85,
+          "tau_fit_median_chip": -0.014999999999999847,
+          "residual_rms_per_tap": 431638.4581312974,
+          "mean_signal_norm": 33737075.49173126
+        }
+      ]
+    }
+  },
+  "row_count": 1632,
+  "uniform_phase_points": 16,
+  "pilot_phase_points": 1,
+  "eligible_rows": 4,
+  "eligibility_rule": "actual pilot phase 8.83 deg; HAC covariance; df=3 reference threshold; local 95% FIM width <=3m",
+  "input_sha256": {
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_detectability_20261013/FROZEN_SHORT_DELAY_DETECTABILITY_20261013.md": "001f281de91a65f141c834167c1fc3ec620ecb30a2e35c1e92b3076639bfc110",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/open_loop/d005_a025/prn09_epoch_responses.csv": "ce1f8a65e0ebaa7ebcc8036c2e6e43b00ae34dcea2580413691ff7022ce47d4f",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/response_banks/bank_39.npz": "39ea148af569d072a1917f7b72afa56b3ca6a54eb317b36fbd3d734f049b6589",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/open_loop/d005_a050/prn09_epoch_responses.csv": "cdb3cc15683b97f19c7b15ada5a569edb30b40c27c9b9d384fd7942f53a25142",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/response_banks/bank_53.npz": "8f819e14ac47d779facf31304d3f51769c3123ee0d0737247180d5df4ee45771",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/open_loop/d010_a025/prn09_epoch_responses.csv": "e7a0cec491690bc0e61d3dbc97730e89e0cb45824d649a48d5b2265a513001d1",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/response_banks/bank_67.npz": "e89645cbe904bd27b1d5defcc38a3615a0122e43604e70448b9da37212e3c7a3",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/open_loop/d010_a050/prn09_epoch_responses.csv": "62a8eeadc8248ebe8c33b44ead495a52d39656843c711e5ee6bbc6c920b9fcb7",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/response_banks/bank_81.npz": "2c608eaf9238bf9dedb5aa9b0ac37ad777d56af5b79f22677e8cbfd29f04e6de"
+  }
+}

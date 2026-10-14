@@ -1,0 +1,276 @@
+{
+  "status": "complete",
+  "analysis_class": "post_hoc_paired_profile_grid_diagnostic_existing_data_only",
+  "iq_generated": false,
+  "pvt_run": false,
+  "validation_truth_read_only_after_kappa_freeze": true,
+  "objective": "complex LS with affine tap nuisance removed by orthogonal QR; profile common complex gain",
+  "grid_arms": {
+    "stable_coarse_0p02": {
+      "direct_delay_chip": [
+        -0.4,
+        0.4
+      ],
+      "step_chip": 0.02,
+      "zero_point_inserted_exactly": true,
+      "separation_chip": [
+        0.04,
+        1.2
+      ],
+      "step_chip_separation": 0.02,
+      "rho_grid_count": 113
+    },
+    "stable_dense_0p002": {
+      "direct_delay_chip": [
+        -0.4,
+        0.4
+      ],
+      "step_chip": 0.002,
+      "zero_point_inserted_exactly": true,
+      "separation_chip": [
+        0.04,
+        1.2
+      ],
+      "step_chip_separation": 0.02,
+      "rho_grid_count": 113
+    }
+  },
+  "clean_kappa_calibration": {
+    "clean_windows": 32,
+    "bootstraps_per_window": 100,
+    "bootstraps_per_arm": 3200,
+    "percentile": 0.9,
+    "quantile_method": "higher",
+    "rng": "numpy.default_rng(2026101316), paired epoch-resample indices across arms",
+    "kappa_by_method_and_cell": {
+      "stable_coarse_0p02": {
+        "d005_a025": 0.4273409310056564,
+        "d005_a050": 0.30481131289813024,
+        "d010_a025": 0.248619414609478,
+        "d010_a050": 0.27492867378724317
+      },
+      "stable_dense_0p002": {
+        "d005_a025": 0.5100893775715674,
+        "d005_a050": 0.36964290403187094,
+        "d010_a025": 0.29710051085354117,
+        "d010_a050": 0.3611658153726345
+      }
+    }
+  },
+  "legacy_surface_numeric_audit": {
+    "stable_affine_ls_vs_legacy_saved_surface": {
+      "seed": 2026101311,
+      "cell": "d005_a025",
+      "window": 36,
+      "saved_legacy_surface_replay_by_legacy_code": "PASS (exact equality verified independently)",
+      "stable_affine_ls_vs_saved_legacy_max_relative_rss_difference": 0.8395501483179557,
+      "stable_affine_ls_vs_saved_legacy_median_relative_rss_difference": 0.15448243791845936,
+      "same_surface_shape": true
+    },
+    "representative_gram_rank_diagnostic": {
+      "design_condition_number": 1948007.3102571904,
+      "gram_eigenvalue_ratios_ascending": [
+        2.6352318774922117e-13,
+        5.567002729525981e-13,
+        1.0
+      ],
+      "legacy_pinv_rcond": 1e-12,
+      "directions_below_legacy_cutoff": 2,
+      "nuisance_column_scales": {
+        "response_norm": 30824734.224303514,
+        "constant_norm": 20.024984394500787,
+        "linear_norm": 23.180594804194893
+      }
+    },
+    "interpretation": "legacy saved values replay exactly under old code, but its unscaled Gram pseudoinverse drops nuisance directions; use the stable paired arms to isolate grid spacing under the stated objective"
+  },
+  "validation_windows_per_arm": 160,
+  "by_cell_and_method": {
+    "d005_a025": {
+      "stable_coarse_0p02": {
+        "windows": 40,
+        "ungated_coverage_count": 30,
+        "ungated_coverage": 0.75,
+        "ungated_width_median_m": 11.722090244379276,
+        "ungated_width_q10_m": 3.321214835332147,
+        "ungated_width_q90_m": 17.583135366568914,
+        "gate_active_count": 0,
+        "gated_coverage_count": 0,
+        "gated_coverage": 0.0,
+        "kappa_clean_q90": 0.4273409310056564,
+        "tau_zero_chip": 0.008333521299988867,
+        "legacy_saved_coverage_count": 32,
+        "legacy_saved_width_median_m": 29.305225610948213
+      },
+      "stable_dense_0p002": {
+        "windows": 40,
+        "ungated_coverage_count": 35,
+        "ungated_coverage": 0.875,
+        "ungated_width_median_m": 18.169239878787877,
+        "ungated_width_q10_m": 7.033254146627565,
+        "ungated_width_q90_m": 23.44418048875855,
+        "gate_active_count": 0,
+        "gated_coverage_count": 0,
+        "gated_coverage": 0.0,
+        "kappa_clean_q90": 0.5100893775715674,
+        "tau_zero_chip": 0.008333521299988867,
+        "legacy_saved_coverage_count": 32,
+        "legacy_saved_width_median_m": 29.305225610948213
+      }
+    },
+    "d005_a050": {
+      "stable_coarse_0p02": {
+        "windows": 40,
+        "ungated_coverage_count": 35,
+        "ungated_coverage": 0.875,
+        "ungated_width_median_m": 11.722090244379277,
+        "ungated_width_q10_m": 5.5097749131274805,
+        "ungated_width_q90_m": 14.070433275947327,
+        "gate_active_count": 0,
+        "gated_coverage_count": 0,
+        "gated_coverage": 0.0,
+        "kappa_clean_q90": 0.30481131289813024,
+        "tau_zero_chip": 0.011986606543337002,
+        "legacy_saved_coverage_count": 36,
+        "legacy_saved_width_median_m": 29.305225610948213
+      },
+      "stable_dense_0p002": {
+        "windows": 40,
+        "ungated_coverage_count": 40,
+        "ungated_coverage": 1.0,
+        "ungated_width_median_m": 15.824821829912022,
+        "ungated_width_q10_m": 9.670724451612903,
+        "ungated_width_q90_m": 20.57226837888563,
+        "gate_active_count": 0,
+        "gated_coverage_count": 0,
+        "gated_coverage": 0.0,
+        "kappa_clean_q90": 0.36964290403187094,
+        "tau_zero_chip": 0.011986606543337002,
+        "legacy_saved_coverage_count": 36,
+        "legacy_saved_width_median_m": 29.305225610948213
+      }
+    },
+    "d010_a025": {
+      "stable_coarse_0p02": {
+        "windows": 40,
+        "ungated_coverage_count": 26,
+        "ungated_coverage": 0.65,
+        "ungated_width_median_m": 12.91740032155827,
+        "ungated_width_q10_m": 5.861045122189638,
+        "ungated_width_q90_m": 18.77844544374791,
+        "gate_active_count": 0,
+        "gated_coverage_count": 0,
+        "gated_coverage": 0.0,
+        "kappa_clean_q90": 0.248619414609478,
+        "tau_zero_chip": -0.004078829124360799,
+        "legacy_saved_coverage_count": 33,
+        "legacy_saved_width_median_m": 29.305225610948213
+      },
+      "stable_dense_0p002": {
+        "windows": 40,
+        "ungated_coverage_count": 38,
+        "ungated_coverage": 0.95,
+        "ungated_width_median_m": 17.594685892939452,
+        "ungated_width_q10_m": 11.722090244379274,
+        "ungated_width_q90_m": 21.179163838571558,
+        "gate_active_count": 0,
+        "gated_coverage_count": 0,
+        "gated_coverage": 0.0,
+        "kappa_clean_q90": 0.29710051085354117,
+        "tau_zero_chip": -0.004078829124360799,
+        "legacy_saved_coverage_count": 33,
+        "legacy_saved_width_median_m": 29.305225610948213
+      }
+    },
+    "d010_a050": {
+      "stable_coarse_0p02": {
+        "windows": 40,
+        "ungated_coverage_count": 34,
+        "ungated_coverage": 0.85,
+        "ungated_width_median_m": 12.799700749613116,
+        "ungated_width_q10_m": 5.861045122189639,
+        "ungated_width_q90_m": 17.58313536656891,
+        "gate_active_count": 0,
+        "gated_coverage_count": 0,
+        "gated_coverage": 0.0,
+        "kappa_clean_q90": 0.27492867378724317,
+        "tau_zero_chip": -0.007354391462737975,
+        "legacy_saved_coverage_count": 37,
+        "legacy_saved_width_median_m": 29.305225610948213
+      },
+      "stable_dense_0p002": {
+        "windows": 40,
+        "ungated_coverage_count": 37,
+        "ungated_coverage": 0.925,
+        "ungated_width_median_m": 17.583135366568914,
+        "ungated_width_q10_m": 12.718467915151514,
+        "ungated_width_q90_m": 21.13945318726378,
+        "gate_active_count": 0,
+        "gated_coverage_count": 0,
+        "gated_coverage": 0.0,
+        "kappa_clean_q90": 0.3611658153726345,
+        "tau_zero_chip": -0.007354391462737975,
+        "legacy_saved_coverage_count": 37,
+        "legacy_saved_width_median_m": 29.305225610948213
+      }
+    }
+  },
+  "overall_by_method": {
+    "stable_coarse_0p02": {
+      "windows": 160,
+      "ungated_coverage_count": 125,
+      "ungated_coverage": 0.78125,
+      "ungated_width_median_m": 11.722090244379277,
+      "ungated_width_q10_m": 3.4188879038914783,
+      "ungated_width_q90_m": 17.583135366568914,
+      "gate_active_count": 0,
+      "gated_coverage_count": 0,
+      "gated_coverage": 0.0
+    },
+    "stable_dense_0p002": {
+      "windows": 160,
+      "ungated_coverage_count": 150,
+      "ungated_coverage": 0.9375,
+      "ungated_width_median_m": 17.583135366568914,
+      "ungated_width_q10_m": 9.201840841837733,
+      "ungated_width_q90_m": 21.685866952101662,
+      "gate_active_count": 0,
+      "gated_coverage_count": 0,
+      "gated_coverage": 0.0
+    }
+  },
+  "inputs_sha256": {
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_detectability_20261013/FROZEN_SHORT_DELAY_DETECTABILITY_20261013.md": "2504d098d710b5040a094e9be2016740587247b514e97a65f2973448bf6d6b00",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/short_delay_detectability_20261013/FROZEN_PROFILE_NUMERICAL_AUDIT_AMENDMENT_20261013.md": "f1721fc93dc40cf6fdadc2f30b8fe6d37511920e534abb2dde840062d2771fbe",
+    "/home/zoxoai/Documents/ChatGPT/paper/PAPER_NEW/results/bias_interval_pvt_20261013/short_delay_ungated_profile_coverage.csv": "cea5e9f47817131b98cb34d651b82e44d248f92d2c4df8816a9cbb6cd43cabf7",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/open_loop/d005_a025/prn09_epoch_responses.csv": "ce1f8a65e0ebaa7ebcc8036c2e6e43b00ae34dcea2580413691ff7022ce47d4f",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/response_banks/bank_39.npz": "39ea148af569d072a1917f7b72afa56b3ca6a54eb317b36fbd3d734f049b6589",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101311/open_loop/d005_a025/prn09_epoch_responses.csv": "8324bbdcfe945e6583186fb37dc5b18a34aae25bdd711ad02ab3feeaa5259a33",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101312/open_loop/d005_a025/prn09_epoch_responses.csv": "39ffdfa813cea28db780ea8da70bfc21add6796e136eef3f7b6adf47214b8c99",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101313/open_loop/d005_a025/prn09_epoch_responses.csv": "a64c17515e3ec207e7eef8269a8c35d6bf790ac75ef2fb5b1f83cc9c7671a8b8",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101314/open_loop/d005_a025/prn09_epoch_responses.csv": "6f257640fe0df0174621840f3560a492d3cbaa804c10b93c0072761c5426a2db",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101320/open_loop/d005_a025/prn09_epoch_responses.csv": "b7c960786d2a2da0e2f735cd77900c752d5edf8f8fa6ebd2a9ca127699b5a981",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/open_loop/d005_a050/prn09_epoch_responses.csv": "cdb3cc15683b97f19c7b15ada5a569edb30b40c27c9b9d384fd7942f53a25142",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/response_banks/bank_53.npz": "8f819e14ac47d779facf31304d3f51769c3123ee0d0737247180d5df4ee45771",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101311/open_loop/d005_a050/prn09_epoch_responses.csv": "280bf2f16f009af46ffa954ce9c728a9e0482d38aee583c4c4ab450cba2b38b8",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101312/open_loop/d005_a050/prn09_epoch_responses.csv": "5173f329bc7d458e05b1fc97741c891bd3a7907656ea9a7224ef35cc455fcf9e",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101313/open_loop/d005_a050/prn09_epoch_responses.csv": "cc4a5a0e1bf504cb1896cafd01d19cfc67373224cd4eed8039ed07a946f34661",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101314/open_loop/d005_a050/prn09_epoch_responses.csv": "5fea1f538e3fa50ef37c3a5de8b50b54fc2ec28611ac7257bafdb73c32e8f88f",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101320/open_loop/d005_a050/prn09_epoch_responses.csv": "1078490a7f972e2e04f668493ecb55b3d658d01e2e8fe0102671c07dd77779d2",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/open_loop/d010_a025/prn09_epoch_responses.csv": "e7a0cec491690bc0e61d3dbc97730e89e0cb45824d649a48d5b2265a513001d1",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/response_banks/bank_67.npz": "e89645cbe904bd27b1d5defcc38a3615a0122e43604e70448b9da37212e3c7a3",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101311/open_loop/d010_a025/prn09_epoch_responses.csv": "f6d63f8f8d94a347bc667e48bd870d29f0ab1111b1118895d068fd90e0990d64",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101312/open_loop/d010_a025/prn09_epoch_responses.csv": "18cdd6c001dbf2db299e7272d89d745cdbdd6c4234c9788b1f4d23bde9a3ed05",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101313/open_loop/d010_a025/prn09_epoch_responses.csv": "19912a844b3f3893f13e43912ae29e5d333624bb96ddf8958d01d867a6d891c4",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101314/open_loop/d010_a025/prn09_epoch_responses.csv": "f9c600c4228c200cffa9561c54b9e572e4918ad0654e6c8ceda36bd166243b7b",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101320/open_loop/d010_a025/prn09_epoch_responses.csv": "a9d6263881c229626cf865efa3f584b06b596177d31d48bdd2350bdee7e1146c",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/open_loop/d010_a050/prn09_epoch_responses.csv": "62a8eeadc8248ebe8c33b44ead495a52d39656843c711e5ee6bbc6c920b9fcb7",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment/response_banks/bank_81.npz": "2c608eaf9238bf9dedb5aa9b0ac37ad777d56af5b79f22677e8cbfd29f04e6de",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101311/open_loop/d010_a050/prn09_epoch_responses.csv": "06f3f96b17eabefee94d304ea1da477c65a59fe2a0ce79fb1362ba301647f1cf",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101312/open_loop/d010_a050/prn09_epoch_responses.csv": "bbcbc52be03ecec641e343d479b779a23a7206870afb188a2ec23e0bd6c4890c",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101313/open_loop/d010_a050/prn09_epoch_responses.csv": "ede36cedcc3b7220d7a15f66487ed514466f106a31f53a0720eb19355ded0820",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101314/open_loop/d010_a050/prn09_epoch_responses.csv": "5f08d7750acec9f2d512f712af5b617673eca89d424a038db15b1f5507b88ccf",
+    "/home/zoxoai/Documents/ChatGPT/paper/gps_l1_prn09_short_delay_pilot_20261013/seed_2026101320/open_loop/d010_a050/prn09_epoch_responses.csv": "652483daa89d51905028d70fcf025bf573b8be06748602287044ce505e4ac1f9"
+  },
+  "code_sha256": "c71eb8c48ee3d29c567184b4cda7c2d9f99d60b492fa39924d6d6e26f952402f"
+}
