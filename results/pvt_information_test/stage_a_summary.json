@@ -1,0 +1,335 @@
+{
+  "status": "complete",
+  "self_test": false,
+  "iq_generated": false,
+  "pvt_run": false,
+  "design": {
+    "delays_chip": [
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "amplitudes": [
+      0.1,
+      0.25,
+      0.5
+    ],
+    "phases_deg": [
+      0,
+      45,
+      90,
+      135,
+      180,
+      225,
+      270,
+      315
+    ]
+  },
+  "settings": {
+    "paper": "<workspace paper root>",
+    "data_dir": "<workspace paper root>/gps_l1_prn09_short_delay_pilot_20261013/calibration_v2_after_acquisition_amendment",
+    "out": "results/pvt_information_test",
+    "cells": [
+      "d005_a025",
+      "d005_a050",
+      "d010_a025",
+      "d010_a050"
+    ],
+    "step": 0.002,
+    "cal_boot": 24,
+    "cal_inject_boot": 5,
+    "test_boot": 8,
+    "workers": 4,
+    "self_test": false
+  },
+  "calibration": [
+    {
+      "cell": "d005_a025",
+      "calibration_windows": [
+        36,
+        38,
+        40,
+        42
+      ],
+      "test_windows": [
+        37,
+        39,
+        41,
+        43
+      ],
+      "c_dd_chip": 0.0673119690893147,
+      "c_eml_chip": 0.06723029814670313,
+      "detection_threshold_T": 1.8513720831393559,
+      "kappa": 0.4878754394275744,
+      "kappa_quantile": 0.95,
+      "kappa_calibration_count": 2328,
+      "clean_calibration_observations": 100,
+      "profile_step_chip": 0.002,
+      "seconds": 505.6
+    },
+    {
+      "cell": "d005_a050",
+      "calibration_windows": [
+        50,
+        52,
+        54,
+        56
+      ],
+      "test_windows": [
+        51,
+        53,
+        55,
+        57
+      ],
+      "c_dd_chip": 0.07248444972399684,
+      "c_eml_chip": 0.07241168140428414,
+      "detection_threshold_T": 1.2673567154982144,
+      "kappa": 0.1732990834806165,
+      "kappa_quantile": 0.95,
+      "kappa_calibration_count": 2328,
+      "clean_calibration_observations": 100,
+      "profile_step_chip": 0.002,
+      "seconds": 608.9
+    },
+    {
+      "cell": "d010_a025",
+      "calibration_windows": [
+        64,
+        66,
+        68,
+        70
+      ],
+      "test_windows": [
+        65,
+        67,
+        69,
+        71
+      ],
+      "c_dd_chip": 0.07767730396348507,
+      "c_eml_chip": 0.077495995650788,
+      "detection_threshold_T": 1.7838648818555058,
+      "kappa": 0.40047626104566847,
+      "kappa_quantile": 0.95,
+      "kappa_calibration_count": 2328,
+      "clean_calibration_observations": 100,
+      "profile_step_chip": 0.002,
+      "seconds": 622.0
+    },
+    {
+      "cell": "d010_a050",
+      "calibration_windows": [
+        78,
+        80,
+        82,
+        84
+      ],
+      "test_windows": [
+        79,
+        81,
+        83,
+        85
+      ],
+      "c_dd_chip": 0.09337831362969434,
+      "c_eml_chip": 0.09372187833432792,
+      "detection_threshold_T": 2.2304562453191177,
+      "kappa": 0.4880752495951819,
+      "kappa_quantile": 0.95,
+      "kappa_calibration_count": 2328,
+      "clean_calibration_observations": 100,
+      "profile_step_chip": 0.002,
+      "seconds": 498.2
+    }
+  ],
+  "summary": {
+    "cells": {},
+    "clean_coverage": 0.9375,
+    "injected_coverage": 0.9063946759259259,
+    "clean_flag_rate": 0.041666666666666664,
+    "by_delay_amplitude": [
+      {
+        "delay_chip": 0.02,
+        "amplitude": 0.1,
+        "n": 1152,
+        "coverage": 0.9487847222222222,
+        "median_width_m": 14.066508293255133,
+        "one_sided_fraction": 0.1345486111111111,
+        "sign_ok_when_abs_err_gt_1m": 0.6681614349775785,
+        "rms_dd_m": 2.9140039645261,
+        "rms_eml_m": 2.6126677307017263,
+        "rms_profile_point_m": 3.619416823691192,
+        "rms_after_midpoint_m": 4.455231418483641,
+        "detect_rate": 0.06770833333333333,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.02,
+        "amplitude": 0.25,
+        "n": 1152,
+        "coverage": 0.9114583333333334,
+        "median_width_m": 14.652612805474096,
+        "one_sided_fraction": 0.13975694444444445,
+        "sign_ok_when_abs_err_gt_1m": 0.659016393442623,
+        "rms_dd_m": 3.1911740925401193,
+        "rms_eml_m": 2.8970038882307594,
+        "rms_profile_point_m": 3.6734548623186356,
+        "rms_after_midpoint_m": 4.709156214439889,
+        "detect_rate": 0.07118055555555555,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.02,
+        "amplitude": 0.5,
+        "n": 1152,
+        "coverage": 0.8836805555555556,
+        "median_width_m": 15.824821829912025,
+        "one_sided_fraction": 0.1640625,
+        "sign_ok_when_abs_err_gt_1m": 0.6811440677966102,
+        "rms_dd_m": 7.861851026967735,
+        "rms_eml_m": 3.7889042560272155,
+        "rms_profile_point_m": 4.898976323825122,
+        "rms_after_midpoint_m": 5.825553510225055,
+        "detect_rate": 0.06770833333333333,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.05,
+        "amplitude": 0.1,
+        "n": 1152,
+        "coverage": 0.9045138888888888,
+        "median_width_m": 14.652612805474092,
+        "one_sided_fraction": 0.13975694444444445,
+        "sign_ok_when_abs_err_gt_1m": 0.6456692913385826,
+        "rms_dd_m": 2.996396478718048,
+        "rms_eml_m": 2.7203406806217627,
+        "rms_profile_point_m": 3.4858696721240916,
+        "rms_after_midpoint_m": 4.51186564864593,
+        "detect_rate": 0.08072916666666667,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.05,
+        "amplitude": 0.25,
+        "n": 1152,
+        "coverage": 0.8732638888888888,
+        "median_width_m": 16.41092634213099,
+        "one_sided_fraction": 0.1371527777777778,
+        "sign_ok_when_abs_err_gt_1m": 0.6134636264929425,
+        "rms_dd_m": 3.633034583740659,
+        "rms_eml_m": 3.4610181049594027,
+        "rms_profile_point_m": 4.542564988816101,
+        "rms_after_midpoint_m": 5.171300877584843,
+        "detect_rate": 0.10416666666666667,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.05,
+        "amplitude": 0.5,
+        "n": 1152,
+        "coverage": 0.8585069444444444,
+        "median_width_m": 19.341448903225807,
+        "one_sided_fraction": 0.21354166666666666,
+        "sign_ok_when_abs_err_gt_1m": 0.7037037037037037,
+        "rms_dd_m": 12.138039920746284,
+        "rms_eml_m": 5.1177402032619135,
+        "rms_profile_point_m": 7.020838422030947,
+        "rms_after_midpoint_m": 7.124952540587163,
+        "detect_rate": 0.20225694444444445,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.1,
+        "amplitude": 0.1,
+        "n": 1152,
+        "coverage": 0.8897569444444444,
+        "median_width_m": 15.23871731769306,
+        "one_sided_fraction": 0.1362847222222222,
+        "sign_ok_when_abs_err_gt_1m": 0.616685456595265,
+        "rms_dd_m": 2.979621966732073,
+        "rms_eml_m": 2.7557270877829385,
+        "rms_profile_point_m": 3.9805057587442163,
+        "rms_after_midpoint_m": 4.721213849803815,
+        "detect_rate": 0.09461805555555555,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.1,
+        "amplitude": 0.25,
+        "n": 1152,
+        "coverage": 0.8706597222222222,
+        "median_width_m": 19.634501159335287,
+        "one_sided_fraction": 0.11979166666666667,
+        "sign_ok_when_abs_err_gt_1m": 0.5916575192096597,
+        "rms_dd_m": 4.175583533731606,
+        "rms_eml_m": 3.6998912390402525,
+        "rms_profile_point_m": 5.761311993249767,
+        "rms_after_midpoint_m": 5.7273263186616985,
+        "detect_rate": 0.2309027777777778,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.1,
+        "amplitude": 0.5,
+        "n": 1152,
+        "coverage": 0.9583333333333334,
+        "median_width_m": 19.927553415444766,
+        "one_sided_fraction": 0.2552083333333333,
+        "sign_ok_when_abs_err_gt_1m": 0.7864838393731636,
+        "rms_dd_m": 15.673437602984567,
+        "rms_eml_m": 6.108317116671503,
+        "rms_profile_point_m": 6.614639743669152,
+        "rms_after_midpoint_m": 7.078223482101172,
+        "detect_rate": 0.5772569444444444,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.2,
+        "amplitude": 0.1,
+        "n": 1152,
+        "coverage": 0.8732638888888888,
+        "median_width_m": 16.997030854349955,
+        "one_sided_fraction": 0.1345486111111111,
+        "sign_ok_when_abs_err_gt_1m": 0.6082589285714286,
+        "rms_dd_m": 2.9055935312010313,
+        "rms_eml_m": 2.7717388864315553,
+        "rms_profile_point_m": 4.444271907243062,
+        "rms_after_midpoint_m": 5.053225839051327,
+        "detect_rate": 0.1779513888888889,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.2,
+        "amplitude": 0.25,
+        "n": 1152,
+        "coverage": 0.9305555555555556,
+        "median_width_m": 19.341448903225807,
+        "one_sided_fraction": 0.0954861111111111,
+        "sign_ok_when_abs_err_gt_1m": 0.592800899887514,
+        "rms_dd_m": 3.1357129205557257,
+        "rms_eml_m": 3.7873317571852807,
+        "rms_profile_point_m": 5.231783393422901,
+        "rms_after_midpoint_m": 5.3806977107954905,
+        "detect_rate": 0.6284722222222222,
+        "grid_edge_rate": 0.0
+      },
+      {
+        "delay_chip": 0.2,
+        "amplitude": 0.5,
+        "n": 1152,
+        "coverage": 0.9739583333333334,
+        "median_width_m": 15.238717317693059,
+        "one_sided_fraction": 0.18489583333333334,
+        "sign_ok_when_abs_err_gt_1m": 0.6871686108165429,
+        "rms_dd_m": 7.065098812377469,
+        "rms_eml_m": 6.273522495423364,
+        "rms_profile_point_m": 4.166447344089924,
+        "rms_after_midpoint_m": 4.424351570458862,
+        "detect_rate": 0.9262152777777778,
+        "grid_edge_rate": 0.0
+      }
+    ],
+    "worst_cell_coverage_delay_ge_0p05": 0.8585069444444444,
+    "stage_a_decision": "STAGE_A_PASS",
+    "stage_a_rule": "injected coverage >= 0.90, clean coverage >= 0.90, and every (delay>=0.05, amplitude) cell >= 0.80"
+  }
+}
