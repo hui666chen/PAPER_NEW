@@ -1,0 +1,910 @@
+{
+  "schema": 1,
+  "status": "synthetic_known_truth_noiseless_only",
+  "truth_accessed": true,
+  "monte_carlo_noise_trials": 0,
+  "search_scope": "local diagnostic neighborhood around injected tau and separation; not the full PVT estimator search",
+  "rho_grid_truth_on_grid": true,
+  "cases": [
+    {
+      "prn": 9,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.8,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "none",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 380239.47889980744,
+        "d_over_gain_abs_median": 223346.50588957453,
+        "coherent_location_constant_rms_fraction_of_direct": 0.008675995732484027,
+        "coherent_location_linear_rms_fraction_of_direct": 0.010461348045522307,
+        "median_absolute_constant_rms_fraction_of_direct": 0.13098170971991785,
+        "median_absolute_linear_rms_fraction_of_direct": 0.08906047370975671,
+        "constant_phase_concentration": 0.0030614810870651355,
+        "linear_phase_concentration": 0.01909783156654316,
+        "epochs": 100
+      },
+      "candidate_count": 143,
+      "gram_eigenvalues": [
+        213.55896344685198,
+        536.2285132046287,
+        4645578735576367.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 120,
+        "rss": 0.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 3.689449558966162e-15,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 2.8161131053394557e-14,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 9,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.8,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "coherent_median",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 380239.47889980744,
+        "d_over_gain_abs_median": 223346.50588957453,
+        "coherent_location_constant_rms_fraction_of_direct": 0.008675995732484027,
+        "coherent_location_linear_rms_fraction_of_direct": 0.010461348045522307,
+        "median_absolute_constant_rms_fraction_of_direct": 0.13098170971991785,
+        "median_absolute_linear_rms_fraction_of_direct": 0.08906047370975671,
+        "constant_phase_concentration": 0.0030614810870651355,
+        "linear_phase_concentration": 0.01909783156654316,
+        "epochs": 100
+      },
+      "candidate_count": 143,
+      "gram_eigenvalues": [
+        213.55896344685198,
+        536.2285132046287,
+        4645578735576367.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.7800000000000001,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 118,
+        "rss": 3641178192928.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": -0.019999999999999907,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 0.002008246145060072,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.7800000000000001,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 3641178192970.865,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": -0.019999999999999907,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 9,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.8,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "empirical_resampled",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 380239.47889980744,
+        "d_over_gain_abs_median": 223346.50588957453,
+        "coherent_location_constant_rms_fraction_of_direct": 0.008675995732484027,
+        "coherent_location_linear_rms_fraction_of_direct": 0.010461348045522307,
+        "median_absolute_constant_rms_fraction_of_direct": 0.13098170971991785,
+        "median_absolute_linear_rms_fraction_of_direct": 0.08906047370975671,
+        "constant_phase_concentration": 0.0030614810870651355,
+        "linear_phase_concentration": 0.01909783156654316,
+        "epochs": 100
+      },
+      "candidate_count": 143,
+      "gram_eigenvalues": [
+        213.55896344685198,
+        536.2285132046287,
+        4645578735576367.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 120,
+        "rss": 531092422013336.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 0.15617988613456515,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 531092422013336.94,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 9,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.1,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "none",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 380239.47889980744,
+        "d_over_gain_abs_median": 223346.50588957453,
+        "coherent_location_constant_rms_fraction_of_direct": 0.008675995732484027,
+        "coherent_location_linear_rms_fraction_of_direct": 0.010461348045522307,
+        "median_absolute_constant_rms_fraction_of_direct": 0.13098170971991785,
+        "median_absolute_linear_rms_fraction_of_direct": 0.08906047370975671,
+        "constant_phase_concentration": 0.0030614810870651355,
+        "linear_phase_concentration": 0.01909783156654316,
+        "epochs": 100
+      },
+      "candidate_count": 110,
+      "gram_eigenvalues": [
+        253.3675241263835,
+        536.8608118950999,
+        5859745004848940.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 50,
+        "rss": 0.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 5.272051338195275e-15,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 3.1462619881528195e-15,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 9,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.1,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "coherent_median",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 380239.47889980744,
+        "d_over_gain_abs_median": 223346.50588957453,
+        "coherent_location_constant_rms_fraction_of_direct": 0.008675995732484027,
+        "coherent_location_linear_rms_fraction_of_direct": 0.010461348045522307,
+        "median_absolute_constant_rms_fraction_of_direct": 0.13098170971991785,
+        "median_absolute_linear_rms_fraction_of_direct": 0.08906047370975671,
+        "constant_phase_concentration": 0.0030614810870651355,
+        "linear_phase_concentration": 0.01909783156654316,
+        "epochs": 100
+      },
+      "candidate_count": 110,
+      "gram_eigenvalues": [
+        253.3675241263835,
+        536.8608118950999,
+        5859745004848940.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 50,
+        "rss": 4234470209960.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 0.0018574501364951737,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 4234470209961.242,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 9,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.1,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "empirical_resampled",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 380239.47889980744,
+        "d_over_gain_abs_median": 223346.50588957453,
+        "coherent_location_constant_rms_fraction_of_direct": 0.008675995732484027,
+        "coherent_location_linear_rms_fraction_of_direct": 0.010461348045522307,
+        "median_absolute_constant_rms_fraction_of_direct": 0.13098170971991785,
+        "median_absolute_linear_rms_fraction_of_direct": 0.08906047370975671,
+        "constant_phase_concentration": 0.0030614810870651355,
+        "linear_phase_concentration": 0.01909783156654316,
+        "epochs": 100
+      },
+      "candidate_count": 110,
+      "gram_eigenvalues": [
+        253.3675241263835,
+        536.8608118950999,
+        5859745004848940.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.46193976625564337,
+        "rho_imag": 0.1913417161825449,
+        "rho_magnitude": 0.5,
+        "rho_phase_deg": 22.500000000000004,
+        "direct_index": 40,
+        "reflected_index": 50,
+        "rss": 1111354075005808.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.15999999999999995
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 0.4763919446529049,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.46193976625564337,
+        "rho_imag": 0.1913417161825449,
+        "rho_magnitude": 0.5,
+        "rho_phase_deg": 22.500000000000004,
+        "rss": 1111354075005808.9,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.15999999999999995
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.8,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "none",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 369362.86877104896,
+        "d_over_gain_abs_median": 233607.98262420375,
+        "coherent_location_constant_rms_fraction_of_direct": 0.01100814979108484,
+        "coherent_location_linear_rms_fraction_of_direct": 0.0032489139181172983,
+        "median_absolute_constant_rms_fraction_of_direct": 0.12489468446871546,
+        "median_absolute_linear_rms_fraction_of_direct": 0.09143885701891365,
+        "constant_phase_concentration": 0.02059568554054293,
+        "linear_phase_concentration": 0.008068338778547493,
+        "epochs": 100
+      },
+      "candidate_count": 143,
+      "gram_eigenvalues": [
+        189.9446270845567,
+        536.2772758014081,
+        4877233942797517.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 120,
+        "rss": 0.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 3.4321581925702055e-15,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 3.7623157006026116e-15,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.8,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "coherent_median",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 369362.86877104896,
+        "d_over_gain_abs_median": 233607.98262420375,
+        "coherent_location_constant_rms_fraction_of_direct": 0.01100814979108484,
+        "coherent_location_linear_rms_fraction_of_direct": 0.0032489139181172983,
+        "median_absolute_constant_rms_fraction_of_direct": 0.12489468446871546,
+        "median_absolute_linear_rms_fraction_of_direct": 0.09143885701891365,
+        "constant_phase_concentration": 0.02059568554054293,
+        "linear_phase_concentration": 0.008068338778547493,
+        "epochs": 100
+      },
+      "candidate_count": 143,
+      "gram_eigenvalues": [
+        189.9446270845567,
+        536.2772758014081,
+        4877233942797517.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 120,
+        "rss": 1788433729240.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 0.00014270730430511648,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 1788433729228.2896,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.8,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "empirical_resampled",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 369362.86877104896,
+        "d_over_gain_abs_median": 233607.98262420375,
+        "coherent_location_constant_rms_fraction_of_direct": 0.01100814979108484,
+        "coherent_location_linear_rms_fraction_of_direct": 0.0032489139181172983,
+        "median_absolute_constant_rms_fraction_of_direct": 0.12489468446871546,
+        "median_absolute_linear_rms_fraction_of_direct": 0.09143885701891365,
+        "constant_phase_concentration": 0.02059568554054293,
+        "linear_phase_concentration": 0.008068338778547493,
+        "epochs": 100
+      },
+      "candidate_count": 143,
+      "gram_eigenvalues": [
+        189.9446270845567,
+        536.2772758014081,
+        4877233942797517.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.7200000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 112,
+        "rss": 435340961142240.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": -0.07999999999999985,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.8000000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 0.12910582786258107,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 1.1102230246251565e-16,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.7200000000000002,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 435340961142212.4,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": -0.07999999999999985,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.1,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "none",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 369362.86877104896,
+        "d_over_gain_abs_median": 233607.98262420375,
+        "coherent_location_constant_rms_fraction_of_direct": 0.01100814979108484,
+        "coherent_location_linear_rms_fraction_of_direct": 0.0032489139181172983,
+        "median_absolute_constant_rms_fraction_of_direct": 0.12489468446871546,
+        "median_absolute_linear_rms_fraction_of_direct": 0.09143885701891365,
+        "constant_phase_concentration": 0.02059568554054293,
+        "linear_phase_concentration": 0.008068338778547493,
+        "epochs": 100
+      },
+      "candidate_count": 110,
+      "gram_eigenvalues": [
+        231.7865114209677,
+        537.1444529222593,
+        6087364340660918.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 50,
+        "rss": 0.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 6.505087282284095e-14,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 6.043053790971076e-14,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.1,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "coherent_median",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 369362.86877104896,
+        "d_over_gain_abs_median": 233607.98262420375,
+        "coherent_location_constant_rms_fraction_of_direct": 0.01100814979108484,
+        "coherent_location_linear_rms_fraction_of_direct": 0.0032489139181172983,
+        "median_absolute_constant_rms_fraction_of_direct": 0.12489468446871546,
+        "median_absolute_linear_rms_fraction_of_direct": 0.09143885701891365,
+        "constant_phase_concentration": 0.02059568554054293,
+        "linear_phase_concentration": 0.008068338778547493,
+        "epochs": 100
+      },
+      "candidate_count": 110,
+      "gram_eigenvalues": [
+        231.7865114209677,
+        537.1444529222593,
+        6087364340660918.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "direct_index": 40,
+        "reflected_index": 50,
+        "rss": 2282085748064.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 0.0001510718436222797,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 2282085748029.136,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "tau_true_chip": 0.0,
+      "separation_true_chip": 0.1,
+      "rho_true": {
+        "real": 0.31411904105383753,
+        "imag": 0.13011236700413054,
+        "magnitude": 0.34,
+        "phase_deg": 22.5
+      },
+      "affine_injection_mode": "empirical_resampled",
+      "empirical_clean_projection_scale": {
+        "c_over_gain_abs_median": 369362.86877104896,
+        "d_over_gain_abs_median": 233607.98262420375,
+        "coherent_location_constant_rms_fraction_of_direct": 0.01100814979108484,
+        "coherent_location_linear_rms_fraction_of_direct": 0.0032489139181172983,
+        "median_absolute_constant_rms_fraction_of_direct": 0.12489468446871546,
+        "median_absolute_linear_rms_fraction_of_direct": 0.09143885701891365,
+        "constant_phase_concentration": 0.02059568554054293,
+        "linear_phase_concentration": 0.008068338778547493,
+        "epochs": 100
+      },
+      "candidate_count": 110,
+      "gram_eigenvalues": [
+        231.7865114209677,
+        537.1444529222593,
+        6087364340660918.0
+      ],
+      "gram_pinv_rcond": 1e-12,
+      "effective_pinv_rank_at_truth": 1,
+      "A_old_pinv": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.18000000000000002,
+        "rho_real": 0.18477590650225736,
+        "rho_imag": 0.07653668647301796,
+        "rho_magnitude": 0.2,
+        "rho_phase_deg": 22.500000000000004,
+        "direct_index": 40,
+        "reflected_index": 58,
+        "rss": 587810334037960.0,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.08000000000000002,
+          "rho_abs_error": 0.14
+        }
+      },
+      "B_stable_with_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.1,
+        "rho_real": 0.31411904105383753,
+        "rho_imag": 0.13011236700413054,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5,
+        "rss": 0.13832116159968194,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.0,
+          "rho_abs_error": 0.0
+        }
+      },
+      "C_stable_without_affine": {
+        "tau_chip": 3.3306690738754696e-16,
+        "separation_chip": 0.18000000000000002,
+        "rho_real": 0.18477590650225736,
+        "rho_imag": 0.07653668647301796,
+        "rho_magnitude": 0.2,
+        "rho_phase_deg": 22.500000000000004,
+        "rss": 587810334038038.2,
+        "error": {
+          "tau_error_chip": 3.3306690738754696e-16,
+          "separation_error_chip": 0.08000000000000002,
+          "rho_abs_error": 0.14
+        }
+      }
+    }
+  ]
+}

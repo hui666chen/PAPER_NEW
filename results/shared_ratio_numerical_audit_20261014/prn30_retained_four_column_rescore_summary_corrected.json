@@ -1,0 +1,285 @@
+{
+  "schema": 1,
+  "status": "retained_PRN30_four_column_rescore_no_PVT",
+  "pvt_recomputed": false,
+  "input_scope": "retained PRN30 final-sign-persistence 100x401 epoch responses",
+  "frozen": {
+    "scenes_windows_banks": [
+      {
+        "scene": "clean",
+        "windows": [
+          60,
+          75
+        ],
+        "bank_window": 68
+      },
+      {
+        "scene": "amp_0p01",
+        "windows": [
+          79,
+          94
+        ],
+        "bank_window": 87
+      },
+      {
+        "scene": "amp_0p05",
+        "windows": [
+          100,
+          115
+        ],
+        "bank_window": 108
+      },
+      {
+        "scene": "amp_0p10",
+        "windows": [
+          121,
+          136
+        ],
+        "bank_window": 129
+      }
+    ],
+    "gate_threshold": 0.2,
+    "tau_grid_from_existing_pipeline": [
+      -0.4,
+      0.4000000000000007,
+      0.01
+    ],
+    "separation_grid": [
+      0.04,
+      1.2,
+      0.01
+    ],
+    "sobol_points": 4096,
+    "sobol_scrambles": 2
+  },
+  "solver_definitions": {
+    "A_historical_hybrid": "raw-inverse coarse scorer; raw pinv(rcond=1e-12) continuous tau refinement",
+    "B_stable_with_affine": "column-scaled stable profile for coarse scoring and continuous refinement, with constant/linear nuisance columns",
+    "C_stable_without_affine": "column-scaled stable profile, omitting constant/linear nuisance columns"
+  },
+  "stable_inverse_vs_direct_qr_checks": {
+    "clean": {
+      "with_affine": {
+        "candidate_indices": [
+          0,
+          4738,
+          9476
+        ],
+        "relative_errors": [
+          9.125969716346486e-15,
+          1.9571704620883406e-15,
+          8.140483852824977e-16
+        ],
+        "maximum_relative_error": 9.125969716346486e-15
+      },
+      "without_affine": {
+        "candidate_indices": [
+          0,
+          4738,
+          9476
+        ],
+        "relative_errors": [
+          1.548395711537163e-14,
+          1.7306295400433088e-15,
+          2.1748047989149632e-16
+        ],
+        "maximum_relative_error": 1.548395711537163e-14
+      }
+    },
+    "amp_0p01": {
+      "with_affine": {
+        "candidate_indices": [
+          0,
+          4738,
+          9476
+        ],
+        "relative_errors": [
+          2.0520318661914505e-14,
+          3.1962659224061267e-16,
+          0.0
+        ],
+        "maximum_relative_error": 2.0520318661914505e-14
+      },
+      "without_affine": {
+        "candidate_indices": [
+          0,
+          4738,
+          9476
+        ],
+        "relative_errors": [
+          6.249075718372177e-14,
+          6.467163211437537e-16,
+          1.017409622554738e-15
+        ],
+        "maximum_relative_error": 6.249075718372177e-14
+      }
+    },
+    "amp_0p05": {
+      "with_affine": {
+        "candidate_indices": [
+          0,
+          4738,
+          9476
+        ],
+        "relative_errors": [
+          2.0120868234848554e-14,
+          1.431280019660563e-15,
+          1.9232440377139266e-16
+        ],
+        "maximum_relative_error": 2.0120868234848554e-14
+      },
+      "without_affine": {
+        "candidate_indices": [
+          0,
+          4738,
+          9476
+        ],
+        "relative_errors": [
+          9.405395904591946e-14,
+          2.838125519980819e-15,
+          7.977144735468264e-16
+        ],
+        "maximum_relative_error": 9.405395904591946e-14
+      }
+    },
+    "amp_0p10": {
+      "with_affine": {
+        "candidate_indices": [
+          0,
+          4738,
+          9476
+        ],
+        "relative_errors": [
+          3.489507267060458e-14,
+          1.8848806906157692e-16,
+          2.898690054455529e-16
+        ],
+        "maximum_relative_error": 3.489507267060458e-14
+      },
+      "without_affine": {
+        "candidate_indices": [
+          0,
+          4738,
+          9476
+        ],
+        "relative_errors": [
+          1.465223707794386e-14,
+          1.3272649396552428e-15,
+          2.0501773436119336e-15
+        ],
+        "maximum_relative_error": 1.465223707794386e-14
+      }
+    }
+  },
+  "summary": {
+    "clean/A_historical_hybrid": {
+      "windows": 16,
+      "cross_active": 3,
+      "consistency_failures": 10,
+      "tau_mean_chip": 0.15413976797130394,
+      "tau_std_chip": 0.1964855304999028,
+      "separation_mean_chip": 0.5425000000000001,
+      "separation_boundary_count": 0
+    },
+    "clean/B_stable_with_affine": {
+      "windows": 16,
+      "cross_active": 3,
+      "consistency_failures": 10,
+      "tau_mean_chip": 0.15203805660593978,
+      "tau_std_chip": 0.19809810997209742,
+      "separation_mean_chip": 0.5425000000000001,
+      "separation_boundary_count": 0
+    },
+    "clean/C_stable_without_affine": {
+      "windows": 16,
+      "cross_active": 12,
+      "consistency_failures": 1,
+      "tau_mean_chip": 0.03267335687137819,
+      "tau_std_chip": 0.09802589436531206,
+      "separation_mean_chip": 1.146875,
+      "separation_boundary_count": 0
+    },
+    "amp_0p01/A_historical_hybrid": {
+      "windows": 16,
+      "cross_active": 4,
+      "consistency_failures": 8,
+      "tau_mean_chip": 0.12287890160130463,
+      "tau_std_chip": 0.19142732676974605,
+      "separation_mean_chip": 0.5450000000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p01/B_stable_with_affine": {
+      "windows": 16,
+      "cross_active": 4,
+      "consistency_failures": 8,
+      "tau_mean_chip": 0.12467689022640518,
+      "tau_std_chip": 0.1914731747551039,
+      "separation_mean_chip": 0.5450000000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p01/C_stable_without_affine": {
+      "windows": 16,
+      "cross_active": 12,
+      "consistency_failures": 1,
+      "tau_mean_chip": -0.005282364722735679,
+      "tau_std_chip": 0.0038668007739233474,
+      "separation_mean_chip": 1.1793750000000003,
+      "separation_boundary_count": 0
+    },
+    "amp_0p05/A_historical_hybrid": {
+      "windows": 16,
+      "cross_active": 4,
+      "consistency_failures": 8,
+      "tau_mean_chip": 0.047846602354031056,
+      "tau_std_chip": 0.1375497418744745,
+      "separation_mean_chip": 0.6693750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p05/B_stable_with_affine": {
+      "windows": 16,
+      "cross_active": 4,
+      "consistency_failures": 8,
+      "tau_mean_chip": 0.046942087925855865,
+      "tau_std_chip": 0.13788175934979777,
+      "separation_mean_chip": 0.6693750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p05/C_stable_without_affine": {
+      "windows": 16,
+      "cross_active": 14,
+      "consistency_failures": 1,
+      "tau_mean_chip": 0.0023228389617771864,
+      "tau_std_chip": 0.003501978408071935,
+      "separation_mean_chip": 1.1618750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p10/A_historical_hybrid": {
+      "windows": 16,
+      "cross_active": 7,
+      "consistency_failures": 3,
+      "tau_mean_chip": 0.011752888420044695,
+      "tau_std_chip": 0.10299528115744319,
+      "separation_mean_chip": 0.6818750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p10/B_stable_with_affine": {
+      "windows": 16,
+      "cross_active": 7,
+      "consistency_failures": 3,
+      "tau_mean_chip": 0.011344738308684375,
+      "tau_std_chip": 0.10349480874356175,
+      "separation_mean_chip": 0.6818750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p10/C_stable_without_affine": {
+      "windows": 16,
+      "cross_active": 12,
+      "consistency_failures": 0,
+      "tau_mean_chip": -0.0042884160316586616,
+      "tau_std_chip": 0.00424463825620705,
+      "separation_mean_chip": 1.1231250000000002,
+      "separation_boundary_count": 0
+    }
+  },
+  "caution": "Exploratory numerical re-score of one retained PRN30 batch. The frozen persistence aggregation and PVT were not recomputed; the 10-run PRN9 validation's full epoch responses were deleted, so this does not adjudicate the PRN9 claim."
+}

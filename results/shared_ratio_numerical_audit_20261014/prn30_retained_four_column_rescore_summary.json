@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "status": "retained_PRN30_four_column_rescore_no_PVT",
+  "pvt_recomputed": false,
+  "input_scope": "retained PRN30 final-sign-persistence 100x401 epoch responses",
+  "frozen": {
+    "scenes_windows_banks": [
+      {
+        "scene": "clean",
+        "windows": [
+          60,
+          75
+        ],
+        "bank_window": 68
+      },
+      {
+        "scene": "amp_0p01",
+        "windows": [
+          79,
+          94
+        ],
+        "bank_window": 87
+      },
+      {
+        "scene": "amp_0p05",
+        "windows": [
+          100,
+          115
+        ],
+        "bank_window": 108
+      },
+      {
+        "scene": "amp_0p10",
+        "windows": [
+          121,
+          136
+        ],
+        "bank_window": 129
+      }
+    ],
+    "gate_threshold": 0.2,
+    "tau_grid_from_existing_pipeline": [
+      -0.4,
+      0.4000000000000007,
+      0.01
+    ],
+    "separation_grid": [
+      0.04,
+      1.2,
+      0.01
+    ],
+    "sobol_points": 4096,
+    "sobol_scrambles": 2
+  },
+  "solver_definitions": {
+    "A_historical_hybrid": "raw-inverse coarse scorer; raw pinv(rcond=1e-12) continuous tau refinement",
+    "B_stable_with_affine": "column-scaled stable profile for coarse scoring and continuous refinement, with constant/linear nuisance columns",
+    "C_stable_without_affine": "column-scaled stable profile, omitting constant/linear nuisance columns"
+  },
+  "summary": {
+    "clean/A_historical_hybrid": {
+      "windows": 16,
+      "cross_active": 3,
+      "consistency_failures": 10,
+      "tau_mean_chip": 0.15413976797130394,
+      "tau_std_chip": 0.1964855304999028,
+      "separation_mean_chip": 0.5425000000000001,
+      "separation_boundary_count": 0
+    },
+    "clean/B_stable_with_affine": {
+      "windows": 16,
+      "cross_active": 3,
+      "consistency_failures": 10,
+      "tau_mean_chip": 0.15204914100527445,
+      "tau_std_chip": 0.1980315930060642,
+      "separation_mean_chip": 0.5425000000000001,
+      "separation_boundary_count": 0
+    },
+    "clean/C_stable_without_affine": {
+      "windows": 16,
+      "cross_active": 12,
+      "consistency_failures": 1,
+      "tau_mean_chip": 0.032735380880156095,
+      "tau_std_chip": 0.09801007874499114,
+      "separation_mean_chip": 1.146875,
+      "separation_boundary_count": 0
+    },
+    "amp_0p01/A_historical_hybrid": {
+      "windows": 16,
+      "cross_active": 4,
+      "consistency_failures": 8,
+      "tau_mean_chip": 0.12287890160130463,
+      "tau_std_chip": 0.19142732676974605,
+      "separation_mean_chip": 0.5450000000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p01/B_stable_with_affine": {
+      "windows": 16,
+      "cross_active": 4,
+      "consistency_failures": 8,
+      "tau_mean_chip": 0.12469655764849959,
+      "tau_std_chip": 0.1914880689092193,
+      "separation_mean_chip": 0.5450000000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p01/C_stable_without_affine": {
+      "windows": 16,
+      "cross_active": 12,
+      "consistency_failures": 1,
+      "tau_mean_chip": -0.005142990219313496,
+      "tau_std_chip": 0.0038673827717581573,
+      "separation_mean_chip": 1.1793750000000003,
+      "separation_boundary_count": 0
+    },
+    "amp_0p05/A_historical_hybrid": {
+      "windows": 16,
+      "cross_active": 4,
+      "consistency_failures": 8,
+      "tau_mean_chip": 0.047846602354031056,
+      "tau_std_chip": 0.1375497418744745,
+      "separation_mean_chip": 0.6693750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p05/B_stable_with_affine": {
+      "windows": 16,
+      "cross_active": 4,
+      "consistency_failures": 8,
+      "tau_mean_chip": 0.0471511129433304,
+      "tau_std_chip": 0.1378009347836832,
+      "separation_mean_chip": 0.6693750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p05/C_stable_without_affine": {
+      "windows": 16,
+      "cross_active": 14,
+      "consistency_failures": 1,
+      "tau_mean_chip": 0.0025135769238701297,
+      "tau_std_chip": 0.003535799371130682,
+      "separation_mean_chip": 1.1618750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p10/A_historical_hybrid": {
+      "windows": 16,
+      "cross_active": 7,
+      "consistency_failures": 3,
+      "tau_mean_chip": 0.011752888420044695,
+      "tau_std_chip": 0.10299528115744319,
+      "separation_mean_chip": 0.6818750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p10/B_stable_with_affine": {
+      "windows": 16,
+      "cross_active": 7,
+      "consistency_failures": 3,
+      "tau_mean_chip": 0.011367927466397604,
+      "tau_std_chip": 0.10310747869578786,
+      "separation_mean_chip": 0.6818750000000002,
+      "separation_boundary_count": 0
+    },
+    "amp_0p10/C_stable_without_affine": {
+      "windows": 16,
+      "cross_active": 12,
+      "consistency_failures": 0,
+      "tau_mean_chip": -0.004322722451248807,
+      "tau_std_chip": 0.00430076434066269,
+      "separation_mean_chip": 1.1231250000000002,
+      "separation_boundary_count": 0
+    }
+  },
+  "caution": "Exploratory numerical re-score of one retained PRN30 batch. The frozen persistence aggregation and PVT were not recomputed; the 10-run PRN9 validation's full epoch responses were deleted, so this does not adjudicate the PRN9 claim."
+}

@@ -1,0 +1,586 @@
+{
+  "schema": 1,
+  "status": "four_column_known_truth_noiseless_diagnostic",
+  "truth_accessed": true,
+  "monte_carlo_trials": 0,
+  "pvt_recomputed": false,
+  "cases": [
+    {
+      "prn": 9,
+      "truth": {
+        "tau_chip": 0.0,
+        "separation_chip": 0.8,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5
+      },
+      "affine_fraction_of_path_rms_each": 0.0,
+      "epochs": 8,
+      "search": {
+        "scope": "local grid only; tau +/-0.04 chip and separation +/-0.04 chip",
+        "step_chip": 0.01,
+        "candidates_per_solver": 81
+      },
+      "raw_gram_eigenvalues": [
+        169.2513927987657,
+        448.0549409320463,
+        1940332759526138.8,
+        4878129556571883.0
+      ],
+      "raw_gram_smallest_to_largest": 3.469596098995524e-14,
+      "legacy_pinv_rcond": 1e-12,
+      "effective_raw_gram_rank_at_truth": 2,
+      "column_scaled_design_condition": 2.8478051905870276,
+      "solvers": {
+        "legacy_coarse_inverse_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -3.8989185724067704e+16,
+          "truth_grid_cost": -3.8989185724067704e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "legacy_refine_pinv_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -3.898918572406773e+16,
+          "truth_grid_cost": -3.898918572406773e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "stable_qr_affine_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": 5181365603871.27,
+          "truth_grid_cost": 5181365603871.27,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "stable_qr_no_affine_2col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": 14530903255337.35,
+          "truth_grid_cost": 14530903255337.35,
+          "selected_cost_minus_truth_cost": 0.0
+        }
+      }
+    },
+    {
+      "prn": 9,
+      "truth": {
+        "tau_chip": 0.0,
+        "separation_chip": 0.8,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5
+      },
+      "affine_fraction_of_path_rms_each": 0.05,
+      "epochs": 8,
+      "search": {
+        "scope": "local grid only; tau +/-0.04 chip and separation +/-0.04 chip",
+        "step_chip": 0.01,
+        "candidates_per_solver": 81
+      },
+      "raw_gram_eigenvalues": [
+        169.2513927987657,
+        448.0549409320463,
+        1940332759526138.8,
+        4878129556571883.0
+      ],
+      "raw_gram_smallest_to_largest": 3.469596098995524e-14,
+      "legacy_pinv_rcond": 1e-12,
+      "effective_raw_gram_rank_at_truth": 2,
+      "column_scaled_design_condition": 2.8478051905870276,
+      "solvers": {
+        "legacy_coarse_inverse_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -4.122419174969536e+16,
+          "truth_grid_cost": -4.122419174969536e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "legacy_refine_pinv_4col": {
+          "tau_chip": 0.01,
+          "separation_chip": 0.81,
+          "selected_offset_from_truth_chip": [
+            0.01,
+            0.010000000000000009
+          ],
+          "best_cost": -4.112506606884441e+16,
+          "truth_grid_cost": -4.111741701548558e+16,
+          "selected_cost_minus_truth_cost": -7649053358824.0
+        },
+        "stable_qr_affine_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": 5181365603871.273,
+          "truth_grid_cost": 5181365603871.273,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "stable_qr_no_affine_2col": {
+          "tau_chip": 0.01,
+          "separation_chip": 0.81,
+          "selected_offset_from_truth_chip": [
+            0.01,
+            0.010000000000000009
+          ],
+          "best_cost": 109965602177793.33,
+          "truth_grid_cost": 116218011908339.83,
+          "selected_cost_minus_truth_cost": -6252409730546.5
+        }
+      }
+    },
+    {
+      "prn": 9,
+      "truth": {
+        "tau_chip": 0.0,
+        "separation_chip": 0.1,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5
+      },
+      "affine_fraction_of_path_rms_each": 0.0,
+      "epochs": 8,
+      "search": {
+        "scope": "local grid only; tau +/-0.04 chip and separation +/-0.04 chip",
+        "step_chip": 0.01,
+        "candidates_per_solver": 81
+      },
+      "raw_gram_eigenvalues": [
+        244.63377273101477,
+        484.8278630926914,
+        48554461429272.516,
+        6768929315492205.0
+      ],
+      "raw_gram_smallest_to_largest": 3.614068951364521e-14,
+      "legacy_pinv_rcond": 1e-12,
+      "effective_raw_gram_rank_at_truth": 2,
+      "column_scaled_design_condition": 13.961648020615106,
+      "solvers": {
+        "legacy_coarse_inverse_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.1,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -4.87712084818053e+16,
+          "truth_grid_cost": -4.87712084818053e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "legacy_refine_pinv_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.1,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -4.877120848180545e+16,
+          "truth_grid_cost": -4.877120848180545e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "stable_qr_affine_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.11,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.009999999999999995
+          ],
+          "best_cost": 5481936880195.774,
+          "truth_grid_cost": 5531128944379.527,
+          "selected_cost_minus_truth_cost": -49192064183.75293
+        },
+        "stable_qr_no_affine_2col": {
+          "tau_chip": -0.01,
+          "separation_chip": 0.14,
+          "selected_offset_from_truth_chip": [
+            -0.01,
+            0.04000000000000001
+          ],
+          "best_cost": 14959385305770.809,
+          "truth_grid_cost": 15329986785306.695,
+          "selected_cost_minus_truth_cost": -370601479535.8867
+        }
+      }
+    },
+    {
+      "prn": 9,
+      "truth": {
+        "tau_chip": 0.0,
+        "separation_chip": 0.1,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5
+      },
+      "affine_fraction_of_path_rms_each": 0.05,
+      "epochs": 8,
+      "search": {
+        "scope": "local grid only; tau +/-0.04 chip and separation +/-0.04 chip",
+        "step_chip": 0.01,
+        "candidates_per_solver": 81
+      },
+      "raw_gram_eigenvalues": [
+        244.63377273101477,
+        484.8278630926914,
+        48554461429272.516,
+        6768929315492205.0
+      ],
+      "raw_gram_smallest_to_largest": 3.614068951364521e-14,
+      "legacy_pinv_rcond": 1e-12,
+      "effective_raw_gram_rank_at_truth": 2,
+      "column_scaled_design_condition": 13.961648020615106,
+      "solvers": {
+        "legacy_coarse_inverse_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.1,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -5.130776863313661e+16,
+          "truth_grid_cost": -5.130776863313661e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "legacy_refine_pinv_4col": {
+          "tau_chip": 0.02,
+          "separation_chip": 0.13,
+          "selected_offset_from_truth_chip": [
+            0.02,
+            0.03
+          ],
+          "best_cost": -5.120588530276047e+16,
+          "truth_grid_cost": -5.120314113407574e+16,
+          "selected_cost_minus_truth_cost": -2744168684728.0
+        },
+        "stable_qr_affine_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.11,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.009999999999999995
+          ],
+          "best_cost": 5481936880195.774,
+          "truth_grid_cost": 5531128944379.527,
+          "selected_cost_minus_truth_cost": -49192064183.75293
+        },
+        "stable_qr_no_affine_2col": {
+          "tau_chip": 0.01,
+          "separation_chip": 0.14,
+          "selected_offset_from_truth_chip": [
+            0.01,
+            0.04000000000000001
+          ],
+          "best_cost": 121623358787506.28,
+          "truth_grid_cost": 125991929823333.16,
+          "selected_cost_minus_truth_cost": -4368571035826.875
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "truth": {
+        "tau_chip": 0.0,
+        "separation_chip": 0.8,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5
+      },
+      "affine_fraction_of_path_rms_each": 0.0,
+      "epochs": 8,
+      "search": {
+        "scope": "local grid only; tau +/-0.04 chip and separation +/-0.04 chip",
+        "step_chip": 0.01,
+        "candidates_per_solver": 81
+      },
+      "raw_gram_eigenvalues": [
+        159.90977484948775,
+        452.42786845942106,
+        2032652891106392.5,
+        5200280936351708.0
+      ],
+      "raw_gram_smallest_to_largest": 3.075021846063446e-14,
+      "legacy_pinv_rcond": 1e-12,
+      "effective_raw_gram_rank_at_truth": 2,
+      "column_scaled_design_condition": 2.9389222790292022,
+      "solvers": {
+        "legacy_coarse_inverse_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -4.157862500177386e+16,
+          "truth_grid_cost": -4.157862500177386e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "legacy_refine_pinv_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -4.157862500177382e+16,
+          "truth_grid_cost": -4.157862500177382e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "stable_qr_affine_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.82,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.019999999999999907
+          ],
+          "best_cost": 6892480254887.725,
+          "truth_grid_cost": 7825030719347.355,
+          "selected_cost_minus_truth_cost": -932550464459.6309
+        },
+        "stable_qr_no_affine_2col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.81,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.010000000000000009
+          ],
+          "best_cost": 12025420944871.883,
+          "truth_grid_cost": 12541979153496.45,
+          "selected_cost_minus_truth_cost": -516558208624.5664
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "truth": {
+        "tau_chip": 0.0,
+        "separation_chip": 0.8,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5
+      },
+      "affine_fraction_of_path_rms_each": 0.05,
+      "epochs": 8,
+      "search": {
+        "scope": "local grid only; tau +/-0.04 chip and separation +/-0.04 chip",
+        "step_chip": 0.01,
+        "candidates_per_solver": 81
+      },
+      "raw_gram_eigenvalues": [
+        159.90977484948775,
+        452.42786845942106,
+        2032652891106392.5,
+        5200280936351708.0
+      ],
+      "raw_gram_smallest_to_largest": 3.075021846063446e-14,
+      "legacy_pinv_rcond": 1e-12,
+      "effective_raw_gram_rank_at_truth": 2,
+      "column_scaled_design_condition": 2.9389222790292022,
+      "solvers": {
+        "legacy_coarse_inverse_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -4.4001130349823256e+16,
+          "truth_grid_cost": -4.4001130349823256e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "legacy_refine_pinv_4col": {
+          "tau_chip": 0.01,
+          "separation_chip": 0.8,
+          "selected_offset_from_truth_chip": [
+            0.01,
+            0.0
+          ],
+          "best_cost": -4.389621202101856e+16,
+          "truth_grid_cost": -4.388945927286315e+16,
+          "selected_cost_minus_truth_cost": -6752748155408.0
+        },
+        "stable_qr_affine_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.82,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.019999999999999907
+          ],
+          "best_cost": 6892480254887.729,
+          "truth_grid_cost": 7825030719347.355,
+          "selected_cost_minus_truth_cost": -932550464459.627
+        },
+        "stable_qr_no_affine_2col": {
+          "tau_chip": 0.01,
+          "separation_chip": 0.81,
+          "selected_offset_from_truth_chip": [
+            0.01,
+            0.010000000000000009
+          ],
+          "best_cost": 123606210758748.22,
+          "truth_grid_cost": 131491084186400.17,
+          "selected_cost_minus_truth_cost": -7884873427651.953
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "truth": {
+        "tau_chip": 0.0,
+        "separation_chip": 0.1,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5
+      },
+      "affine_fraction_of_path_rms_each": 0.0,
+      "epochs": 8,
+      "search": {
+        "scope": "local grid only; tau +/-0.04 chip and separation +/-0.04 chip",
+        "step_chip": 0.01,
+        "candidates_per_solver": 81
+      },
+      "raw_gram_eigenvalues": [
+        234.75046630526208,
+        497.74501412870666,
+        51442982440906.35,
+        7182490706395108.0
+      ],
+      "raw_gram_smallest_to_largest": 3.268371319941232e-14,
+      "legacy_pinv_rcond": 1e-12,
+      "effective_raw_gram_rank_at_truth": 2,
+      "column_scaled_design_condition": 13.852008936598468,
+      "solvers": {
+        "legacy_coarse_inverse_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.1,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -5.175776517516306e+16,
+          "truth_grid_cost": -5.175776517516306e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "legacy_refine_pinv_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.1,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -5.175776517516264e+16,
+          "truth_grid_cost": -5.175776517516264e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "stable_qr_affine_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.11,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.009999999999999995
+          ],
+          "best_cost": 23313535120462.33,
+          "truth_grid_cost": 23417048905545.79,
+          "selected_cost_minus_truth_cost": -103513785083.46094
+        },
+        "stable_qr_no_affine_2col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.12,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.01999999999999999
+          ],
+          "best_cost": 30947224031129.203,
+          "truth_grid_cost": 31145195371142.562,
+          "selected_cost_minus_truth_cost": -197971340013.35938
+        }
+      }
+    },
+    {
+      "prn": 30,
+      "truth": {
+        "tau_chip": 0.0,
+        "separation_chip": 0.1,
+        "rho_magnitude": 0.34,
+        "rho_phase_deg": 22.5
+      },
+      "affine_fraction_of_path_rms_each": 0.05,
+      "epochs": 8,
+      "search": {
+        "scope": "local grid only; tau +/-0.04 chip and separation +/-0.04 chip",
+        "step_chip": 0.01,
+        "candidates_per_solver": 81
+      },
+      "raw_gram_eigenvalues": [
+        234.75046630526208,
+        497.74501412870666,
+        51442982440906.35,
+        7182490706395108.0
+      ],
+      "raw_gram_smallest_to_largest": 3.268371319941232e-14,
+      "legacy_pinv_rcond": 1e-12,
+      "effective_raw_gram_rank_at_truth": 2,
+      "column_scaled_design_condition": 13.852008936598468,
+      "solvers": {
+        "legacy_coarse_inverse_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.1,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.0
+          ],
+          "best_cost": -5.449885593559909e+16,
+          "truth_grid_cost": -5.449885593559909e+16,
+          "selected_cost_minus_truth_cost": 0.0
+        },
+        "legacy_refine_pinv_4col": {
+          "tau_chip": 0.02,
+          "separation_chip": 0.14,
+          "selected_offset_from_truth_chip": [
+            0.02,
+            0.04000000000000001
+          ],
+          "best_cost": -5.4391246641036984e+16,
+          "truth_grid_cost": -5.4387611910228296e+16,
+          "selected_cost_minus_truth_cost": -3634730808688.0
+        },
+        "stable_qr_affine_4col": {
+          "tau_chip": 0.0,
+          "separation_chip": 0.11,
+          "selected_offset_from_truth_chip": [
+            0.0,
+            0.009999999999999995
+          ],
+          "best_cost": 23313535120462.336,
+          "truth_grid_cost": 23417048905545.793,
+          "selected_cost_minus_truth_cost": -103513785083.45703
+        },
+        "stable_qr_no_affine_2col": {
+          "tau_chip": 0.02,
+          "separation_chip": 0.14,
+          "selected_offset_from_truth_chip": [
+            0.02,
+            0.04000000000000001
+          ],
+          "best_cost": 152865976596268.16,
+          "truth_grid_cost": 157995267184029.47,
+          "selected_cost_minus_truth_cost": -5129290587761.3125
+        }
+      }
+    }
+  ],
+  "interpretation_limit": "A local deterministic synthetic audit only; it does not establish the effect on historical gates or PVT. The historical pipeline is hybrid: raw np.linalg.inv in coarse candidate scoring and raw pinv(rcond=1e-12) in continuous tau refinement."
+}

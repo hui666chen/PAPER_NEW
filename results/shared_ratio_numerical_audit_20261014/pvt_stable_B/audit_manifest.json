@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "status": "posthoc_PRN30_PVT_sensitivity_audit",
+  "confirmatory": false,
+  "changed_only": "G30 C1C in copies of the retained common single-path RINEX",
+  "source_rinex": "external workspace input (not included): gps_l1_prn30_formal_pvt/final_sign_persistence/common_observable_pvt/observations/common_single.26O",
+  "source_rinex_sha256": "917e1e80a50d3e79fa7c20a699110e4eeedca1b507a06c2888d56a3208a1fbdf",
+  "response_rescore_csv": "results/shared_ratio_numerical_audit_20261014/prn30_retained_four_column_rescore.csv",
+  "response_rescore_sha256": "7382e752bd3b60ce6c937bf13e6dc7d7a11fdd0a50aafdb68f58a24992f081be",
+  "config_sha256": "1315d6d96af856e0509387f39b325fcd67270afdc66dda3b1d8098e971931146",
+  "navigation_sha256": "6ba5329cc2423f194fd117a36f6c04293f674021220c65468636a6e5eec9b2f8",
+  "solver_sha256": "6196dc497b66cf3893e73c6f6e81caefd372f9f044021c2b2ac77ecb84758146",
+  "scenes_seconds": {
+    "clean": [
+      60,
+      75
+    ],
+    "amp_0p01": [
+      79,
+      94
+    ],
+    "amp_0p05": [
+      100,
+      115
+    ],
+    "amp_0p10": [
+      121,
+      136
+    ]
+  },
+  "fixed_gate": "P_cross <= 0.20; causal same-sign 3-of-4 persistence for persistent variant",
+  "variants": {
+    "cross_only_stable_B": {
+      "target_rows_changed": 18,
+      "output_sha256": "239646564aaf45603c31fc5605c258c7f4223c4f09f5588b979fcfb6fa3c6a5f",
+      "observation_path": "results/shared_ratio_numerical_audit_20261014/pvt_stable_B/observations/cross_only_stable_B.26O (gitignored; not included)",
+      "solution_path": "results/shared_ratio_numerical_audit_20261014/pvt_stable_B/solutions/cross_only_stable_B.pos (gitignored; not included)",
+      "solution_sha256": "d90496777b642eb6780145585bf3c73bd38ce9e30992d6566570211caf7662ec",
+      "log_path": "results/shared_ratio_numerical_audit_20261014/pvt_stable_B/logs/cross_only_stable_B.log (gitignored; not included)"
+    },
+    "sign_persistent_stable_B": {
+      "target_rows_changed": 2,
+      "output_sha256": "cdfad81b20cf6d424fafed03e4e2635e9b1a0b70acfb194cbe6d253bb8ddfb4d",
+      "observation_path": "results/shared_ratio_numerical_audit_20261014/pvt_stable_B/observations/sign_persistent_stable_B.26O (gitignored; not included)",
+      "solution_path": "results/shared_ratio_numerical_audit_20261014/pvt_stable_B/solutions/sign_persistent_stable_B.pos (gitignored; not included)",
+      "solution_sha256": "a0ea68039abd1f247a0ff0d1e1daf3360dc7b15401897ed7aed63827e4f8f675",
+      "log_path": "results/shared_ratio_numerical_audit_20261014/pvt_stable_B/logs/sign_persistent_stable_B.log (gitignored; not included)"
+    }
+  },
+  "metrics": {
+    "clean": {
+      "single_A_baseline": {
+        "rmse_3d_m": 2.1866132615361913,
+        "improvement_vs_single_m": 0.0
+      },
+      "cross_only_A": {
+        "rmse_3d_m": 2.379990951710882,
+        "improvement_vs_single_m": -0.19337769017469064
+      },
+      "sign_persistent_A": {
+        "rmse_3d_m": 2.1866132615361913,
+        "improvement_vs_single_m": 0.0
+      },
+      "cross_only_stable_B": {
+        "rmse_3d_m": 2.25907442420653,
+        "improvement_vs_single_m": -0.07246116267033864
+      },
+      "sign_persistent_stable_B": {
+        "rmse_3d_m": 2.1866132615361913,
+        "improvement_vs_single_m": 0.0
+      }
+    },
+    "amp_0p01": {
+      "single_A_baseline": {
+        "rmse_3d_m": 2.3826779945673775,
+        "improvement_vs_single_m": 0.0
+      },
+      "cross_only_A": {
+        "rmse_3d_m": 2.3792488886302525,
+        "improvement_vs_single_m": 0.0034291059371249766
+      },
+      "sign_persistent_A": {
+        "rmse_3d_m": 2.3826779945673775,
+        "improvement_vs_single_m": 0.0
+      },
+      "cross_only_stable_B": {
+        "rmse_3d_m": 2.3582835728531735,
+        "improvement_vs_single_m": 0.02439442171420403
+      },
+      "sign_persistent_stable_B": {
+        "rmse_3d_m": 2.3826779945673775,
+        "improvement_vs_single_m": 0.0
+      }
+    },
+    "amp_0p05": {
+      "single_A_baseline": {
+        "rmse_3d_m": 2.8137380913805417,
+        "improvement_vs_single_m": 0.0
+      },
+      "cross_only_A": {
+        "rmse_3d_m": 2.7106448149896534,
+        "improvement_vs_single_m": 0.10309327639088828
+      },
+      "sign_persistent_A": {
+        "rmse_3d_m": 2.8137380913805417,
+        "improvement_vs_single_m": 0.0
+      },
+      "cross_only_stable_B": {
+        "rmse_3d_m": 2.7294755070250414,
+        "improvement_vs_single_m": 0.08426258435550027
+      },
+      "sign_persistent_stable_B": {
+        "rmse_3d_m": 2.8137380913805417,
+        "improvement_vs_single_m": 0.0
+      }
+    },
+    "amp_0p10": {
+      "single_A_baseline": {
+        "rmse_3d_m": 2.85396059028629,
+        "improvement_vs_single_m": 0.0
+      },
+      "cross_only_A": {
+        "rmse_3d_m": 2.371277201675002,
+        "improvement_vs_single_m": 0.4826833886112878
+      },
+      "sign_persistent_A": {
+        "rmse_3d_m": 2.764180520615342,
+        "improvement_vs_single_m": 0.08978006967094787
+      },
+      "cross_only_stable_B": {
+        "rmse_3d_m": 2.3495326864912047,
+        "improvement_vs_single_m": 0.5044279037950852
+      },
+      "sign_persistent_stable_B": {
+        "rmse_3d_m": 2.765856024107726,
+        "improvement_vs_single_m": 0.08810456617856399
+      }
+    }
+  },
+  "caution": "This is a post-hoc sensitivity comparison on one retained PRN30 noise realization, not an independent confirmation. No original files were modified and no PRN9 claim is adjudicated."
+}
