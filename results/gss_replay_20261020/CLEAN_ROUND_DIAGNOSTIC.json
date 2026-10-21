@@ -1,0 +1,261 @@
+{
+  "epochs": 5300,
+  "first_peak_mean_chip": -0.08097299361804493,
+  "final_mean_chip": -0.21049394782703512,
+  "first_peak_sd_chip": 0.02245447030277756,
+  "final_sd_chip": 0.17906661748702168,
+  "later_round_moves_earlier_gt_0p05_chip": 2541,
+  "later_round_moves_earlier_gt_0p1_chip": 1944,
+  "interpretation": "Later subtraction rounds introduce early candidates in clean data. This localizes the failure; it does not distinguish interpolation, reference shape, noise or paper transcription effects.",
+  "examples": [
+    {
+      "window": 27,
+      "epoch": 2,
+      "estimate_chip": -0.6899533078667848,
+      "arm": "I",
+      "sign": -1.0,
+      "rounds": [
+        {
+          "round": 1,
+          "search": {
+            "delay": -0.07988949290713265,
+            "value": 7530062.530590161,
+            "lower": -0.08023953488472338,
+            "upper": -0.07953945092954193,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.07988949290713265,
+          "amplitude": 7530062.530590161,
+          "plus_one_absolute_value": 759427.230837111,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        },
+        {
+          "round": 2,
+          "search": {
+            "delay": -0.07988949290713265,
+            "value": 5647546.89794262,
+            "lower": -0.08023953488472338,
+            "upper": -0.07953945092954193,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.07988949290713265,
+          "amplitude": 5647546.89794262,
+          "plus_one_absolute_value": 759427.230837111,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        },
+        {
+          "round": 3,
+          "search": {
+            "delay": -0.07029259927963452,
+            "value": 2842237.287683393,
+            "lower": -0.07064264125722525,
+            "upper": -0.06994255730204378,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.07029259927963452,
+          "amplitude": 2842237.287683393,
+          "plus_one_absolute_value": 776745.5451549535,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        },
+        {
+          "round": 4,
+          "search": {
+            "delay": -0.6899533078667848,
+            "value": 1256690.4616587088,
+            "lower": -0.6903033498443755,
+            "upper": -0.689603265889194,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.6899533078667848,
+          "amplitude": 1256690.4616587088,
+          "plus_one_absolute_value": 286779.736416053,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        }
+      ],
+      "config": {
+        "lower": -1.0,
+        "upper": 1.5,
+        "tolerance": 0.001,
+        "rejection_tolerance": 0.005,
+        "max_iterations": 128
+      },
+      "numerically_converged": true,
+      "physical_confidence_calibrated": false,
+      "pseudorange_correction_applied": false
+    },
+    {
+      "window": 27,
+      "epoch": 25,
+      "estimate_chip": -0.43983613046917225,
+      "arm": "Q",
+      "sign": 1.0,
+      "rounds": [
+        {
+          "round": 1,
+          "search": {
+            "delay": -0.08015690118303355,
+            "value": 6365992.46106997,
+            "lower": -0.08050694316062428,
+            "upper": -0.07980685920544282,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.08015690118303355,
+          "amplitude": 6365992.46106997,
+          "plus_one_absolute_value": 214675.183592661,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        },
+        {
+          "round": 2,
+          "search": {
+            "delay": -0.08015690118303355,
+            "value": 4774494.345802478,
+            "lower": -0.08050694316062428,
+            "upper": -0.07980685920544282,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.08015690118303355,
+          "amplitude": 4774494.345802478,
+          "plus_one_absolute_value": 214675.183592661,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        },
+        {
+          "round": 3,
+          "search": {
+            "delay": -0.08975379481053174,
+            "value": 2399066.18202924,
+            "lower": -0.09010383678812246,
+            "upper": -0.08940375283294101,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.08975379481053174,
+          "amplitude": 2399066.18202924,
+          "plus_one_absolute_value": 285172.8842962248,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        },
+        {
+          "round": 4,
+          "search": {
+            "delay": -0.43983613046917225,
+            "value": 806099.0627737076,
+            "lower": -0.440186172446763,
+            "upper": -0.43948608849158155,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.43983613046917225,
+          "amplitude": 806099.0627737076,
+          "plus_one_absolute_value": 221171.00796911772,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        }
+      ],
+      "config": {
+        "lower": -1.0,
+        "upper": 1.5,
+        "tolerance": 0.001,
+        "rejection_tolerance": 0.005,
+        "max_iterations": 128
+      },
+      "numerically_converged": true,
+      "physical_confidence_calibrated": false,
+      "pseudorange_correction_applied": false
+    },
+    {
+      "window": 27,
+      "epoch": 32,
+      "estimate_chip": -0.4101800982281166,
+      "arm": "Q",
+      "sign": -1.0,
+      "rounds": [
+        {
+          "round": 1,
+          "search": {
+            "delay": -0.09018647048981229,
+            "value": 6574600.205022588,
+            "lower": -0.09053651246740305,
+            "upper": -0.08983642851222153,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.09018647048981229,
+          "amplitude": 6574600.205022588,
+          "plus_one_absolute_value": 92520.6121318406,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        },
+        {
+          "round": 2,
+          "search": {
+            "delay": -0.10021603979659102,
+            "value": 4944634.882271631,
+            "lower": -0.10056608177418175,
+            "upper": -0.09986599781900028,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.10021603979659102,
+          "amplitude": 4944634.882271631,
+          "plus_one_absolute_value": 68941.21263352816,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        },
+        {
+          "round": 3,
+          "search": {
+            "delay": -0.4101800982281166,
+            "value": 2632575.674034908,
+            "lower": -0.41053014020570733,
+            "upper": -0.4098300562505258,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.4101800982281166,
+          "amplitude": 2632575.674034908,
+          "plus_one_absolute_value": 312645.6447721553,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        },
+        {
+          "round": 4,
+          "search": {
+            "delay": -0.02990691377661858,
+            "value": 1179761.8069966042,
+            "lower": -0.030256955754209287,
+            "upper": -0.02955687179902787,
+            "evaluations": 20,
+            "converged": true
+          },
+          "candidate_chip": -0.02990691377661858,
+          "amplitude": 1179761.8069966042,
+          "plus_one_absolute_value": 111310.95905031366,
+          "shifted_plus_one": false,
+          "one_chip_alias_rejected": false
+        }
+      ],
+      "config": {
+        "lower": -1.0,
+        "upper": 1.5,
+        "tolerance": 0.001,
+        "rejection_tolerance": 0.005,
+        "max_iterations": 128
+      },
+      "numerically_converged": true,
+      "physical_confidence_calibrated": false,
+      "pseudorange_correction_applied": false
+    }
+  ]
+}

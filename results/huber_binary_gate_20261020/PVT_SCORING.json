@@ -1,0 +1,187 @@
+{
+  "clean": {
+    "ls": {
+      "rmse_3d_m": 2.0594009585415303,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "ls_cap": {
+      "rmse_3d_m": 2.0594009585415303,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber": {
+      "rmse_3d_m": 2.0594009585415303,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber_cap": {
+      "rmse_3d_m": 2.0594009585415303,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "original": {
+      "rmse_3d_m": 2.0594009585415303,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    }
+  },
+  "d0p05_a0p20_p000": {
+    "ls": {
+      "rmse_3d_m": 2.6111578499352484,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "ls_cap": {
+      "rmse_3d_m": 2.6111578499352484,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber": {
+      "rmse_3d_m": 2.6111578499352484,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber_cap": {
+      "rmse_3d_m": 2.6111578499352484,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "original": {
+      "rmse_3d_m": 2.6111578499352484,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    }
+  },
+  "d0p05_a0p20_p090": {
+    "ls": {
+      "rmse_3d_m": 2.0539277137321545,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "ls_cap": {
+      "rmse_3d_m": 2.0539277137321545,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber": {
+      "rmse_3d_m": 2.0539277137321545,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber_cap": {
+      "rmse_3d_m": 2.0539277137321545,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "original": {
+      "rmse_3d_m": 2.0539277137321545,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    }
+  },
+  "d0p05_a0p20_p180": {
+    "ls": {
+      "rmse_3d_m": 3.5359640472487186,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "ls_cap": {
+      "rmse_3d_m": 3.5359640472487186,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber": {
+      "rmse_3d_m": 3.5359640472487186,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber_cap": {
+      "rmse_3d_m": 3.5359640472487186,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "original": {
+      "rmse_3d_m": 3.5359640472487186,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    }
+  },
+  "d0p05_a0p50_p090": {
+    "ls": {
+      "rmse_3d_m": 2.604630030264837,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "ls_cap": {
+      "rmse_3d_m": 2.3019315912543767,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber": {
+      "rmse_3d_m": 2.7298500918737427,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "huber_cap": {
+      "rmse_3d_m": 2.3019315912543767,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    },
+    "original": {
+      "rmse_3d_m": 2.3473362894403347,
+      "common_epochs": 40,
+      "available": 40,
+      "expected": 40,
+      "missing": []
+    }
+  }
+}

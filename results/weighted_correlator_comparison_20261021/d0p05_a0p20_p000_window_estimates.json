@@ -1,0 +1,426 @@
+[
+  {
+    "window": 27,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.0023234109405221065,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.015154494101057221
+  },
+  {
+    "window": 28,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.006049105743815421,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.009588227635358196
+  },
+  {
+    "window": 29,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.002592791904111299,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.005295742351187091
+  },
+  {
+    "window": 30,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.006885431443293613,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.010812649977223532
+  },
+  {
+    "window": 31,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.016861722988404316,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.0025187679027313566
+  },
+  {
+    "window": 32,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.001687382380859525,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.005040858643940041
+  },
+  {
+    "window": 33,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0022413502494222546,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.007084717376619114
+  },
+  {
+    "window": 34,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.006360480478960816,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.0019021676455427427
+  },
+  {
+    "window": 35,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.0005630672151441858,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.008941498791368865
+  },
+  {
+    "window": 36,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.006680765223557652,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.0012207849903603566
+  },
+  {
+    "window": 37,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.005585354299513989,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.0006774033725299181
+  },
+  {
+    "window": 38,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.0017861646485810656,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.005233138264760759
+  },
+  {
+    "window": 39,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.006746339089763004,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.01210126940693559
+  },
+  {
+    "window": 40,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.0013032530541956314,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.004308013232987477
+  },
+  {
+    "window": 41,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.00648625732682368,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.002307244934047343
+  },
+  {
+    "window": 42,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.009381632430439806,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 6.97117681753931e-05
+  },
+  {
+    "window": 43,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.011215717507424849,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.00032981169414595627
+  },
+  {
+    "window": 44,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.0016228731723438878,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.010938482479861136
+  },
+  {
+    "window": 45,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0035199024080822144,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.0005364920850099516
+  },
+  {
+    "window": 46,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.009615433901207797,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.005193833507795784
+  },
+  {
+    "window": 47,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.011637062250818873,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.005812650585702625
+  },
+  {
+    "window": 48,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.001851465339812091,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.009504377959882938
+  },
+  {
+    "window": 49,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.004162481454849164,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.0024409198902802503
+  },
+  {
+    "window": 50,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.004024966084452233,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.008295285408369834
+  },
+  {
+    "window": 51,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.002665850826364708,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.0052441798892039655
+  },
+  {
+    "window": 52,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.001313266325263734,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.005752388034106555
+  },
+  {
+    "window": 53,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.004852048178716348,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.006594954710275542
+  },
+  {
+    "window": 54,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0022478944531175355,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.001208139046325368
+  },
+  {
+    "window": 55,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.010164216633673362,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.0026167318682993133
+  },
+  {
+    "window": 56,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0005763926319174082,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.005431025695113056
+  },
+  {
+    "window": 57,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.00166606001169262,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.004517105570153034
+  },
+  {
+    "window": 58,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.012318347074480927,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.0037680937866596486
+  },
+  {
+    "window": 59,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.008340020636997193,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.0024818655723682736
+  },
+  {
+    "window": 60,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.003254463792827632,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.0019475005649462493
+  },
+  {
+    "window": 61,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0006050741016817925,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.011107620282475132
+  },
+  {
+    "window": 62,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.008609558957136413,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.002404815003985673
+  },
+  {
+    "window": 63,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0018384086819600665,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.009152415029276306
+  },
+  {
+    "window": 64,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.002794353173231014,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.006737529726784098
+  },
+  {
+    "window": 65,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0012261234504636245,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.01136445618140674
+  },
+  {
+    "window": 66,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.004169370543967354,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.002784779167294773
+  },
+  {
+    "window": 67,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0027347248285145742,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.005523716420771637
+  },
+  {
+    "window": 68,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0070387347972202755,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.002446768118024376
+  },
+  {
+    "window": 69,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.015854946951681957,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.004504848876418944
+  },
+  {
+    "window": 70,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.007366386250900443,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.005059533037389453
+  },
+  {
+    "window": 71,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.0028723876378543073,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.008248505461724887
+  },
+  {
+    "window": 72,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.0068808521920618,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.0021135401476556053
+  },
+  {
+    "window": 73,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.013355943540247233,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.009811676900518347
+  },
+  {
+    "window": 74,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": -0.004206227951064804,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.013599505618340413
+  },
+  {
+    "window": 75,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.009454180972829773,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.0020769463173646776
+  },
+  {
+    "window": 76,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.006731735466523189,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.006221822333694571
+  },
+  {
+    "window": 77,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.002345864352647989,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": -0.009179475604181246
+  },
+  {
+    "window": 78,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.008424009686357264,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.004679132596542284
+  },
+  {
+    "window": 79,
+    "epoch_count": 100,
+    "primary_valid_count": 100,
+    "primary_tau_chip": 0.00504942020817678,
+    "mixed_valid_count": 100,
+    "mixed_tau_chip": 0.00029407309794827514
+  }
+]

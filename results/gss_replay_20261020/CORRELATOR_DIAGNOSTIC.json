@@ -1,0 +1,87 @@
+{
+  "clean": {
+    "gss": {
+      "paired_clean_displacement_rmse_m": 0.0,
+      "paired_clean_displacement_mean_m": 0.0,
+      "windows": 40
+    },
+    "eml": {
+      "paired_clean_displacement_rmse_m": 0.0,
+      "paired_clean_displacement_mean_m": 0.0,
+      "windows": 40
+    },
+    "dd": {
+      "paired_clean_displacement_rmse_m": 0.0,
+      "paired_clean_displacement_mean_m": 0.0,
+      "windows": 40
+    }
+  },
+  "d0p05_a0p20_p000": {
+    "gss": {
+      "paired_clean_displacement_rmse_m": 6.313712368381411,
+      "paired_clean_displacement_mean_m": 4.778825355487691,
+      "windows": 40
+    },
+    "eml": {
+      "paired_clean_displacement_rmse_m": 1.7044683706704427,
+      "paired_clean_displacement_mean_m": 1.6811660731983842,
+      "windows": 40
+    },
+    "dd": {
+      "paired_clean_displacement_rmse_m": 4.017406206617913,
+      "paired_clean_displacement_mean_m": -3.6784876781943603,
+      "windows": 40
+    }
+  },
+  "d0p05_a0p20_p090": {
+    "gss": {
+      "paired_clean_displacement_rmse_m": 3.777187342767882,
+      "paired_clean_displacement_mean_m": 1.0611162325359227,
+      "windows": 40
+    },
+    "eml": {
+      "paired_clean_displacement_rmse_m": 0.3297407207354424,
+      "paired_clean_displacement_mean_m": 0.22387401242887695,
+      "windows": 40
+    },
+    "dd": {
+      "paired_clean_displacement_rmse_m": 1.0236291541890021,
+      "paired_clean_displacement_mean_m": -0.4509721140114909,
+      "windows": 40
+    }
+  },
+  "d0p05_a0p20_p180": {
+    "gss": {
+      "paired_clean_displacement_rmse_m": 5.511766681492666,
+      "paired_clean_displacement_mean_m": -4.160777212418265,
+      "windows": 40
+    },
+    "eml": {
+      "paired_clean_displacement_rmse_m": 1.7504543013790552,
+      "paired_clean_displacement_mean_m": -1.6577377182952198,
+      "windows": 40
+    },
+    "dd": {
+      "paired_clean_displacement_rmse_m": 3.260628360164314,
+      "paired_clean_displacement_mean_m": 2.890671849527821,
+      "windows": 40
+    }
+  },
+  "d0p05_a0p50_p090": {
+    "gss": {
+      "paired_clean_displacement_rmse_m": 5.509143064182628,
+      "paired_clean_displacement_mean_m": 2.703635022621108,
+      "windows": 40
+    },
+    "eml": {
+      "paired_clean_displacement_rmse_m": 1.6849228416290551,
+      "paired_clean_displacement_mean_m": 1.640984761574969,
+      "windows": 40
+    },
+    "dd": {
+      "paired_clean_displacement_rmse_m": 2.763000581840686,
+      "paired_clean_displacement_mean_m": -2.2252723531533363,
+      "windows": 40
+    }
+  }
+}

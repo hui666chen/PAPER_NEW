@@ -1,0 +1,98 @@
+{
+  "ls": [
+    {
+      "tau_chip": 0.09929437850661471,
+      "separation_chip": 0.060000000000000005,
+      "rho": 0.5,
+      "boundary": false,
+      "delta": 0.09738034050681259,
+      "gain": 0.01997653598975517,
+      "h0_cost": 219.3388772558376,
+      "h1_cost": 214.95724628038386,
+      "ordinary_rss": 214.95724628038386,
+      "converged": true,
+      "objective": [
+        218.6001797188241
+      ]
+    },
+    {
+      "tau_chip": 0.08116630963989403,
+      "separation_chip": 0.04,
+      "rho": 0.5,
+      "boundary": true,
+      "delta": 0.09060856912105228,
+      "gain": 0.02505676622692749,
+      "h0_cost": 225.14526962679594,
+      "h1_cost": 219.50385723865875,
+      "ordinary_rss": 219.50385723865875,
+      "converged": true,
+      "objective": [
+        213.86960849563863
+      ]
+    }
+  ],
+  "scene": "d0p05_a0p50_p090",
+  "window": 44,
+  "elapsed_seconds": 3.1752243041992188,
+  "refinements": [
+    {
+      "h0": {
+        "tau_chip": 0.08719365367632481,
+        "train_rss_before": 224.30880917184498,
+        "train_rss_after": 224.21740948775164,
+        "local_interval": [
+          0.08500000000000041,
+          0.09500000000000042
+        ],
+        "local_edge": false,
+        "optimizer_success": true,
+        "nfev": 7
+      },
+      "h1": {
+        "tau_chip": 0.09929437850661471,
+        "train_rss_before": 218.60017971882417,
+        "train_rss_after": 218.59441983863576,
+        "local_interval": [
+          0.09000000000000043,
+          0.11000000000000042
+        ],
+        "local_edge": false,
+        "optimizer_success": true,
+        "nfev": 8
+      },
+      "rho_real": 3.061616997868383e-17,
+      "rho_imag": 0.5,
+      "separation_chip": 0.060000000000000005
+    },
+    {
+      "h0": {
+        "tau_chip": 0.07826746578337161,
+        "train_rss_before": 218.44153620720675,
+        "train_rss_after": 218.406316009409,
+        "local_interval": [
+          0.0750000000000004,
+          0.08500000000000041
+        ],
+        "local_edge": false,
+        "optimizer_success": true,
+        "nfev": 8
+      },
+      "h1": {
+        "tau_chip": 0.08116630963989403,
+        "train_rss_before": 213.8696084956386,
+        "train_rss_after": 213.85339955543944,
+        "local_interval": [
+          0.07000000000000041,
+          0.0900000000000004
+        ],
+        "local_edge": false,
+        "optimizer_success": true,
+        "nfev": 8
+      },
+      "rho_real": -0.19134171618254486,
+      "rho_imag": 0.46193976625564337,
+      "separation_chip": 0.04
+    }
+  ],
+  "previous_result_sha256": "7f2dec954973ef1ab349f5743b47ba20450c9c79f3f83ee6f9ea289c60849509"
+}
